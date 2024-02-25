@@ -3,109 +3,136 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import styles from '@assets/scss/home.module.scss'
-import logoBlack from '@assets/images/logo-black.svg'
-import phone2 from '@assets/images/phone-orange.svg'
-import { IconEmail, IconLocation, IconPhone } from '@srccommons/icons'
+import bct from '@assets/images/BCT.png'
+import { IconLocation, IconPhone } from '@srccommons/icons'
 
 const FooterComponent = () => {
   return (
-    <footer className="pb-[6rem]">
-      <Container>
-        <div className="grid grid-cols-5 gap-5 items-stretch flex-wrap">
-          <div className="col-span-5 lg:col-span-3">
-            <h1 className="custom-text-mode text-xl font-extrabold lg:text-[21.9px] mb-2">CÔNG TY TNHH QUẢNG CÁO VÀ THƯƠNG MẠI
-              <br className='hidden lg:block' />
-              DƯƠNG PHONG (DPA)</h1>
-            <div className="flex items-center gap-8 lg:gap-16 flex-wrap justify-center lg:justify-start">
+    <footer className="py-[5rem]" style={{ background: '#666666' }}>
+      <div className='w-full xl:w-5/6 max-w-screen-xl mx-auto'>
+        <div className="grid grid-cols-5 gap-7 items-stretch flex-wrap">
+          <div className="col-span-5 lg:col-span-2">
+            <h1 className="text-orange text-xl font-extrabold font-avo_bold lg:text-[20.85px] mb-2">Công ty TNHH Quảng Cáo và Phát Triển M.A.I</h1>
+            <h3 className='text-xl lg:text-[18.5px] font-avo text-orange'>M.A.I Development And Advertising Company Limited</h3>
+            <div className="flex items-center gap-8 lg:gap-16 flex-wrap mt-1 justify-center lg:justify-start">
               <div >
                 <div className="flex custom-text-mode gap-2">
                   <IconLocation color='white' className='w-[12px] custom-icon-show ' />
                   <IconLocation color='black' className='w-[12px] custom-icon-hidden' />
-                  <span className='text=[15px] font-medium'>66/52 Phổ Quang, P. 2, Q. Tân Bình, Tp.HCM</span>
+                  <span className='text-[18px] font-avo '>60 Đào Duy Anh, Phường 9, Quận Phú Nhuận, TPHCM</span>
                 </div>
                 <div className="flex justify-between">
                   <div className="flex custom-text-mode gap-2">
                     <IconPhone color='white' className='w-[12px] custom-icon-show' />
                     <IconPhone color='black' className='w-[12px] custom-icon-hidden' />
 
-                    <span className='text=[15px]'> 08. 38 44 1111M</span>
+                    <span className='text-[18px] font-avo'>  (+84) 28 2240 6511 </span>
                   </div>
                   <div>
-                    <span className="custom-text-mode text=[15px]">fax: 08. 3997 1009</span>
+                    <span className="custom-text-mode text-[18px] font-avo">Hotline 0902 668 246</span>
                   </div>
                 </div>
-                <div className="flex custom-text-mode gap-2">
-                  <IconEmail color='white' className='w-[12px] custom-icon-show' />
-                  <IconEmail color='black' className='w-[12px] custom-icon-hidden' />
-
-                  <span className='text=[15px]'>contact@dpa.vn</span>
-                </div>
-              </div>
-
-              <div className="flex rounded-full items-center gap-4 bg-custom-mode p-2 lg:p-[10px]">
-                <div className="bg-logo-custom-mode rounded-full w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] p-3"><Image alt="" className="w-full h-full" src={logoBlack} /></div>
-                <div>
-                  <div className="flex items-center gap-4">
-                    <Image width={17} alt="" src={phone2} />
-                    <p className="font-extrabold custom-text-logo-mode text-base lg:text-lg pe-1">Gọi cho chúng tôi</p>
-                  </div>
-                  <span className="text-[#F26311] text-base lg:text-lg font-bold">(+84) 913 927 471</span>
-                </div>
               </div>
             </div>
-          </div>
-          <div className="col-span-5 md:col-span-2 lg:col-span-1 ">
-            <h1 className="custom-text-mode font-extrabold text-[20px]">OUR MENU CATAGORIES</h1>
-            <ul className={`${styles.ul} custom-text-mode`}>
-              <li className='text=[15px]'>
-                <Link href={'/'} >TRANG CHỦ</Link>
-              </li>
-              <li className='text=[15px] uppercase'><Link href={'/'} >giới thiệu</Link></li>
-              <li className='text=[15px] uppercase'> <Link href={'/'} >Thư viện</Link></li>
-              <li className='text=[15px] uppercase'> <Link href={'/'} >Thông tin</Link></li>
-              <li className='text=[15px] uppercase'><Link href={'/'} >Hỗ trợ</Link></li>
-            </ul>
-          </div>
-          <div className="col-span-5 md:col-span-2 lg:col-span-1">
-            <h1 className="custom-text-mode font-extrabold text-[20px]">LAST EVENTS</h1>
-            <ul className={`${styles.ul} custom-text-mode`}>
-              <li className='text=[15px]'>
-                <Link href={'/'} >Chrismas</Link>
-              </li>
-              <li className='text=[15px] '><Link href={'/'} >Black Friday</Link></li>
-              <li className='text=[15px] '> <Link href={'/'} >Sunday Specia</Link></li>
-            </ul>
-          </div>
-
-          <div className="custom-text-mode col-span-5 lg:col-span-3 ">
-            <div className="my-9 text=[15px]">
-              <h3 className='text=[15px] font-extrabold '>NHÀ IN DƯƠNG PHONG:</h3>
-              <span>
-                7/9A, Ấp 1, xã Xuân Thới Thượng, <br />
-                Huyện Hóc Môn, Tp.HCM
-              </span>
+            <div className='flex gap-5 my-5 justify-end'>
+              <div className=' text-white text-[29px]'>
+                <i className="fa fa-instagram"></i>
+              </div>
+              <div className=' text-white text-[29px]'>
+                <i className="fa fa-facebook-f"></i>
+              </div>
+              <div className=' text-white text-[29px]'>
+                <i className="fa fa-twitter"></i>
+              </div>
+              <div className=' text-white text-[29px]'>
+                <i className="fa fa-envelope"></i>
+              </div>
             </div>
-            <div className="mb-9 text=[15px]">
-              <h3 className='font-extrabold'>XƯỞNG SẢN XUẤT KỸ THUẬT SỐ</h3>
-              <span>số 5 Phạm Ngũ Lão, Quận Gò Vấp, Tp.HCM</span>
-            </div>
-            <div className='text=[15px]'>
-              <h3 className='font-extrabold'>VPĐD TẠI HÀ NỘI:</h3>
-              <span>R.707, 65 Văn Miếu, Đống Đa , Hà Nội</span>
+            <div className=''>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0691669253342!2d106.67486747451754!3d10.806014558648329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d8c1782d29%3A0x361dc71292710cab!2zNjAgxJDDoG8gRHV5IEFuaCwgUGjGsOG7nW5nIDksIFBow7ogTmh14bqtbiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1708878783701!5m2!1svi!2s" width="100%" height="250" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
-
-          <div className="col-span-5 lg:col-span-2 flex items-end mt-5 lg:0">
-            <div className="flex gap-3 items-center flex-wrap">
-              <h2 className="custom-text-mode text-[15.42px] font-avo_bold">New Enter</h2>
-              <div className='flex gap-3 flex-wrap'>
-                <input className={`${styles.input} text-base md:text-[15.42px] p-2 xl:p-3 border-0 outline-0 rounded-full font-semibold placeholder:text-black`} placeholder="enter your email address" />
-                <button className={`${styles.btn} text-[15.42px] py-3 px-5 md:px-10 border-0 outline-0 rounded-full font-semibold`}>Subcribe</button>
+          <div className='col-span-3'>
+            <div className='grid grid-cols-3 gap-5'>
+              <div className="col-span-1 ">
+                <h1 className="custom-text-mode font-extrabold text-[20px]">Dịch vụ</h1>
+                <ul className={`${styles.ul} custom-text-mode`}>
+                  <li className='text-[20px] flex gap-2'>
+                    <div>
+                      <i className="fa fa-angle-right"></i>
+                    </div>
+                    <Link href={'/'} >Phát triển sản phẩm</Link>
+                  </li>
+                  <li className='text-[20px] flex gap-2'>
+                    <div>
+                      <i className="fa fa-angle-right"></i>
+                    </div>
+                    <Link href={'/'} >Sản xuất sản phẩm</Link>
+                  </li>
+                  <li className='text-[20px] flex gap-2'>
+                    <div>
+                      <i className="fa fa-angle-right"></i>
+                    </div>
+                    <Link href={'/'} >Đầu tư và có giải pháp
+                      các thương hiệu
+                      hiện đại và truyền thống</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-span-1 ">
+                <h1 className="custom-text-mode font-extrabold text-[20px]">Về chúng tôi</h1>
+                <ul className={`${styles.ul} custom-text-mode`}>
+                  <li className='text-[20px] flex gap-2'>
+                    <div>
+                      <i className="fa fa-angle-right"></i>
+                    </div>
+                    <Link href={'/'} >Hồ sơ công ty</Link>
+                  </li>
+                  <li className='text-[20px] flex gap-2'>
+                    <div>
+                      <i className="fa fa-angle-right"></i>
+                    </div>
+                    <Link href={'/'} >Các đối tác</Link>
+                  </li>
+                  <li className='text-[20px] flex gap-2'>
+                    <div>
+                      <i className="fa fa-angle-right"></i>
+                    </div>
+                    <Link href={'/'} >Đôi ngũ nhân viên</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-span-1 ">
+                <h1 className="custom-text-mode font-extrabold text-[20px]">Liên hệ</h1>
+                <ul className={`${styles.ul} custom-text-mode`}>
+                  <li className='text-[20px] flex gap-2'>
+                    <div>
+                      <i className="fa fa-angle-right"></i>
+                    </div>
+                    <Link href={'/'} >Form liên hệ</Link>
+                  </li>
+                  <li className='text-[20px] flex gap-2'>
+                    <div>
+                      <i className="fa fa-angle-right"></i>
+                    </div>
+                    <Link href={'/'} >Điện thoại</Link>
+                  </li>
+                  <li className='text-[20px] flex gap-2'>
+                    <div>
+                      <i className="fa fa-angle-right"></i>
+                    </div>
+                    <Link href={'/'} >Email</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className='col-span-3 ms-auto'>
+                <Image alt='' className='w-[250px] mt-20' src={bct} />
               </div>
             </div>
           </div>
+
         </div>
-      </Container>
+      </div>
     </footer>
   )
 }

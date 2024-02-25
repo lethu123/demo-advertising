@@ -12,7 +12,7 @@ import MenuMobile from './MenuMobile'
 const HeaderComponent = () => {
     return (
         <div>
-            <div className='bg-header1' >
+            <div className='bg-orange' >
                 <Container >
                     <div className='flex lg:justify-around justify-between items-center py-[9px] flex-wrap px-6' >
                         <div className='items-center hidden lg:flex'>
