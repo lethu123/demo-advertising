@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import styles from '@assets/scss/home.module.scss'
-import logo2 from '@assets/images/logo.svg' 
+import logo2 from '@assets/images/logo.svg'
 
 const menu = [
     {
@@ -104,7 +104,7 @@ const MenuMobile = () => {
                             </div>
                         }
                         return <Link onClick={() => setOpen(!open)} key={it.title} href={it.path} className={`${index != menu.length - 1 ? 'border-b' : ''} flex  items-center px-5 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
-                            {it.icon && <Image style={{ width: 20, height: 20 }} alt='' src={it.icon} />}  {it.title}
+                            {it.title}
                         </Link>
                     })}
                 </div>

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import './globals.scss'; 
+import './globals.scss';
+import logo from '@assets/images/logo.svg'
 
 export const metadata: Metadata = {
   title: "Mai Advertising",
-  description: "Công ty TNHH Quảng cáo & Thương mại Dương Phong – DPA – Sự lớn mạnh của bạn là thành công của chúng tôi",
-  keywords: ['nhà in', 'Dương phong', 'xưởng in', 'xưởng in Dương Phong'],
+  description: "Công ty TNHH Mai Advertising",
+  keywords: ['Mai Advertising', 'Advertising', 'xưởng in'],
   openGraph: {
-    images: 'http://dpa.vn/wp-content/uploads/2016/07/dpa-logo.png' ,
+    images: logo,
   },
 };
 
