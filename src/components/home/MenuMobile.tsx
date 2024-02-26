@@ -2,9 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import styles from '@assets/scss/home.module.scss'
-import logo2 from '@assets/images/logo-black.svg'
-import flagVN from '@assets/images/vietnam.png'
-import flagUK from '@assets/images/UK.png'
+import logo2 from '@assets/images/logo.svg' 
 
 const menu = [
     {
@@ -38,19 +36,15 @@ const menu = [
         path: '/',
         subMenu: [
             {
-                title: 'Dịch vụ 1',
+                title: 'Phát triển sản phẩm',
                 path: '/'
             },
             {
-                title: 'Dịch vụ 2',
+                title: 'Sản xuất sản phẩm',
                 path: '/'
             },
             {
-                title: 'Dịch vụ 3',
-                path: '/'
-            },
-            {
-                title: 'Dịch vụ 4',
+                title: 'Đầu tư và có giải pháp các thương hiệu hiện đại và truyền thống',
                 path: '/'
             },
         ]
@@ -66,24 +60,14 @@ const menu = [
     {
         title: ' Liên hệ',
         path: '/'
-    },
-    {
-        title: 'Tiếng anh',
-        path: '/',
-        icon: flagVN
-    },
-    {
-        title: 'Tiếng việt',
-        path: '/',
-        icon: flagUK
-    },
+    }
 ]
 const MenuMobile = () => {
     const [open, setOpen] = useState(false)
     return (
         <div className={`${styles.mobile_menu} lg:hidden relative`}>
 
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 " aria-label="Global">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between py-2 md:p-6 " aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
@@ -101,7 +85,7 @@ const MenuMobile = () => {
                     }
                 >
                     <span className="sr-only">Open main menu</span>
-                    <i className="fa fa-bars text-white "></i>
+                    <i className="fa fa-bars"></i>
                 </button>
 
             </nav>
@@ -111,9 +95,9 @@ const MenuMobile = () => {
                     {menu.map((it, index) => {
                         if (it.subMenu) {
                             return <div key={it.title} className={`${index != menu.length - 1 ? 'border-b' : ''}`} >
-                                <h3 className="px-5 text-nowrap  p-3 font-semibold text-gray-900 ">{it.title}</h3>
+                                <h3 className="px-5  p-3 font-semibold text-gray-900 ">{it.title}</h3>
                                 <div className='ms-7'>
-                                    {it.subMenu.map((i, idx) => (<Link onClick={() => setOpen(!open)} key={i.title} href={i.path} className={`${idx != it.subMenu.length - 1 ? 'border-b' : ''} flex  items-center px-5 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
+                                    {it.subMenu.map((i, idx) => (<Link onClick={() => setOpen(!open)} key={i.title} href={i.path} className={`${idx != it.subMenu.length - 1 ? 'border-b' : ''} flex  items-center px-5  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}>
                                         {i.title}
                                     </Link>))}
                                 </div>

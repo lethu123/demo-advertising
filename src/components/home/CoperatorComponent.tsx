@@ -13,10 +13,10 @@ const CoperatorComponent = () => {
         <div>
             <Container>
                 <div className='mb-1'>
-                    <h1 className="font-icie_medium tracking-[5px] text-2xl md:text-3xl lg:text-[29.28px] p-3 inline-block" style={{ background: '#A8AAAC' }}>CÁC QUÝ ĐỐI TÁC</h1>
+                    <h1 className="font-icie_medium tracking-[5px] text-lg sm:text-2xl md:text-3xl lg:text-[29.28px] p-3 inline-block" style={{ background: '#A8AAAC' }}>CÁC QUÝ ĐỐI TÁC</h1>
                 </div>
             </Container>
-            <div className={`coperator mb-[6rem] flex flex-col px-3 py-[5rem]   relative `} style={{ background: '#A8AAAC' }}  >
+            <div className={`coperator mb-[3rem] md:mb-[6rem] flex flex-col px-3 py-[2rem] md:py-[5rem]   relative `} style={{ background: '#A8AAAC' }}  >
 
                 <div className='w-full xl:w-4/5 max-w-screen-xl mx-auto'>
                     <div className="w-full flex gap-x-[2rem] gap-y-[1rem] items-end  flex-wrap justify-center">

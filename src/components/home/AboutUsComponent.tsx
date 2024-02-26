@@ -10,10 +10,13 @@ const AboutUsComponent = () => {
     <div className='pb-[70px]'>
       <div className={`w-full  xl:w-5/6 max-w-screen-xl ms-auto justify-center px-4 xl:px-0 bg-white ${styles.about_us}`}>
         <div className='flex justify-around'>
-          <h2 className=''></h2>
-          <h2 className='font-icie_medium text-[35.05px] tracking-[1rem] text-center me-10'>VỀ CHÚNG TÔI</h2>
+          <h2 className='hidden lg::block'></h2>
+          <h2 className='font-icie_medium text-lg md:text-[35.05px] tracking-[0.5rem] md:tracking-[1rem] text-center lg:me-10'>VỀ CHÚNG TÔI</h2>
         </div>
-        <div className='flex h-[260px]'>
+        <div className='flex h-[200px] md:h-[300px] mt-2 lg:hidden'>
+          <Image alt='' className='h-full' src={banner} />
+        </div>
+        <div className='h-[260px] hidden lg:flex mt-2'>
           <Image alt='' className='h-full' src={slat} />
 
           <div className={`${styles.about_us_image}`}>

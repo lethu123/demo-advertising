@@ -9,7 +9,7 @@ import { IconLocation, IconPhone } from '@srccommons/icons'
 const FooterComponent = () => {
   return (
     <footer className="py-[5rem]" style={{ background: '#666666' }}>
-      <div className='w-full xl:w-5/6 max-w-screen-xl mx-auto'>
+      <div className='w-full px-3 xl:w-5/6 max-w-screen-xl lg:mx-auto'>
         <div className="grid grid-cols-5 gap-7 items-stretch flex-wrap">
           <div className="col-span-5 lg:col-span-2">
             <h1 className="text-orange text-xl font-extrabold font-avo_bold lg:text-[20.85px] mb-2">Công ty TNHH Quảng Cáo và Phát Triển M.A.I</h1>
@@ -52,9 +52,9 @@ const FooterComponent = () => {
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0691669253342!2d106.67486747451754!3d10.806014558648329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528d8c1782d29%3A0x361dc71292710cab!2zNjAgxJDDoG8gRHV5IEFuaCwgUGjGsOG7nW5nIDksIFBow7ogTmh14bqtbiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1708878783701!5m2!1svi!2s" width="100%" height="250" style={{ border: 0 }}   loading="lazy"  ></iframe>
             </div>
           </div>
-          <div className='col-span-3'>
+          <div className='col-span-5 lg:col-span-3'>
             <div className='grid grid-cols-3 gap-5'>
-              <div className="col-span-1 ">
+              <div className="col-span-3 md:col-span-1 ">
                 <h1 className="custom-text-mode font-extrabold text-[20px]">Dịch vụ</h1>
                 <ul className={`${styles.ul} custom-text-mode`}>
                   <li className='text-[20px] flex gap-2'>
@@ -79,7 +79,7 @@ const FooterComponent = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-span-1 ">
+              <div className="col-span-3 md:col-span-1">
                 <h1 className="custom-text-mode font-extrabold text-[20px]">Về chúng tôi</h1>
                 <ul className={`${styles.ul} custom-text-mode`}>
                   <li className='text-[20px] flex gap-2'>
@@ -102,7 +102,7 @@ const FooterComponent = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-span-1 ">
+              <div className="col-span-3 md:col-span-1">
                 <h1 className="custom-text-mode font-extrabold text-[20px]">Liên hệ</h1>
                 <ul className={`${styles.ul} custom-text-mode`}>
                   <li className='text-[20px] flex gap-2'>
@@ -125,8 +125,8 @@ const FooterComponent = () => {
                   </li>
                 </ul>
               </div>
-              <div className='col-span-3 ms-auto'>
-                <Image alt='' className='w-[250px] mt-20' src={bct} />
+              <div className='col-span-3 md:ms-auto'>
+                <Image alt='' className='w-[250px] lg:mt-20' src={bct} />
               </div>
             </div>
           </div>

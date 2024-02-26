@@ -7,10 +7,10 @@ import styles from "@assets/scss/home.module.scss"
 
 const ContactComponent = () => {
     return (
-        <div className={`w-full xl:w-5/6 max-w-screen-xl me-auto justify-center pt-4 xl:px-0 mb-20`}>
+        <div className={`w-full lg:mt-20 xl:w-5/6 max-w-screen-xl me-auto justify-center xl:px-0 mb-20`}>
             <div className='grid grid-cols-3 items-center'>
-                <div className='col-span-2'>
-                    <div className='flex h-[200px] ps-5'>
+                <div className='hidden lg:block md:col-span-2'>
+                    <div className='flex h-[150px] lg:h-[200px]  ps-5'>
                         <Image alt='' className='h-full' src={slat} />
 
                         <div className={`slat-image`}>
@@ -18,7 +18,7 @@ const ContactComponent = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-1'>
+                <div className='col-span-3 lg:col-span-1 md:px-3  sm:pt-5 sm:mx-auto'>
                     <form>
                         <div className='bg-orange form px-8 py-5'>
                             <h2 className='font-avo_bold text-[24px] tracking-[0.12rem] text-center'>KẾT NỐI VỚI CHÚNG TÔI</h2>

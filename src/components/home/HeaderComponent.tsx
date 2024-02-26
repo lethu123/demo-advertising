@@ -14,18 +14,18 @@ const HeaderComponent = () => {
         <div>
             <div className='bg-orange' >
                 <Container >
-                    <div className='flex lg:justify-around justify-between items-center py-[9px] flex-wrap px-6' >
+                    <div className='flex lg:justify-around justify-between items-center py-[9px] flex-wrap' >
                         <div className='items-center hidden lg:flex'>
                             <Image style={{ width: 20, height: 20 }} alt='' src={location} />
                             <span className="text-white ml-2 text-[16.5px]">60 Đào Duy Anh, P.9, Q. Phú Nhuận, TP. Hồ Chí Minh </span>
                         </div>
                         <div className='flex items-center'>
                             <Image style={{ width: 20, height: 20 }} alt='' src={icPhone} />
-                            <span className="text-white ml-2 text-[16.5px]"> (+84) 28 2240 6511</span>
+                            <span className="text-white ml-2 text-xs sm:text-sm text-[16.5px]"> (+84) 28 2240 6511</span>
                         </div>
-                        <div className='flex items-center flex-wrap'>
-                            <button className='bg-white px-5 rounded'>SHOPPING NOW</button>
-                        </div>
+
+                        <button className='bg-white px-5 rounded text-xs sm:text-sm'>SHOPPING NOW</button>
+
                     </div>
                 </Container>
             </div>
@@ -64,16 +64,15 @@ const HeaderComponent = () => {
                                     <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                                         <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
                                             <Link href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                                Dịch vụ 1
+                                                Phát triển sản phẩm
                                             </Link>
                                             <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                                Dịch vụ 2
+                                                Sản xuất sản phẩm
                                             </a>
-                                            <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                                Dịch vụ 3
-                                            </a>
-                                            <a href="#" className="flex items-center px-8 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
-                                                Dịch vụ 4
+                                            <a href="#" className="flex items-center px-8 gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100">
+                                                Đầu tư và có giải pháp
+                                                các thương hiệu
+                                                hiện đại và truyền thống
                                             </a>
                                         </div>
                                     </div>
@@ -94,7 +93,7 @@ const HeaderComponent = () => {
                         </div>
                     </div>
                 </Container>
-                
+
             </div>
         </div>
 
