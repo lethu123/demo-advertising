@@ -57,19 +57,19 @@ const FooterComponent = () => {
               <div className="col-span-3 md:col-span-1 ">
                 <h1 className="custom-text-mode font-extrabold text-[20px]">Dịch vụ</h1>
                 <ul className={`${styles.ul} custom-text-mode`}>
-                  <li className='text-[20px] flex gap-2'>
+                  <li className='text-[20px] flex gap-2 menu-footer'>
                     <div>
                       <i className="fa fa-angle-right"></i>
                     </div>
                     <Link href={'/'} >Phát triển sản phẩm</Link>
                   </li>
-                  <li className='text-[20px] flex gap-2'>
+                  <li className='text-[20px] flex gap-2 menu-footer'>
                     <div>
                       <i className="fa fa-angle-right"></i>
                     </div>
                     <Link href={'/'} >Sản xuất sản phẩm</Link>
                   </li>
-                  <li className='text-[20px] flex gap-2'>
+                  <li className='text-[20px] flex gap-2 menu-footer'>
                     <div>
                       <i className="fa fa-angle-right"></i>
                     </div>
@@ -82,19 +82,19 @@ const FooterComponent = () => {
               <div className="col-span-3 md:col-span-1">
                 <h1 className="custom-text-mode font-extrabold text-[20px]">Về chúng tôi</h1>
                 <ul className={`${styles.ul} custom-text-mode`}>
-                  <li className='text-[20px] flex gap-2'>
+                  <li className='text-[20px] flex gap-2 menu-footer'>
                     <div>
                       <i className="fa fa-angle-right"></i>
                     </div>
                     <Link href={'/'} >Hồ sơ công ty</Link>
                   </li>
-                  <li className='text-[20px] flex gap-2'>
+                  <li className='text-[20px] flex gap-2 menu-footer'>
                     <div>
                       <i className="fa fa-angle-right"></i>
                     </div>
                     <Link href={'/'} >Các đối tác</Link>
                   </li>
-                  <li className='text-[20px] flex gap-2'>
+                  <li className='text-[20px] flex gap-2 menu-footer'>
                     <div>
                       <i className="fa fa-angle-right"></i>
                     </div>
@@ -105,19 +105,19 @@ const FooterComponent = () => {
               <div className="col-span-3 md:col-span-1">
                 <h1 className="custom-text-mode font-extrabold text-[20px]">Liên hệ</h1>
                 <ul className={`${styles.ul} custom-text-mode`}>
-                  <li className='text-[20px] flex gap-2'>
+                  <li className='text-[20px] flex gap-2 menu-footer'>
                     <div>
                       <i className="fa fa-angle-right"></i>
                     </div>
                     <Link href={'/'} >Form liên hệ</Link>
                   </li>
-                  <li className='text-[20px] flex gap-2'>
+                  <li className='text-[20px] flex gap-2 menu-footer'>
                     <div>
                       <i className="fa fa-angle-right"></i>
                     </div>
                     <Link href={'/'} >Điện thoại</Link>
                   </li>
-                  <li className='text-[20px] flex gap-2'>
+                  <li className='text-[20px] flex gap-2 menu-footer'>
                     <div>
                       <i className="fa fa-angle-right"></i>
                     </div>

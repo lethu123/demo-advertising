@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import './globals.scss';
+import '@assets/scss/home.scss';
 import logo from '@assets/images/logo.svg'
 
 export const metadata: Metadata = {

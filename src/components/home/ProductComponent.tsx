@@ -29,7 +29,9 @@ const ProductComponent = () => {
                     </div>
                     <div className='col-span-2 md:col-span-1'>
                         <div className='w-full'>
-                            <Image alt='' className='h-full w-full' src={design1} />
+                            {/* <Image alt='' className='h-full w-full animated animatedFadeInUp fadeInUp' src={design1} /> */}
+                            <Image alt='' className='h-full w-full bounce' src={design1} />
+
                         </div>
                     </div>
                 </div>
@@ -38,8 +40,8 @@ const ProductComponent = () => {
                 <div className='grid grid-cols-2 gap-10 items-stretch'>
                     <div className='col-span-2 md:col-span-1'>
                         <div className='w-full relative pt-20 pe-5'>
-                            <Image alt='' style={{ position: 'absolute', right: 0, top: 0, width: '60%' }} className='' src={design3} />
-                            <Image alt='' className='' src={design2} />
+                            <Image alt='' style={{ position: 'absolute', right: 0, top: 0, width: '60%' }} className='z-10 bounce' src={design3} />
+                            <Image alt=''  className='bounce' src={design2} />
                         </div>
                     </div>
                     <div className='col-span-2 md:col-span-1'>

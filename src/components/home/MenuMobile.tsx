@@ -109,8 +109,7 @@ const MenuMobile = () => {
                     })}
                 </div>
             </div>
-
-        </div >
+        </div>
     )
 }
 

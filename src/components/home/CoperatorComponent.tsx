@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import styles from '@assets/scss/home.module.scss'
 import "@assets/scss/home.scss";
 import logo1 from '@assets/images/logo1.svg';
 import logo2 from '@assets/images/logo2.svg';
