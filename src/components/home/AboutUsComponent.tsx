@@ -7,8 +7,8 @@ import Container from '@/commons/Container'
 
 const AboutUsComponent = () => {
   return (
-    <div className='pb-[70px]'>
-      <div className={`w-full  xl:w-5/6 max-w-screen-xl ms-auto justify-center px-4 xl:px-0 bg-white ${styles.about_us}`}>
+    <div className='pb-[70px] pt-20 overflow-hidden'>
+      <div className={`w-full  xl:w-5/6 max-w-screen-xl ms-auto justify-center px-4 xl:px-0 3xl:mx-auto bg-white ${styles.about_us}`}>
         <div className='flex justify-around'>
           <h2 className='hidden lg::block'></h2>
           <h2 className='font-icie_medium text-lg md:text-[35.05px] tracking-[0.5rem] md:tracking-[1rem] text-center lg:me-10'>VỀ CHÚNG TÔI</h2>
