@@ -1,18 +1,18 @@
 import Container from '@srccommons/Container'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react' 
+import React from 'react'
 import { IconLocation, IconPhone } from '@srccommons/icons'
 
 const FooterComponent = () => {
   return (
     <footer className="py-[5rem] overflow-hidden" style={{ background: '#666666' }}>
       <div className='w-full px-3 xl:w-5/6 max-w-screen-xl lg:mx-auto'>
-        <div className="grid grid-cols-5 lg:gap-28 md:gap-10 md:grid-cols-6  items-stretch flex-wrap">
+        <div className="grid grid-cols-5 md:gap-10 md:grid-cols-6  items-stretch flex-wrap">
           <div className="col-span-5 md:col-span-3">
             <h1 className="text-orange text-xl font-extrabold font-avo_bold lg:text-[20.85px] mb-2">Công ty TNHH Quảng Cáo và Phát Triển M.A.I</h1>
             <h3 className='text-xl lg:text-[18.5px] font-avo text-orange'>M.A.I Development And Advertising Company Limited</h3>
-            <div className="flex   gap-8 lg:gap-16 flex-wrap mt-1   ">
+            <div className="flex   gap-8 lg:gap-16 flex-grow flex-wrap mt-1   ">
               <div >
                 <div className="flex custom-text-mode gap-2">
                   <IconLocation color='white' className='w-[12px] custom-icon-show ' />
@@ -30,22 +30,24 @@ const FooterComponent = () => {
                     <span className="custom-text-mode text-[18px] font-avo">Hotline 0902 668 246</span>
                   </div>
                 </div>
+                <div className='flex gap-5 my-5 justify-end'>
+                  <div className=' text-white text-[29px]'>
+                    <i className="fa fa-instagram"></i>
+                  </div>
+                  <div className=' text-white text-[29px]'>
+                    <i className="fa fa-facebook-f"></i>
+                  </div>
+                  <div className=' text-white text-[29px]'>
+                    <i className="fa fa-twitter"></i>
+                  </div>
+                  <div className=' text-white text-[29px]'>
+                    <i className="fa fa-envelope"></i>
+                  </div>
+                </div>
               </div>
+
             </div>
-            <div className='flex gap-5 my-5 justify-end'>
-              <div className=' text-white text-[29px]'>
-                <i className="fa fa-instagram"></i>
-              </div>
-              <div className=' text-white text-[29px]'>
-                <i className="fa fa-facebook-f"></i>
-              </div>
-              <div className=' text-white text-[29px]'>
-                <i className="fa fa-twitter"></i>
-              </div>
-              <div className=' text-white text-[29px]'>
-                <i className="fa fa-envelope"></i>
-              </div>
-            </div>
+
 
           </div>
           {/* <div className='col-span-5 lg:col-span-3'>
