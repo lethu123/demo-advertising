@@ -1,6 +1,7 @@
 import Container from '@/commons/Container'
 import Image from 'next/image'
 import React from 'react'
+import styles from '@assets/scss/home.module.scss'
 import design1 from '@assets/images/design1@2x.png'
 import design2 from '@assets/images/design2@2x.png'
 import design3 from '@assets/images/design3@2x.png'
@@ -36,7 +37,10 @@ const ProductComponent = () => {
                         <div className='col-span-2 md:col-span-1'>
                             <div className='w-full relative'>
                                 {/* <Image alt='' className='h-full w-full animated animatedFadeInUp fadeInUp' src={design1} /> */}
-                                <Image alt='' className='h-full w-full ' src={design1} />
+                                <div className={`${styles.image_hover} rounded`}>
+                                    <Image alt='' className={`h-full w-full  `} src={design1} /> 
+                                </div>
+
                                 <div className='absolute -top-[136px] -right-[51px] w-[265px] -z-[1]'>
                                     <Image alt='' src={threeSlash3} />
                                 </div>

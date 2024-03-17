@@ -33,7 +33,7 @@ const BannerComponent = () => {
             <div className={`top-0 z-40 w-full   ${!scrolled ? 'absolute   unsticky-header' : 'sticky-header shadow'}`}>
                 <div className='w-full xl:w-3/4 max-w-screen-xl justify-center mx-auto px-4 xl:px-0'>
                     <MenuMobile />
-                    <div className="hidden xl:block ">
+                    <div className="hidden lg:block ">
                         <ul className='flex items-stretch gap-12 justify-center'>
                             <div className='flex items-center'>
                                 <li >
@@ -42,7 +42,7 @@ const BannerComponent = () => {
                             </div>
                             <div className='menu flex items-center'>
                                 <li className='flex items-center' >
-                                    <Link href="" className='text-white text-[18px] mr-2' data-hover='SẢN PHẨM'>SẢN PHẨM </Link>
+                                    <h3 className='text-white text-[18px] mr-2' data-hover='SẢN PHẨM'>SẢN PHẨM </h3>
                                     <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i>
                                 </li>
                                 <div className='menu_products overflow-hidden'>
@@ -75,7 +75,7 @@ const BannerComponent = () => {
                             </div>
                             <div className='menu flex items-center'>
                                 <li className='flex items-center' >
-                                    <Link href="" className='text-white text-[18px] mr-2' data-hover='DỊCH VỤ'>DỊCH VỤ </Link>
+                                    <h3 className='text-white text-[18px] mr-2' data-hover='DỊCH VỤ'>DỊCH VỤ </h3>
                                     <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i>
                                 </li>
                                 <div className='menu_products overflow-hidden'>
@@ -119,80 +119,7 @@ const BannerComponent = () => {
                             <div className='flex items-center'>
                                 <li className='flex items-center'><Link href="" className='text-white text-[18px]' data-hover="LIÊN HỆ">LIÊN HỆ</Link></li>
                             </div>
-                        </ul>
-                        {/* <div className="flex items-center gap-14 justify-center py-2">
-                            <div className='transform-menu-single'>
-                                <Link href={'/'} className={`   text-white text-[18px] py-3`}>Trang chủ</Link>
-                            </div>
-                            <div className={`${styles.submenu} relative`}>
-                                <h3 className={`  text-white text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></h3>
-                                <div className={`${styles.submenu_show} absolute z-10 flex  w-full`}>
-                                    <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
-                                        <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
-                                            <div className="hover:bg-gray-100 px-3">
-                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
-                                                    Sản phẩm 1
-                                                </Link>
-                                            </div>
-                                            <div className="hover:bg-gray-100 px-3">
-                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
-                                                    Sản phẩm 2
-                                                </Link>
-                                            </div>
-                                            <div className="hover:bg-gray-100 px-3">
-                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
-                                                    Sản phẩm 3
-                                                </Link>
-                                            </div>
-                                            <div className="hover:bg-gray-100 px-3">
-                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
-                                                    Sản phẩm 4
-                                                </Link>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={`${styles.submenu} relative`}>
-                                <h3 className="text-white text-[18px] cursor-pointer py-3">Dịch vụ <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></h3>
-                                <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
-                                    <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
-                                        <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
-                                            <div className="hover:bg-gray-100 px-3">
-                                                <Link href="#" className="flex menu-footer items-center text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 ">
-                                                    Phát triển sản phẩm
-                                                </Link>
-                                            </div>
-                                            <div className="hover:bg-gray-100 px-3">
-                                                <Link href="#" className="flex menu-footer items-center text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 ">
-                                                    Sản xuất sản phẩm
-                                                </Link>
-                                            </div>
-                                            <div className="hover:bg-gray-100 px-3">
-                                                <Link href="#" className="flex menu-footer items-center gap-x-2.5 p-3 font-semibold text-gray-900 ">
-                                                    Đầu tư và có giải pháp
-                                                    các thương hiệu
-                                                    hiện đại và truyền thống
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <Image className='h-[80px] w-[130px]' alt='' src={logo} />
-                            </div>
-                            <div>
-                                <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Về chúng tôi</Link>
-                            </div>
-                            <div>
-                                <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Tin tức</Link>
-                            </div>
-                            <div>
-                                <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Liên hệ</Link>
-                            </div>
-                        </div> */}
+                        </ul> 
                     </div>
                 </div>
             </div>

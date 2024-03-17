@@ -273,31 +273,6 @@
      }
  }
 
- .transform-menu-single {
-     height: 27px;
-     overflow: hidden;
-
-     &:hover {
-         .menu_single1 a {
-             animation: slide-up-text 2s;
-
-
-         }
-     }
- }
-
-
- @keyframes slide-up-text {
-     0% {
-         transform: translateY(0%);
-     }
-
-     100% {
-         transform: translateY(-100%);
-         color: rebeccapurple;
-     }
- }
-
 
 
 
@@ -307,7 +282,6 @@
  }
 
  .menu_products {
-     //  height: 0;
      position: absolute;
      top: 100%;
      width: 100%;
@@ -319,7 +293,9 @@
  }
 
  ul li {
-     a {
+
+     a,
+     h3 {
          display: block;
          font-weight: bold;
          text-align: center;
@@ -333,7 +309,9 @@
  }
 
  ul li:hover {
-     a {
+
+     a,
+     h3 {
          transform: translateY(-100%);
      }
 
@@ -354,13 +332,16 @@
 
 
 
- ul li a:before {
-     content: attr(data-hover);
-     color: rgb(244, 229, 229);
-     display: block;
-     left: 0;
-     top: 100%;
-     text-align: center;
-     position: absolute;
-     width: 100%;
+ ul li { 
+     a:before,
+     h3:before {
+         content: attr(data-hover);
+         color: rgb(244, 229, 229);
+         display: block;
+         left: 0;
+         top: 100%;
+         text-align: center;
+         position: absolute;
+         width: 100%;
+     }
  }

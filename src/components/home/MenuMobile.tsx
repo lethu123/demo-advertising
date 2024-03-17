@@ -89,8 +89,8 @@ const MenuMobile = () => {
                 </button>
 
             </nav>
-            <div className={`${open ? styles.menu_show : styles.menu_hidden} overflow-hidden  absolute top-16  w-full z-10`}>
-                <div className={`device-x bg-white rounded-md   mx-6 p-2  shadow-lg ring-1 ring-gray-900/5 h-full ${styles.sidebar}`}>
+            <div className={`${open ? styles.menu_show : styles.menu_hidden} overflow-hidden  absolute top-16   w-full z-10`}>
+                <div className={`device-x bg-white rounded-md   mx-6 p-2  shadow-lg ring-1 ring-gray-900/5 h-[80%] overflow-y-scroll ${styles.sidebar}`}>
 
                     {menu.map((it, index) => {
                         if (it.subMenu) {
