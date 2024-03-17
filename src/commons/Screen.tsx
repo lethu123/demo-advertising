@@ -1,6 +1,4 @@
-import React from 'react'
-import styles from "@assets/scss/home.module.scss"
-import Script from 'next/script';
+import React from 'react' 
 import "@assets/scss/home.scss"
 
 const Screen = ({ children }: { children: React.ReactNode; }) => {

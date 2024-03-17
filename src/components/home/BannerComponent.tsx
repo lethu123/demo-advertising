@@ -1,12 +1,205 @@
-import React from 'react'
-import homecss from '@assets/scss/home.module.scss' 
+import React, { useEffect } from 'react'
+import homecss from '@assets/scss/home.module.scss'
+import Link from 'next/link'
+import styles from '@assets/scss/home.module.scss'
+import logo from '@assets/images/logo.svg'
+import MenuMobile from './MenuMobile'
+import Image from 'next/image'
 
 
 const BannerComponent = () => {
+    const [scrolled, setScrolled] = React.useState(false);
+
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 70) {
+            setScrolled(true);
+        }
+        else {
+            setScrolled(false);
+        }
+    }
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", handleScroll)
+        }
+        return () => window.removeEventListener("scroll", handleScroll)
+
+    }, [])
 
     return (
-        <div className={`${homecss.banner} h-[400px] lg:h-svh flex flex-col justify-between`}>
-            <div className='animated animatedFadeInUp fadeInUp text-center text-white pt-[4rem] text-xl lg:text-[27.88px] tracking-[.15em] font-icie_medium px-3'>“NIỀM TIN CỦA BẠN LÀ ĐỘNG LỰC PHÁT TRIỂN CỦA CHÚNG TÔI”</div>
+        <div className='relative'>
+
+            <div className={`top-0 z-40 w-full   ${!scrolled ? 'absolute   unsticky-header' : 'sticky-header shadow'}`}>
+                <div className='w-full xl:w-3/4 max-w-screen-xl justify-center mx-auto px-4 xl:px-0'>
+                    <MenuMobile />
+                    <div className="hidden xl:block ">
+                        <ul className='flex items-stretch gap-12 justify-center'>
+                            <div className='flex items-center'>
+                                <li >
+                                    <Link href="" className='text-white text-[18px]' data-hover="TRANG CHỦ">TRANG CHỦ</Link>
+                                </li>
+                            </div>
+                            <div className='menu flex items-center'>
+                                <li className='flex items-center' >
+                                    <Link href="" className='text-white text-[18px] mr-2' data-hover='SẢN PHẨM'>SẢN PHẨM </Link>
+                                    <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i>
+                                </li>
+                                <div className='menu_products overflow-hidden'>
+                                    <div className="flex-auto  rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                                        <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Sản phẩm 1
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Sản phẩm 2
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Sản phẩm 3
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Sản phẩm 4
+                                                </Link>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='menu flex items-center'>
+                                <li className='flex items-center' >
+                                    <Link href="" className='text-white text-[18px] mr-2' data-hover='DỊCH VỤ'>DỊCH VỤ </Link>
+                                    <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i>
+                                </li>
+                                <div className='menu_products overflow-hidden'>
+                                    <div className="flex-auto  rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                                        <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    dịch vụ 1
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    dịch vụ 2
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    dịch vụ 3
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    dịch vụ 4
+                                                </Link>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+ 
+                            <li className='py-2'>
+                                <Image className='h-[80px] w-[130px]' alt='' src={logo} />
+                            </li >
+                            <div className='flex items-center'>
+                                <li className='flex items-center'><Link href="" className='text-white text-[18px]' data-hover="VỀ CHÚNG TÔI">VỀ CHÚNG TÔI</Link></li>
+                            </div>
+                            <div className='flex items-center'>
+                                <li className='flex items-center'><Link href="" className='text-white text-[18px]' data-hover="TIN TỨC">TIN TỨC</Link></li>
+                            </div>
+                            <div className='flex items-center'>
+                                <li className='flex items-center'><Link href="" className='text-white text-[18px]' data-hover="LIÊN HỆ">LIÊN HỆ</Link></li>
+                            </div>
+                        </ul>
+                        {/* <div className="flex items-center gap-14 justify-center py-2">
+                            <div className='transform-menu-single'>
+                                <Link href={'/'} className={`   text-white text-[18px] py-3`}>Trang chủ</Link>
+                            </div>
+                            <div className={`${styles.submenu} relative`}>
+                                <h3 className={`  text-white text-[18px] cursor-pointer py-3`}>Sản phẩm <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></h3>
+                                <div className={`${styles.submenu_show} absolute z-10 flex  w-full`}>
+                                    <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                                        <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Sản phẩm 1
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Sản phẩm 2
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Sản phẩm 3
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Sản phẩm 4
+                                                </Link>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={`${styles.submenu} relative`}>
+                                <h3 className="text-white text-[18px] cursor-pointer py-3">Dịch vụ <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i></h3>
+                                <div className={`${styles.submenu_show} absolute z-10 flex  max-w-max`}>
+                                    <div className=" max-w-md flex-auto overflow-hidden rounded bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                                        <div className=" divide-x divide-gray-900/5 bg-gray-50 ">
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex menu-footer items-center text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Phát triển sản phẩm
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex menu-footer items-center text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Sản xuất sản phẩm
+                                                </Link>
+                                            </div>
+                                            <div className="hover:bg-gray-100 px-3">
+                                                <Link href="#" className="flex menu-footer items-center gap-x-2.5 p-3 font-semibold text-gray-900 ">
+                                                    Đầu tư và có giải pháp
+                                                    các thương hiệu
+                                                    hiện đại và truyền thống
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <Image className='h-[80px] w-[130px]' alt='' src={logo} />
+                            </div>
+                            <div>
+                                <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Về chúng tôi</Link>
+                            </div>
+                            <div>
+                                <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Tin tức</Link>
+                            </div>
+                            <div>
+                                <Link href={'/'} className={`${styles.menu_single} text-white text-[18px] py-3`}>Liên hệ</Link>
+                            </div>
+                        </div> */}
+                    </div>
+                </div>
+            </div>
+            <div className={`${homecss.banner} h-[400px] lg:h-svh flex flex-col justify-between relative`}>
+                <div className='animated animatedFadeInUp fadeInUp text-center text-white w-full absolute top-[40%] translate-x-2/4  text-xl lg:text-[27.88px] tracking-[.15em] font-icie_medium px-3'>“NIỀM TIN CỦA BẠN LÀ ĐỘNG LỰC PHÁT TRIỂN CỦA CHÚNG TÔI”</div>
+            </div>
+
         </div>
     )
 }

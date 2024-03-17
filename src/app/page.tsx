@@ -11,27 +11,24 @@ import EventComponent from "@/components/home/EventComponent";
 import ContactComponent from "@/components/home/ContactComponent";
 export default function Home() {
   return (
-    <div>
+    <Screen>
+      <HeaderComponent />
+      {/* BANNER */}
+      <BannerComponent />
+      <SloganComponent />
+      {/* about us */}
+      <AboutUsComponent />
+      {/* coperator */}
+      <CoperatorComponent />
+      {/* product */}
+      <ProductComponent />
+      {/* event */}
+      <EventComponent />
+      {/* contact  */}
+      <ContactComponent />
+      {/* footer */}
+      <FooterComponent />
+    </Screen>
 
-      <Screen>
-
-        <HeaderComponent />
-        {/* BANNER */}
-        <BannerComponent />
-        <SloganComponent />
-        {/* about us */}
-        <AboutUsComponent />
-        {/* coperator */}
-        <CoperatorComponent />
-        {/* product */}
-        <ProductComponent />
-        {/* event */}
-        <EventComponent />
-        {/* contact  */}
-        <ContactComponent />
-        {/* footer */}
-        <FooterComponent />
-      </Screen>
-    </div>
   );
 }

@@ -211,4 +211,156 @@
      }
  }
 
- 
+
+ .sticky-header {
+     position: fixed;
+     top: 0;
+     background: rgba($color: white, $alpha: 0.8);
+     //  transition-duration: 0.5s; 
+     animation: slide-down 0.7s;
+
+     .mobile-menu {
+         margin-top: 0 !important;
+
+         button {
+             border-color: #978b8b;
+
+             i {
+                 color: #978b8b;
+             }
+         }
+     }
+
+     a,
+     i,
+     h3 {
+         color: black !important;
+     }
+
+     a::before {
+         color: #1D1D1D;
+     }
+ }
+
+ .unsticky-header {
+     // position: absolute;
+     animation: slide-up 0.7s;
+ }
+
+
+ @keyframes slide-down {
+     0% {
+         opacity: 0;
+         transform: translateY(-100%);
+     }
+
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @keyframes slide-up {
+     0% {
+         opacity: 0;
+         transform: translateY(100%);
+         // background: rgba($color: white, $alpha: 0.8);
+     }
+
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .transform-menu-single {
+     height: 27px;
+     overflow: hidden;
+
+     &:hover {
+         .menu_single1 a {
+             animation: slide-up-text 2s;
+
+
+         }
+     }
+ }
+
+
+ @keyframes slide-up-text {
+     0% {
+         transform: translateY(0%);
+     }
+
+     100% {
+         transform: translateY(-100%);
+         color: rebeccapurple;
+     }
+ }
+
+
+
+
+ ul li {
+     overflow: hidden;
+     position: relative;
+ }
+
+ .menu_products {
+     //  height: 0;
+     position: absolute;
+     top: 100%;
+     width: 100%;
+     left: 0;
+     transition: all .6s;
+     transform: scaleY(0);
+     transform-origin: top;
+     transition: transform 0.2s linear;
+ }
+
+ ul li {
+     a {
+         display: block;
+         font-weight: bold;
+         text-align: center;
+         text-decoration: none;
+         transition: all .3s;
+     }
+
+     i {
+         transition: all .3s;
+     }
+ }
+
+ ul li:hover {
+     a {
+         transform: translateY(-100%);
+     }
+
+     i {
+         transform: rotate(-180deg);
+     }
+
+
+ }
+
+ ul .menu:hover {
+     .menu_products {
+         //  height: auto;
+         transform: scaleY(1);
+         transition: all .2s;
+     }
+ }
+
+
+
+ ul li a:before {
+     content: attr(data-hover);
+     color: rgb(244, 229, 229);
+     display: block;
+     left: 0;
+     top: 100%;
+     text-align: center;
+     position: absolute;
+     width: 100%;
+ }
