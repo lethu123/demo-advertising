@@ -237,7 +237,7 @@
          color: black !important;
      }
 
-     a::before {
+     a::before,  h3::before {
          color: #1D1D1D;
      }
  }

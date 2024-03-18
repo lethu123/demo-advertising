@@ -27,7 +27,7 @@ const ProductComponent = () => {
                     <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>THIẾT KẾ - SÁNG TẠO – IN ẤN</h3>
                     <div className='grid grid-cols-2 gap-10'>
                         <div className='col-span-2 md:col-span-1'>
-                            <p className='text-[18px] mb-3'>Chào mừng bạn đến với M.A.I - nơi kết nối ý tưởng và sự sáng tạo với thế giới thực. Chúng tôi là một doanh nghiệp chuyên về thiết kế sáng tạo, nơi nâng cao giá trị và trải nghiệm của sản phẩm và dịch vụ.</p>
+                            <p className='text-[18px] mb-3 md:mt-4'>Chào mừng bạn đến với M.A.I - nơi kết nối ý tưởng và sự sáng tạo với thế giới thực. Chúng tôi là một doanh nghiệp chuyên về thiết kế sáng tạo, nơi nâng cao giá trị và trải nghiệm của sản phẩm và dịch vụ.</p>
                             <p>Sứ mệnh của chúng tôi: <br />
                                 Tại M.A.I, chúng tôi tin rằng sự sáng tạo có thể thay đổi thế giới. Sứ mệnh của chúng tôi là tạo ra những sản phẩm và dịch vụ mang tính đột phá, tối ưu hóa trải nghiệm người dùng, và góp phần làm thay đổi cách mọi người tương tác với thế giới xung quanh.</p>
                             <div className='text-center mt-7'>
@@ -37,9 +37,9 @@ const ProductComponent = () => {
                         <div className='col-span-2 md:col-span-1'>
                             <div className='w-full relative'>
                                 {/* <Image alt='' className='h-full w-full animated animatedFadeInUp fadeInUp' src={design1} /> */}
-                                <div className={`${styles.image_hover} rounded`}>
-                                    <Image alt='' className={`h-full w-full  `} src={design1} /> 
-                                </div>
+
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design1} />
+
 
                                 <div className='absolute -top-[136px] -right-[51px] w-[265px] -z-[1]'>
                                     <Image alt='' src={threeSlash3} />
@@ -52,8 +52,8 @@ const ProductComponent = () => {
                     <div className='grid grid-cols-2 gap-10 items-stretch relative'>
                         <div className='col-span-2 md:col-span-1'>
                             <div className='w-full relative pt-20 pe-5'>
-                                <Image alt='' style={{ position: 'absolute', right: 0, top: 0, width: '60%' }} className='z-10 ' src={design3} />
-                                <Image alt='' className='' src={design2} />
+                                <Image alt='' style={{ position: 'absolute', right: 0, top: 0, width: '60%' }} className={`z-10 ${styles.image_hover} `} src={design3} />
+                                <Image alt='' className={`${styles.image_hover}`} src={design2} />
                                 <div className='absolute -top-[37px] -left-[97px] w-[265px] -z-[1]'>
                                     <Image alt='' src={threeSlash} />
                                 </div>
@@ -74,16 +74,16 @@ const ProductComponent = () => {
                         <div className='grid grid-cols-2 items-center gap-10 '>
                             <div className='col-span-2 md:col-span-1  grid grid-cols-2 gap-1'>
                                 <div className='col-span-1'>
-                                    <Image alt='' className='h-full w-full' src={design4} />
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design4} />
                                 </div>
                                 <div className='col-span-1'>
-                                    <Image alt='' className='h-full w-full' src={design5} />
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design5} />
                                 </div>
                                 <div className='col-span-1'>
-                                    <Image alt='' className='h-full w-full' src={design6} />
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design6} />
                                 </div>
                                 <div className='col-span-1'>
-                                    <Image alt='' className='h-full w-full' src={design7} />
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design7} />
                                 </div>
                             </div>
                             <div className='col-span-2 md:col-span-1'>
