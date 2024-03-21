@@ -28,7 +28,7 @@ const BannerComponent = () => {
     }, [])
 
     return (
-        <div className='relative'>
+        <div className='relative banner'>
 
             <div className={`top-0 z-40 w-full   ${!scrolled ? 'absolute   unsticky-header' : 'sticky-header shadow'}`}>
                 <div className='w-full xl:w-3/4 max-w-screen-xl relative justify-center mx-auto px-4 xl:px-0'>
@@ -88,26 +88,15 @@ const BannerComponent = () => {
                                         <div className="flex-auto col-span-5 ps-5  text-sm leading-6  ">
                                             <div className=" divide-x divide-gray-900/5   ">
                                                 <div className="hover:bg-gray-100 px-3">
-                                                    <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 ">
-                                                        Dịch vụ 1
+                                                    <Link href="/services/thiet-ke-san-xuất-bap-bi-giay" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 ">
+                                                        Thiết kế sản xuất bao bì giấy
                                                     </Link>
                                                 </div>
                                                 <div className="hover:bg-gray-100 px-3">
-                                                    <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 ">
-                                                        Dịch vụ 2
+                                                    <Link href="/services/thiet-ke-trung-bay-quang-cao" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 ">
+                                                        Thiết kế trưng bày quảng cáo (POSM)
                                                     </Link>
                                                 </div>
-                                                <div className="hover:bg-gray-100 px-3">
-                                                    <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 ">
-                                                        Dịch vụ 3
-                                                    </Link>
-                                                </div>
-                                                <div className="hover:bg-gray-100 px-3">
-                                                    <Link href="#" className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 ">
-                                                        Dịch vụ 4
-                                                    </Link>
-                                                </div>
-
                                             </div>
                                         </div>
                                     </div>

@@ -19,118 +19,119 @@
         animation-name: slide-right;
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
-        -webkit-animation-duration: 0.75s;
-        animation-duration: 0.75s;
-        animation-delay: 1s;
-        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        animation-delay: 1.7s;
+        -webkit-animation-delay: 1.7s;
         animation-fill-mode: both;
         -webkit-animation-fill-mode: both;
     }
+}
 
-    @keyframes slide-right {
-        0% {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
 
-        100% {
-            opacity: 1;
-            width: 100%;
+    100% {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.divider_col {
+    height: 10px;
+    width: 1px;
+    background: white;
+    margin: 0 25px;
+}
+
+.bg_category {
+    .divider_col3 {
+        height: 55px;
+        width: 5px;
+        background: #f77e0b 0% 0% no-repeat padding-box;
+    }
+}
+
+.text_custom_yellow {
+    color: #ff9d00;
+}
+
+.bg_custom_yellow {
+    background: #f77e0b;
+}
+
+footer {
+
+    .input,
+    .btn {
+        background-color: #fe9d2b;
+    }
+
+    .ul>li {
+        line-height: 30px;
+    }
+}
+
+.image_hover {
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform 0.4s linear;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.sidebar {
+    ul>li {
+        padding: 10px 0;
+    }
+}
+
+.mobile_menu {
+    .menu_hidden {
+        height: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.5s linear;
+    }
+
+    .menu_show {
+        height: 100lvh;
+        transform: scaleY(1);
+        transform-origin: top;
+        transition: transform 0.5s linear;
+        margin-top: 20px;
+    }
+}
+
+.about_us {
+    .about_us_image {
+        position: relative;
+        z-index: 0;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
             height: 100%;
+            width: 0;
+            //  background: transparent;
+            z-index: 1;
+            border-right: 95px solid transparent;
+            /* Chiều rộng của cạnh góc vuông */
+            border-bottom: 260px solid white;
+            /* Chiều cao của cạnh góc vuông */
         }
     }
+}
 
-    .divider_col {
-        height: 10px;
-        width: 1px;
-        background: white;
-        margin: 0 25px;
-    }
-
-    .bg_category {
-        .divider_col3 {
-            height: 55px;
-            width: 5px;
-            background: #f77e0b 0% 0% no-repeat padding-box;
-        }
-    }
-
-    .text_custom_yellow {
-        color: #ff9d00;
-    }
-
-    .bg_custom_yellow {
-        background: #f77e0b;
-    }
-
-    footer {
-
-        .input,
-        .btn {
-            background-color: #fe9d2b;
-        }
-
-        .ul>li {
-            line-height: 30px;
-        }
-    }
-
-    .image_hover {
-        transform: scale(1);
-        transform-origin: center center;
-        transition: transform 0.4s linear;
-
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-
-    .sidebar {
-        ul>li {
-            padding: 10px 0;
-        }
-    }
-
-    .mobile_menu {
-        .menu_hidden {
-            height: 0;
-            transform: scaleY(0);
-            transform-origin: top;
-            transition: transform 0.5s linear;
-        }
-
-        .menu_show {
-            height: 100lvh;
-            transform: scaleY(1);
-            transform-origin: top;
-            transition: transform 0.5s linear;
-            margin-top: 20px;
-        }
-    }
-
-    .about_us {
-        .about_us_image {
-            position: relative;
-            z-index: 0;
-
-            &::after {
-                position: absolute;
-                content: "";
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 0;
-                //  background: transparent;
-                z-index: 1;
-                border-right: 95px solid transparent;
-                /* Chiều rộng của cạnh góc vuông */
-                border-bottom: 260px solid white;
-                /* Chiều cao của cạnh góc vuông */
-            }
-        }
-    }
-
-    .event {
-        @include backgroundFN("../images/event@2x.png");
-    }
+.event {
+    @include backgroundFN("../images/event@2x.png");
+}
