@@ -28,6 +28,11 @@
     }
 }
 
+.bannerV2 {
+    @include backgroundFN("../images/banner.png");
+    position: relative;
+}
+
 @keyframes slide-right {
     0% {
         opacity: 0;

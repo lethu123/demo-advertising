@@ -37,7 +37,7 @@ const menu = [
         subMenu: [
             {
                 title: 'Thiết kế sản xuất bao bì giấy',
-                path: '/services/thiet-ke-san-xuất-bap-bi-giay'
+                path: '/services/thiet-ke-san-xuat-bao-bi-giay'
             },
             {
                 title: 'Thiết kế trưng bày quảng cáo (POSM)',
