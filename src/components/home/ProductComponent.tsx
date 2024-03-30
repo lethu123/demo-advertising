@@ -118,6 +118,7 @@ const ProductComponent = () => {
                             <div className='col-span-2 md:col-span-1'>
                                 <p className='text-[18px] mb-3'>M.A.I Advertising - nơi bạn có thể biến tưởng thành hiện thực với công nghệ in kỹ thuật số hiện đại. Chúng tôi là đối tác tin cậy của bạn trong việc tạo ra các sản phẩm in ấn chất lượng cao với độ tinh xảo và sáng tạo không giới hạn.</p>
                                 <p>Không chỉ là một công ty in thông thường, mà là một đội ngũ chuyên gia sáng tạo và kỹ thuật viên đam mê về công nghệ in kỹ thuật số. Chúng tôi đưa ra những giải pháp in đa dạng từ in offset, in kỹ thuật số đến in ấn 3D, đáp ứng mọi nhu cầu của bạn.</p>
+                                <p>... CÒN NỮA</p>
                                 <div className='text-center mt-7'>
                                     <button className='view-more text-sm md:text-[23.47px]'>Xem thêm</button>
                                 </div>
