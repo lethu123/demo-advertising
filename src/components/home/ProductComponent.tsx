@@ -24,12 +24,11 @@ const ProductComponent = () => {
                     <h1 className='text-center text-xl sm:text-2xl md:text-[35.03px] font-avo_bold'>
                         SẢN PHẨM CỦA CHÚNG TÔI
                     </h1>
-                    <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>THIẾT KẾ - SÁNG TẠO – IN ẤN</h3>
+                    <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>THIẾT KẾ SẢN XUẤT BAO BÌ GIẤY</h3>
                     <div className='grid grid-cols-2 gap-10'>
                         <div className='col-span-2 md:col-span-1'>
-                            <p className='text-[18px] mb-3 md:mt-4'>Chào mừng bạn đến với M.A.I - nơi kết nối ý tưởng và sự sáng tạo với thế giới thực. Chúng tôi là một doanh nghiệp chuyên về thiết kế sáng tạo, nơi nâng cao giá trị và trải nghiệm của sản phẩm và dịch vụ.</p>
-                            <p>Sứ mệnh của chúng tôi: <br />
-                                Tại M.A.I, chúng tôi tin rằng sự sáng tạo có thể thay đổi thế giới. Sứ mệnh của chúng tôi là tạo ra những sản phẩm và dịch vụ mang tính đột phá, tối ưu hóa trải nghiệm người dùng, và góp phần làm thay đổi cách mọi người tương tác với thế giới xung quanh.</p>
+                            <p className='text-[18px] mb-3 md:mt-4'>Thay vì sử dụng các túi nhựa khó phân hủy, gây ô nhiễm đến môi trường toàn cầu thì người tiêu dùng hiện nay đang có xu hướng chuyển qua dùng các túi làm bằng giấy, vừa bảo vệ được cảnh quan sống .</p>
+                            <p><b>- Một sản phẩm nổi bật, thu hút khách hàng từ cái nhìn đầu tiên không phải dựa vào công dụng của nó, mà chính là nhờ vào giao diện bên ngoài của sản phẩm đó. Việc chăm chút cho bao bì bên ngoài đó là điều cần thiết cho mỗi sản phẩm. </b></p>
                             <div className='text-center mt-7'>
                                 <button className='view-more text-sm md:text-[23.47px]'>Xem thêm</button>
                             </div>
@@ -74,8 +73,8 @@ const ProductComponent = () => {
                                 </div>
                             </div>
                             <div className='col-span-2 md:col-span-1'>
-                                <p className='text-[18px] mb-3'>Chào mừng bạn đến với M.A.I - nơi kết nối thương hiệu với khách hàng thông qua những chiến lược quảng cáo độc đáo và hiệu quả. Chúng tôi tự hào là đối tác chiến lược trong việc đưa thông điệp của bạn đến với đối tượng mục tiêu một cách sáng tạo và tinh tế.</p>
-                                <p>M.A.I không chỉ là một công ty quảng cáo thông thường, mà là một đội ngũ chuyên gia sáng tạo và đam mê về nghệ thuật quảng cáo. Chúng tôi tin rằng mỗi thương hiệu là một câu chuyện riêng biệt, và nhiệm vụ của chúng tôi là giúp bạn kể lên câu chuyện đó một cách cuốn hút và sâu sắc.</p>
+                                <p className='text-[18px] mb-3'>Chào mừng bạn đến với <b>M.A.I</b> - nơi kết nối thương hiệu với khách hàng thông qua những chiến lược quảng cáo độc đáo và hiệu quả. Chúng tôi tự hào là đối tác chiến lược trong việc đưa thông điệp của bạn đến với đối tượng mục tiêu một cách sáng tạo và tinh tế.</p>
+                                <p><b>M.A.I</b> không chỉ là một công ty quảng cáo thông thường, mà là một đội ngũ chuyên gia sáng tạo và đam mê về nghệ thuật quảng cáo. Chúng tôi tin rằng mỗi thương hiệu là một câu chuyện riêng biệt, và nhiệm vụ của chúng tôi là giúp bạn kể lên câu chuyện đó một cách cuốn hút và sâu sắc.</p>
                                 <div className='text-center mt-7'>
                                     <button className='view-more text-sm md:text-[23.47px]'>Xem thêm</button>
                                 </div>
