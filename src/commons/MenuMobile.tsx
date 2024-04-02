@@ -43,6 +43,10 @@ const menu = [
                 title: 'Thiết kế trưng bày quảng cáo (POSM)',
                 path: '/services/thiet-ke-trung-bay-quang-cao'
             },
+            {
+                title: 'In thương mại, xuất bản ấn phẩm',
+                path: '/services/in-thuong-mai-xuat-ban-an-pham'
+            },
         ]
     },
     {

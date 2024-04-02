@@ -7,7 +7,7 @@ import homecss from '@assets/scss/home.module.scss'
 import Link from 'next/link'
 import styles from '@assets/scss/home.module.scss'
 import logo from '@assets/images/logo.svg'
-import MenuMobile from './MenuMobile'
+import MenuMobile from '../../commons/MenuMobile'
 
 const HeaderComponent = () => {
     return (

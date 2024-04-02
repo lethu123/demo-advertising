@@ -237,7 +237,8 @@
          color: black !important;
      }
 
-     a::before,  h3::before {
+     a::before,
+     h3::before {
          color: #1D1D1D !important;
      }
  }
@@ -275,76 +276,130 @@
 
 
 
-.banner {
+ .banner,
+ .banner-single {
 
-    ul li {
-        overflow: hidden;
-        position: relative;
-    }
-   
-    .menu_products {
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        left: 0;
-        transition: all .6s;
-        transform: scaleY(0);
-        transform-origin: top;
-        transition: transform 0.2s linear;
-    }
-   
-    ul li {
-   
-        a,
-        h3 {
-            display: block;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            transition: all .3s;
-        }
-   
-        i {
-            transition: all .3s;
-        }
-    }
-   
-    ul li:hover {
-   
-        a,
-        h3 {
-            transform: translateY(-100%);
-        }
-   
-        i {
-            transform: rotate(-180deg);
-        }
-   
-   
-    }
-   
-    ul .menu:hover {
-        .menu_products {
-            //  height: auto;
-            transform: scaleY(1);
-            transition: all .2s;
-        }
-    }
-   
-   
-   
-    ul li { 
-        a:before,
-        h3:before {
-            content: attr(data-hover);
-            color: rgb(244, 229, 229);
-            display: block;
-            left: 0;
-            top: 100%;
-            text-align: center;
-            position: absolute;
-            width: 100%;
-        }
-    }
-}
- 
+     ul li {
+         overflow: hidden;
+         position: relative;
+     }
+
+     .menu_products {
+         position: absolute;
+         top: 100%;
+         width: 100%;
+         left: 0;
+         transition: all .6s;
+         transform: scaleY(0);
+         transform-origin: top;
+         transition: transform 0.2s linear;
+     }
+
+     ul li {
+
+         a,
+         h3 {
+             display: block;
+             font-weight: bold;
+             text-align: center;
+             text-decoration: none;
+             transition: all .3s;
+         }
+
+         i {
+             transition: all .3s;
+         }
+     }
+
+     ul li:hover {
+
+         a,
+         h3 {
+             transform: translateY(-100%);
+         }
+
+         i {
+             transform: rotate(-180deg);
+         }
+
+
+     }
+
+     ul .menu:hover {
+         .menu_products {
+             //  height: auto;
+             transform: scaleY(1);
+             transition: all .2s;
+         }
+     }
+
+
+
+     ul li {
+
+         a:before,
+         h3:before {
+             content: attr(data-hover);
+             display: block;
+             left: 0;
+             top: 100%;
+             text-align: center;
+             position: absolute;
+             width: 100%;
+         }
+     }
+ }
+
+ .banner {
+     ul li {
+
+         a:before,
+         h3:before {
+             color: rgb(244, 229, 229);
+         }
+     }
+ }
+
+ .banner-single {
+     ul li {
+
+         a:before,
+         h3:before {
+             color: black;
+         }
+     }
+ }
+
+ .our-product {
+     h1::after {
+         content: '';
+         position: absolute;
+         width: 80%;
+         height: 2px;
+         background: #A8AAAC;
+         bottom: 0;
+         left: 50%;
+         transform: translateX(-50%)
+     }
+ }
+
+
+ @mixin backgroundItem() {
+     background-position: center;
+     background-size: cover;
+ }
+
+ .bg-banner-product1 {
+     background-image: url(../images/banner1.png);
+     @include backgroundItem();
+ }
+
+ .bg-banner-product2 {
+     background-image: url(../images/banner2.png);
+     @include backgroundItem();
+ }
+
+ .bg-banner-product3 {
+     background-image: url(../images/banner2.png);
+     @include backgroundItem();
+ }

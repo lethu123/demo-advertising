@@ -1,47 +1,33 @@
 "use client"
 
 import React, { useEffect } from 'react'
-import Link from 'next/link'
-import logo from '@assets/images/logo.svg'
-import MenuMobile from '../../commons/MenuMobile'
+import Container from '@srccommons/Container'
 import Image from 'next/image'
+import Link from 'next/link'
+import styles from '@assets/scss/home.module.scss'
+import logo from '@assets/images/logo.svg'
+import '@assets/scss/home.scss';
+import { usePathname } from 'next/navigation'
+import MenuMobile from '@/commons/MenuMobile'
 
-
-const Header2Component = () => {
-    const [scrolled, setScrolled] = React.useState(false);
-
-    const handleScroll = () => {
-        const offset = window.scrollY;
-        if (offset > 70) {
-            setScrolled(true);
-        }
-        else {
-            setScrolled(false);
-        }
-    }
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            window.addEventListener("scroll", handleScroll)
-        }
-        return () => window.removeEventListener("scroll", handleScroll)
-
-    }, [])
+const Navbar = () => {
+    const path = usePathname();
 
     return (
 
-        <div className={`top-0 z-40 w-full   ${!scrolled ? 'absolute   unsticky-header' : 'sticky-header shadow'}`}>
-            <div className='w-full xl:w-3/4 max-w-screen-xl relative justify-center mx-auto px-4 xl:px-0'>
+        <div className='sticky top-0 bg-white z-30 shadow'>
+            <div className='w-full xl:w-3/4 max-w-screen-xl relative justify-center mx-auto px-4 xl:px-0 banner-single'>
                 <MenuMobile />
                 <div className="hidden lg:block ">
                     <ul className='flex items-stretch gap-12 justify-between'>
                         <div className='flex items-center'>
                             <li >
-                                <Link href="/" className='text-white text-[18px]' data-hover="TRANG CHỦ">TRANG CHỦ</Link>
+                                <Link href="/" className='  text-[18px]' data-hover="TRANG CHỦ">TRANG CHỦ</Link>
                             </li>
                         </div>
                         <div className='menu flex items-center'>
                             <li className='flex items-center' >
-                                <h3 className='text-white text-[18px] mr-2' data-hover='SẢN PHẨM'>SẢN PHẨM </h3>
+                                <h3 className='  text-[18px] mr-2' data-hover='SẢN PHẨM'>SẢN PHẨM </h3>
                                 <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i>
                             </li>
                             <div className='menu_products overflow-hidden'>
@@ -77,7 +63,7 @@ const Header2Component = () => {
                         </div>
                         <div className='menu flex items-center'>
                             <li className='flex items-center' >
-                                <h3 className='text-white text-[18px] mr-2' data-hover='DỊCH VỤ'>DỊCH VỤ </h3>
+                                <h3 className=' text-[18px] mr-2' data-hover='DỊCH VỤ'>DỊCH VỤ </h3>
                                 <i className="fa fa-angle-down" style={{ color: '#f8dfa9' }}></i>
                             </li>
 
@@ -113,19 +99,20 @@ const Header2Component = () => {
                             <Image className='h-[100px] w-[150px]' alt='' src={logo} />
                         </li >
                         <div className='flex items-center'>
-                            <li className='flex items-center'><Link href="" className='text-white text-[18px]' data-hover="VỀ CHÚNG TÔI">VỀ CHÚNG TÔI</Link></li>
+                            <li className='flex items-center'><Link href="" className=' text-[18px]' data-hover="VỀ CHÚNG TÔI">VỀ CHÚNG TÔI</Link></li>
                         </div>
                         <div className='flex items-center'>
-                            <li className='flex items-center'><Link href="" className='text-white text-[18px]' data-hover="TIN TỨC">TIN TỨC</Link></li>
+                            <li className='flex items-center'><Link href="" className=' text-[18px]' data-hover="TIN TỨC">TIN TỨC</Link></li>
                         </div>
                         <div className='flex items-center'>
-                            <li className='flex items-center'><Link href="" className='text-white text-[18px]' data-hover="LIÊN HỆ">LIÊN HỆ</Link></li>
+                            <li className='flex items-center'><Link href="" className=' text-[18px]' data-hover="LIÊN HỆ">LIÊN HỆ</Link></li>
                         </div>
                     </ul>
                 </div>
             </div>
         </div>
+
     )
 }
 
-export default Header2Component
+export default Navbar

@@ -9,8 +9,27 @@ import design4 from '@assets/images/design4@2x.png'
 import design5 from '@assets/images/design5@2x.png'
 import design6 from '@assets/images/design6@2x.png'
 import design7 from '@assets/images/design7@2x.png'
+
+import sp1 from '@assets/images/sp1.png';
+import sp2 from '@assets/images/sp1.2.png';
+import sp3 from '@assets/images/sp1.3.png';
+import sp4 from '@assets/images/sp1.4.png';
+
+import sp5 from '@assets/images/sp2.png';
+import sp6 from '@assets/images/sp2.2.png';
+
+import sp7 from '@assets/images/sp3.png';
+import sp8 from '@assets/images/sp3.2.png';
+import sp9 from '@assets/images/sp3.3.png';
+import sp10 from '@assets/images/sp3.4.png';
+import sp11 from '@assets/images/sp3.5.png';
+
+import sp12 from '@assets/images/sp4.png';
+import sp13 from '@assets/images/sp4.2.png';
+import sp14 from '@assets/images/sp4.3.png';
+
+
 import threeSlash from '@assets/images/three-slash.svg'
-import threeSlash2 from '@assets/images/three-slash2.svg'
 import threeSlash3 from '@assets/images/three-slash3.svg'
 
 
@@ -18,12 +37,14 @@ import threeSlash3 from '@assets/images/three-slash3.svg'
 const ProductComponent = () => {
     return (
 
-        <div className='overflow-hidden'>
+        <div className='overflow-hidden our-product'>
             <Container>
                 <div  >
-                    <h1 className='text-center text-xl sm:text-2xl md:text-[35.03px] font-avo_bold'>
-                        SẢN PHẨM CỦA CHÚNG TÔI
-                    </h1>
+                    <div className='text-center'>
+                        <h1 className='pb-4 inline-block relative text-xl sm:text-2xl md:text-[35.03px] font-avo_bold'>
+                            SẢN PHẨM CỦA CHÚNG TÔI
+                        </h1>
+                    </div>
                     <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>THIẾT KẾ SẢN XUẤT BAO BÌ GIẤY</h3>
                     <div className='grid grid-cols-2 gap-10'>
                         <div className='col-span-2 md:col-span-1'>
@@ -39,16 +60,16 @@ const ProductComponent = () => {
 
                                 <div className='col-span-2 md:col-span-1  grid grid-cols-2 gap-1'>
                                     <div className='col-span-1'>
-                                        <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design4} />
+                                        <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp1} />
                                     </div>
                                     <div className='col-span-1'>
-                                        <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design5} />
+                                        <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp2} />
                                     </div>
                                     <div className='col-span-1'>
-                                        <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design6} />
+                                        <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp3} />
                                     </div>
                                     <div className='col-span-1'>
-                                        <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design7} />
+                                        <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp4} />
                                     </div>
                                 </div>
 
@@ -65,8 +86,8 @@ const ProductComponent = () => {
                         <div className='grid grid-cols-2 gap-10 items-stretch relative'>
                             <div className='col-span-2 md:col-span-1'>
                                 <div className='w-full relative pt-20 pe-5'>
-                                    <Image alt='' style={{ position: 'absolute', right: 0, top: 0, width: '60%' }} className={`z-10 ${styles.image_hover} `} src={design3} />
-                                    <Image alt='' className={`${styles.image_hover}`} src={design2} />
+                                    <Image alt='' style={{ position: 'absolute', right: 0, top: 0, width: '60%' }} className={`z-10 ${styles.image_hover} `} src={sp6} />
+                                    <Image alt='' className={`${styles.image_hover}`} src={sp5} />
                                     <div className='absolute -top-[37px] -left-[97px] w-[265px] -z-[1]'>
                                         <Image alt='' src={threeSlash} />
                                     </div>
@@ -88,18 +109,26 @@ const ProductComponent = () => {
 
                         <div className=' grid grid-cols-4 gap-1 items-stretch'>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
-                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design4} />
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp7} />
                             </div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1 bg-cyan-900 rounded-xl mt-3'></div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1 bg-cyan-900 rounded-xl mt-3'></div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp8} />
+                            </div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp9} />
+                            </div>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
                                 <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design5} />
                             </div>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
                                 <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design6} />
                             </div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1 bg-cyan-900 rounded-xl mb-3'></div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1 bg-cyan-900 rounded-xl mb-3'></div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp10} />
+                            </div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp11} />
+                            </div>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
                                 <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design7} />
                             </div>
@@ -125,16 +154,16 @@ const ProductComponent = () => {
                             </div>
                             <div className='col-span-2 md:col-span-1  grid grid-cols-2 gap-1'>
                                 <div className='col-span-1'>
-                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design4} />
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp12} />
                                 </div>
                                 <div className='col-span-1'>
-                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design5} />
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp13} />
                                 </div>
                                 <div className='col-span-1'>
                                     <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design6} />
                                 </div>
                                 <div className='col-span-1'>
-                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design7} />
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp14} />
                                 </div>
                             </div>
 
