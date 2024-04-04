@@ -14,19 +14,23 @@ const menu = [
     path: "/",
     subMenu: [
       {
-        title: "Sản phẩm 1",
+        title: "Name card",
         path: "/",
       },
       {
-        title: "Sản phẩm 2",
+        title: "Lịch",
         path: "/",
       },
       {
-        title: "Sản phẩm 3",
+        title: "Sticker",
         path: "/",
       },
       {
-        title: "Sản phẩm 4",
+        title: "Bảng tên chức danh, menu (mica)",
+        path: "/",
+      },
+      {
+        title: "Standee, backrop (PP, hiflex)",
         path: "/",
       },
     ],

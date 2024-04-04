@@ -52,7 +52,7 @@ const page = () => {
       {/* BANNER */}
       <BannerSingle classImage={"bg-banner-product2"} />
 
-      <div className="mt-auto py-4" style={{ background: "#F99E1D" }}>
+      <div className="mt-auto py-4" style={{ background: "#FFCD00" }}>
         <Image
           className="mx-auto"
           width={88}
@@ -248,10 +248,10 @@ const page = () => {
       <div id="thiet-ke-thi-cong-pano-hop-den-quang-cao"></div>
       <div
         className="pt-8 pb-14 relative overflow-hidden"
-        style={{ background: "#F99E1D", zIndex: -1 }}
+        style={{ background: "#FFCD00", zIndex: -1 }}
       >
         <Container>
-          <div className="mb-5  py-4" style={{ background: "#F99E1D" }}>
+          <div className="mb-5  py-4" style={{ background: "#FFCD00" }}>
             <Image
               className="mx-auto"
               width={88}

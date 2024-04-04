@@ -45,7 +45,7 @@ const ProductionDesign = () => {
         classImage={"bg-banner-product1"}
       />
 
-      <div className="mt-auto py-4" style={{ background: "#F99E1D" }}>
+      <div className="mt-auto py-4" style={{ background: "#FFCD00" }}>
         <Image
           className="mx-auto"
           width={88}

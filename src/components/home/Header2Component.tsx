@@ -68,7 +68,7 @@ const Header2Component = () => {
                           href="#"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Sản phẩm 1
+                          Name card
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">
@@ -76,7 +76,7 @@ const Header2Component = () => {
                           href="#"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Sản phẩm 2
+                          Lịch
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">
@@ -84,7 +84,7 @@ const Header2Component = () => {
                           href="#"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Sản phẩm 3
+                          Sticker
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">
@@ -92,7 +92,15 @@ const Header2Component = () => {
                           href="#"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Sản phẩm 4
+                          Bảng tên chức danh, menu (mica)
+                        </Link>
+                      </div>
+                      <div className="hover:bg-gray-100 px-3">
+                        <Link
+                          href="#"
+                          className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
+                        >
+                          Standee, backrop (PP, hiflex)
                         </Link>
                       </div>
                     </div>

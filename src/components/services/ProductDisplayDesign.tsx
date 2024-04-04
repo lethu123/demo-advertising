@@ -47,7 +47,7 @@ const ProductDisplayDesign = () => {
         classImage={"bg-banner-product2"}
       />
 
-      <div className="mt-auto py-4" style={{ background: "#F99E1D" }}>
+      <div className="mt-auto py-4" style={{ background: "#FFCD00" }}>
         <Image
           className="mx-auto"
           width={88}
@@ -239,7 +239,7 @@ const ProductDisplayDesign = () => {
           </div>
         </Container>
       </div>
-      <div className="pt-8 pb-14" style={{ background: "#F99E1D" }}>
+      <div className="pt-8 pb-14" style={{ background: "#FFCD00" }}>
         <Container>
           <p className="text-white">
             Nội thất showroom: tủ, kệ trưng bày sản phẩm. Gian hàng hội chợ,
