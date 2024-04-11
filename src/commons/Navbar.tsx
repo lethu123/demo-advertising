@@ -43,7 +43,15 @@ const Navbar = () => {
                     <div className=" divide-x divide-gray-900/5   ">
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/so-tay"
+                          className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
+                        >
+                          Sổ tay
+                        </Link>
+                      </div>
+                      <div className="hover:bg-gray-100 px-3">
+                        <Link
+                          href="/products/name-card"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Name card
@@ -51,7 +59,7 @@ const Navbar = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/lich"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Lịch
@@ -59,7 +67,7 @@ const Navbar = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/sticker"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Sticker
@@ -67,7 +75,7 @@ const Navbar = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/bang-ten-chuc-danh"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Bảng tên chức danh, menu (mica)
@@ -75,7 +83,7 @@ const Navbar = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/standee-backrop-pp-hiflex"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Standee, backrop (PP, hiflex)

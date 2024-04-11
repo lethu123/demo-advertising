@@ -26,9 +26,8 @@ const Header2Component = () => {
 
   return (
     <div
-      className={`top-0 z-40 w-full   ${
-        !scrolled ? "absolute   unsticky-header" : "sticky-header shadow"
-      }`}
+      className={`top-0 z-40 w-full   ${!scrolled ? "absolute   unsticky-header" : "sticky-header shadow"
+        }`}
     >
       <div className="w-full xl:w-3/4 max-w-screen-xl relative justify-center mx-auto px-4 xl:px-0">
         <MenuMobile />
@@ -65,7 +64,15 @@ const Header2Component = () => {
                     <div className=" divide-x divide-gray-900/5   ">
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/so-tay"
+                          className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
+                        >
+                          Sổ tay
+                        </Link>
+                      </div>
+                      <div className="hover:bg-gray-100 px-3">
+                        <Link
+                          href="/products/name-card"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Name card
@@ -73,7 +80,7 @@ const Header2Component = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/lich"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Lịch
@@ -81,7 +88,7 @@ const Header2Component = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/sticker"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Sticker
@@ -89,7 +96,7 @@ const Header2Component = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/bang-ten-chuc-danh"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Bảng tên chức danh, menu (mica)
@@ -97,7 +104,7 @@ const Header2Component = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/standee-backrop-pp-hiflex"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Standee, backrop (PP, hiflex)

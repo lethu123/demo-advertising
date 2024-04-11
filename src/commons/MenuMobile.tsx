@@ -14,6 +14,10 @@ const menu = [
     path: "/",
     subMenu: [
       {
+        title: "Sổ tay",
+        path: "/",
+      },
+      {
         title: "Name card",
         path: "/",
       },

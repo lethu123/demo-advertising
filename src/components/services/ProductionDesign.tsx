@@ -4,10 +4,7 @@ import HeaderComponent from "@/components/home/HeaderComponent";
 import Image from "next/image";
 import React from "react";
 import styles from "@assets/scss/home.module.scss";
-import design4 from "@assets/images/design4@2x.png";
-import design5 from "@assets/images/design5@2x.png";
 import design6 from "@assets/images/design6@2x.png";
-import design7 from "@assets/images/design7@2x.png";
 import threeSlash3 from "@assets/images/three-slash3.svg";
 import FooterComponent from "@/components/home/FooterComponent";
 import sloganIcon from "@assets/images/icon1.svg";
@@ -92,7 +89,7 @@ const ProductionDesign = () => {
               </div>
               <div className="col-span-2 flex justify-center items-center">
                 <div className="flex items-center gap-5">
-                  <p className="w-[27px] h-[27px] bg-[#F2792C] rounded-full"></p>
+                  <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
                     Túi giấy Couche, <br />
                     Túi giấy Briston, <br />
@@ -138,7 +135,7 @@ const ProductionDesign = () => {
 
               <div className="col-span-2 flex justify-center items-center">
                 <div className="flex items-center gap-5">
-                  <p className="w-[27px] h-[27px] bg-[#F2792C] rounded-full"></p>
+                  <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl lg:text-[23px] tracking-widest">
                     Túi giấy kraft, <br />
                     Túi giấy Duplex, <br />
