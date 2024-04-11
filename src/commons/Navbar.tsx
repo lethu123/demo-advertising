@@ -131,7 +131,7 @@ const Navbar = () => {
                           href="/services/in-thuong-mai-xuat-ban-an-pham"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          In thương mại, xuất bản ấn phẩm
+                          In thương mại, xuất bản phẩm
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">

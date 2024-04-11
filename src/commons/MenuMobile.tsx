@@ -52,7 +52,7 @@ const menu = [
         path: "/services/thiet-ke-trung-bay-quang-cao",
       },
       {
-        title: "In thương mại, xuất bản ấn phẩm",
+        title: "In thương mại, xuất bản phẩm",
         path: "/services/in-thuong-mai-xuat-ban-an-pham",
       },
       {

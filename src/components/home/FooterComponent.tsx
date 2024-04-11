@@ -11,8 +11,8 @@ const FooterComponent = () => {
       <div className='w-full px-3 xl:w-5/6 max-w-screen-xl lg:mx-auto'>
         <div className="grid grid-cols-5 gap-10 xl:gap-16   items-stretch flex-wrap">
           <div className="col-span-5 lg:col-span-2">
-            <h1 className="text-orange text-xl font-extrabold font-avo_bold lg:text-[20.85px] mb-2">Công ty TNHH Quảng Cáo và Phát Triển M.A.I</h1>
-            <h3 className='text-xl lg:text-[18.5px] font-avo text-orange'>M.A.I Development And Advertising Company Limited</h3>
+            <h1 className="text-orange1 text-xl font-extrabold font-avo_bold lg:text-[20.85px] mb-2">Công ty TNHH Quảng Cáo và Phát Triển M.A.I</h1>
+            <h3 className='text-xl lg:text-[18.5px] font-avo text-orange1'>M.A.I Development And Advertising Company Limited</h3>
             <div className="flex   gap-8 lg:gap-16 flex-grow flex-wrap mt-1   ">
               <div >
                 <div className="flex custom-text-mode gap-2">
