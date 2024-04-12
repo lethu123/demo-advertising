@@ -49,7 +49,7 @@ const Calandar = () => {
             <div className="overflow-hidden">
                 <Container>
                     <div className='relative mt-16'>
-                        <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>IN THƯƠNG MẠI, XUẤT BẢN PHẨM</h3>
+                        <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>LỊCH</h3>
 
                         <div className=' grid grid-cols-4 gap-1 items-stretch'>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
@@ -101,7 +101,7 @@ const Calandar = () => {
                 <div className="overflow-hidden">
                     <Container>
                         <div className='relative mt-16'>
-                            <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>IN THƯƠNG MẠI, XUẤT BẢN PHẨM</h3>
+                            <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>STICKER</h3>
 
                             <div className=' grid grid-cols-4 gap-1 items-stretch'>
                                 <div className='col-span-2 sm:col-span-2 md:col-span-1'>
