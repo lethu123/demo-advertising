@@ -32,23 +32,15 @@ const Standee = () => {
                 idScreen="bang-ten-chuc-danh"
                 classImage={"bg-banner-product2"}
             />
-            <div className="mt-auto py-4" style={{ background: "#FFCD00" }}>
-                <Image
-                    className="mx-auto"
-                    width={88}
-                    height={53}
-                    alt=""
-                    src={sloganIcon}
-                />
-                <h3 className="text-white uppercase text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
+            <div className="mt-auto py-8" style={{ background: "#FFCD00" }}>
+                <h3 className="text-white uppercase text-center text-2xl lg:text-[37.12px] font-avo_bold">
                     Bảng tên chức danh, menu (mica)
                 </h3>
             </div>
 
             <div className="overflow-hidden">
                 <Container>
-                    <div className='relative mt-16'>
-                        <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>BẢNG TÊN CHỨC DANH, MENU (MICA)</h3>
+                    <div className='relative mt-20'>
 
                         <div className=' grid grid-cols-4 gap-1 items-stretch'>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
@@ -83,23 +75,11 @@ const Standee = () => {
                 </Container>
             </div>
             <div id="standee-backrop-pp-hiflex"></div>
-            <div className='my-[6.5rem]'>
-                <div className="mt-auto py-4" style={{ background: "#FFCD00" }}>
-                    <Image
-                        className="mx-auto"
-                        width={88}
-                        height={53}
-                        alt=""
-                        src={sloganIcon}
-                    />
-                    <h3 className="text-white uppercase text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
-                        Standee, backrop (PP, hiflex)
-                    </h3>
-                </div>
+            <div className='my-[6.5rem]'> 
 
                 <div className="overflow-hidden">
                     <Container>
-                        <div className='relative mt-16'>
+                        <div className='relative mt-10'>
                             <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>STANDEE, BACKROP (PP, HIFLEX)</h3>
 
                             <div className=' grid grid-cols-4 gap-1 items-stretch'>

@@ -31,24 +31,15 @@ const NoteBook = () => {
                 idScreen="so-tay"
                 classImage={"bg-banner-product2"}
             />
-            <div className="mt-auto py-4" style={{ background: "#FFCD00" }}>
-                <Image
-                    className="mx-auto"
-                    width={88}
-                    height={53}
-                    alt=""
-                    src={sloganIcon}
-                />
-                <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
+            <div className="mt-auto py-8" style={{ background: "#FFCD00" }}>
+                <h3 className="text-white text-center text-2xl lg:text-[37.12px] font-avo_bold">
                     SỔ TAY
                 </h3>
             </div>
 
             <div className="overflow-hidden">
                 <Container>
-                    <div className='relative mt-16'>
-                        <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>SỔ TAY</h3>
-
+                    <div className='relative mt-20'>
                         <div className=' grid grid-cols-4 gap-1 items-stretch'>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
                                 <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp7} />
@@ -82,23 +73,11 @@ const NoteBook = () => {
                 </Container>
             </div>
             <div id="name-card"></div>
-            <div className='my-[6.5rem]'>
-                <div className="mt-auto py-4" style={{ background: "#FFCD00" }}>
-                    <Image
-                        className="mx-auto"
-                        width={88}
-                        height={53}
-                        alt=""
-                        src={sloganIcon}
-                    />
-                    <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
-                        NAME CARD
-                    </h3>
-                </div>
+            <div className='my-[6.5rem]'> 
 
                 <div className="overflow-hidden">
                     <Container>
-                        <div className='relative mt-16'>
+                        <div className='relative mt-10'>
                             <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>NAME CARD</h3>
 
                             <div className=' grid grid-cols-4 gap-1 items-stretch'>

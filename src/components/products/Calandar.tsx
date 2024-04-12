@@ -33,23 +33,15 @@ const Calandar = () => {
                 idScreen="lich"
                 classImage={"bg-banner-product2"}
             />
-            <div className="mt-auto py-4" style={{ background: "#FFCD00" }}>
-                <Image
-                    className="mx-auto"
-                    width={88}
-                    height={53}
-                    alt=""
-                    src={sloganIcon}
-                />
-                <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
+            <div className="mt-auto py-8" style={{ background: "#FFCD00" }}>
+                <h3 className="text-white text-center text-2xl lg:text-[37.12px] font-avo_bold">
                     LỊCH
                 </h3>
             </div>
 
             <div className="overflow-hidden">
                 <Container>
-                    <div className='relative mt-16'>
-                        <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>LỊCH</h3>
+                    <div className='relative mt-20'>
 
                         <div className=' grid grid-cols-4 gap-1 items-stretch'>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
@@ -85,22 +77,10 @@ const Calandar = () => {
             </div>
             <div id="sticker"></div>
             <div className='my-[6.5rem]'>
-                <div className="mt-auto py-4" style={{ background: "#FFCD00" }}>
-                    <Image
-                        className="mx-auto"
-                        width={88}
-                        height={53}
-                        alt=""
-                        src={sloganIcon}
-                    />
-                    <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
-                        STICKER
-                    </h3>
-                </div>
 
                 <div className="overflow-hidden">
                     <Container>
-                        <div className='relative mt-16'>
+                        <div className='relative mt-10'>
                             <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>STICKER</h3>
 
                             <div className=' grid grid-cols-4 gap-1 items-stretch'>
