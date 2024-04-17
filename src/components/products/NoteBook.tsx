@@ -6,20 +6,29 @@ import HeaderComponent from "@/components/home/HeaderComponent";
 import Image from "next/image";
 import React from "react";
 import FooterComponent from "@/components/home/FooterComponent";
-import sloganIcon from "@assets/images/icon1.svg";
 import BannerSingle from "@/components/home/BannerSingle";
 
 import styles from "@assets/scss/home.module.scss";
-import design7 from "@assets/images/design7@2x.png";
-import design5 from '@assets/images/design5@2x.png'
-import design6 from '@assets/images/design6@2x.png'
 import threeSlash3 from "@assets/images/three-slash3.svg";
 import threeSlash from '@assets/images/three-slash.svg'
-import sp7 from '@assets/images/sp3.png';
-import sp8 from '@assets/images/sp3.2.png';
-import sp9 from '@assets/images/sp3.3.png';
-import sp10 from '@assets/images/sp3.4.png';
-import sp11 from '@assets/images/sp3.5.png';
+import sp1 from '@assets/images/st1.png';
+import sp2 from '@assets/images/st1.2.png';
+import sp3 from '@assets/images/st1.3.png';
+import sp4 from '@assets/images/st1.4.png';
+import sp5 from '@assets/images/st2.png';
+import sp6 from '@assets/images/st2.2.png';
+import sp7 from '@assets/images/st2.3.png';
+import sp8 from '@assets/images/st2.4.png';
+
+import sp9 from '@assets/images/nc1.png';
+import sp10 from '@assets/images/nc1.2.png';
+import sp11 from '@assets/images/nc1.3.png';
+import sp12 from '@assets/images/nc1.4.png';
+import sp13 from '@assets/images/nc2.png';
+import sp14 from '@assets/images/nc2.2.png';
+import sp15 from '@assets/images/nc2.3.png';
+import sp16 from '@assets/images/nc2.4.png';
+
 
 
 const NoteBook = () => {
@@ -31,39 +40,36 @@ const NoteBook = () => {
                 idScreen="so-tay"
                 classImage={"bg-banner-product2"}
             />
-            <div className="mt-auto py-8" style={{ background: "#FFCD00" }}>
-                <h3 className="text-white text-center text-2xl lg:text-[37.12px] font-avo_bold">
-                    SỔ TAY
-                </h3>
+            <div className="mt-12">
+                <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]'>SỔ TAY</h3>
             </div>
-
             <div className="overflow-hidden">
                 <Container>
-                    <div className='relative mt-20'>
+                    <div className='relative mt-16'>
                         <div className=' grid grid-cols-4 gap-1 items-stretch'>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp1} />
+                            </div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp2} />
+                            </div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp3} />
+                            </div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp4} />
+                            </div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp5} />
+                            </div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
+                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp6} />
+                            </div>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
                                 <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp7} />
                             </div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
+                            <div className='col-span-2 sm:col-span-2 md:col-span-1'>
                                 <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp8} />
-                            </div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
-                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp9} />
-                            </div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1'>
-                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design5} />
-                            </div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1'>
-                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design6} />
-                            </div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
-                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp10} />
-                            </div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
-                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp11} />
-                            </div>
-                            <div className='col-span-2 sm:col-span-2 md:col-span-1'>
-                                <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design7} />
                             </div>
                         </div>
                         <div className='absolute -top-[37px] -left-[97px]  -z-[1]'>
@@ -73,7 +79,7 @@ const NoteBook = () => {
                 </Container>
             </div>
             <div id="name-card"></div>
-            <div className='my-[6.5rem]'> 
+            <div className='my-[6.5rem]'>
 
                 <div className="overflow-hidden">
                     <Container>
@@ -82,28 +88,28 @@ const NoteBook = () => {
 
                             <div className=' grid grid-cols-4 gap-1 items-stretch'>
                                 <div className='col-span-2 sm:col-span-2 md:col-span-1'>
-                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp7} />
-                                </div>
-                                <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
-                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp8} />
-                                </div>
-                                <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
                                     <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp9} />
                                 </div>
-                                <div className='col-span-2 sm:col-span-2 md:col-span-1'>
-                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design5} />
-                                </div>
-                                <div className='col-span-2 sm:col-span-2 md:col-span-1'>
-                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design6} />
-                                </div>
-                                <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
+                                <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
                                     <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp10} />
                                 </div>
-                                <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
+                                <div className='col-span-2 sm:col-span-2 md:col-span-1 mt-3'>
                                     <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp11} />
                                 </div>
                                 <div className='col-span-2 sm:col-span-2 md:col-span-1'>
-                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={design7} />
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp12} />
+                                </div>
+                                <div className='col-span-2 sm:col-span-2 md:col-span-1'>
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp13} />
+                                </div>
+                                <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp14} />
+                                </div>
+                                <div className='col-span-2 sm:col-span-2 md:col-span-1 mb-3'>
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp15} />
+                                </div>
+                                <div className='col-span-2 sm:col-span-2 md:col-span-1'>
+                                    <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp16} />
                                 </div>
                             </div>
                             <div className='absolute -top-[37px] -right-[180px] -z-[1]'>
