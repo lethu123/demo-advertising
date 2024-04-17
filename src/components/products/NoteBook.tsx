@@ -45,7 +45,7 @@ const NoteBook = () => {
             </div>
             <div className="overflow-hidden">
                 <Container>
-                    <div className='relative mt-16'>
+                    <div className='relative mt-12'>
                         <div className=' grid grid-cols-4 gap-1 items-stretch'>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>
                                 <Image alt='' className={`h-full w-full ${styles.image_hover} `} src={sp1} />
