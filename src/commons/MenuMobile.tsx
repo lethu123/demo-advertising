@@ -63,15 +63,15 @@ const menu = [
   },
   {
     title: "Về chúng tôi",
-    path: "/",
+    path: "/about-us",
   },
   {
     title: "Tin tức",
-    path: "/",
+    path: "/news",
   },
   {
     title: " Liên hệ",
-    path: "/",
+    path: "/contact",
   },
 ];
 const MenuMobile = () => {

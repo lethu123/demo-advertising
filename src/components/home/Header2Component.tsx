@@ -29,7 +29,7 @@ const Header2Component = () => {
       className={`top-0 z-40 w-full   ${!scrolled ? "absolute   unsticky-header" : "sticky-header shadow"
         }`}
     >
-      <div className="w-full xl:w-3/4 max-w-screen-xl relative justify-center mx-auto px-4 xl:px-0">
+      <div className="w-full xl:w-4/5 max-w-screen-2xl relative justify-center mx-auto px-4 xl:px-0">
         <MenuMobile />
         <div className="hidden lg:block ">
           <ul className="flex items-stretch gap-12 justify-between">
@@ -37,7 +37,7 @@ const Header2Component = () => {
               <li>
                 <Link
                   href="/"
-                  className="text-white text-[18px]"
+                  className="text-white text-[15px] 2xl:text-[18px]"
                   data-hover="TRANG CHỦ"
                 >
                   TRANG CHỦ
@@ -47,7 +47,7 @@ const Header2Component = () => {
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className="text-white text-[18px] mr-2"
+                  className="text-white text-[15px] 2xl:text-[18px] mr-2"
                   data-hover="SẢN PHẨM"
                 >
                   SẢN PHẨM{" "}
@@ -118,7 +118,7 @@ const Header2Component = () => {
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className="text-white text-[18px] mr-2"
+                  className="text-white text-[15px] 2xl:text-[18px] mr-2"
                   data-hover="DỊCH VỤ"
                 >
                   DỊCH VỤ{" "}
@@ -178,8 +178,8 @@ const Header2Component = () => {
             <div className="flex items-center">
               <li className="flex items-center">
                 <Link
-                  href=""
-                  className="text-white text-[18px]"
+                  href="/about-us"
+                  className="text-white text-[15px] 2xl:text-[18px]"
                   data-hover="VỀ CHÚNG TÔI"
                 >
                   VỀ CHÚNG TÔI
@@ -189,8 +189,8 @@ const Header2Component = () => {
             <div className="flex items-center">
               <li className="flex items-center">
                 <Link
-                  href=""
-                  className="text-white text-[18px]"
+                  href="/news"
+                  className="text-white text-[15px] 2xl:text-[18px]"
                   data-hover="TIN TỨC"
                 >
                   TIN TỨC
@@ -200,8 +200,8 @@ const Header2Component = () => {
             <div className="flex items-center">
               <li className="flex items-center">
                 <Link
-                  href=""
-                  className="text-white text-[18px]"
+                  href="/contact"
+                  className="text-white text-[15px] 2xl:text-[18px]"
                   data-hover="LIÊN HỆ"
                 >
                   LIÊN HỆ
