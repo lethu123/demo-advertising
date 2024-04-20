@@ -37,7 +37,7 @@ const Contact = () => {
                     <div className='relative md:pt-8 pb-16'>
                         <Image className='absolute top-[110px] -left-[250px]' alt='' width={200} src={slash} />
                         <div className=''>
-                            <h1 className='text-center lg:text-left font-icie_medium text-xl md:text-[40px] lg:text-[50px] mt-5 text-[#534741] tracking-[0.5rem]'>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+                            <h1 className='text-center lg:text-left font-icie_medium text-xl md:text-[40px] lg:text-[45px] mt-5 text-[#534741] tracking-[0.5rem]'>LIÊN HỆ VỚI CHÚNG TÔI</h1>
                             <div className='mt-10'>
                                 <p className='mb-5 text-xl md:text-[36px] leading-9 text-[#534741]'>Với NHIỆT HUYẾT và sức SÁNG TẠO. Chúng tôi luôn luôn hoàn thiện những ý tưởng, dự án hoặc giải pháp cho hhách hàng của mình. </p>
                                 <p className='mb-5 text-xl md:text-[36px] leading-9 text-[#534741]'>
