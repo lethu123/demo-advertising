@@ -214,6 +214,7 @@ body.light-mode {
 
 .menu-footer {
   transition: transform 250ms ease-in-out;
+  margin-bottom: 10px;
   &:hover {
     transform: translateX(10px);
     color: #fe9d2b;

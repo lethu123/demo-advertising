@@ -39,6 +39,7 @@ import sp20 from "@assets/images/sp4.png";
 import sp21 from "@assets/images/i4.png";
 import sp22 from "@assets/images/i4.2.png";
 import sp23 from "@assets/images/sp4.3.png";
+import FooterComponentV2 from "../home/FooterComponentV2";
 
 const CommercialPrintPublishing = () => {
   return (
@@ -321,7 +322,7 @@ const CommercialPrintPublishing = () => {
           <Image alt="" src={threeSlash4} />
         </div>
       </div>
-      <FooterComponent />
+      <FooterComponentV2 />
     </Screen>
   );
 };

@@ -10,6 +10,7 @@ import React from 'react'
 import sloganIcon from '@assets/images/iconSlogon2.png'
 import slash from '@assets/images/slash-dark.png'
 import FooterComponent from '@/components/home/FooterComponent'
+import FooterComponentV2 from '@/components/home/FooterComponentV2'
 
 const Contact = () => {
     return (
@@ -32,35 +33,35 @@ const Contact = () => {
                     </div >
                 </div>
 
-                <Container>
+                <div className="w-full xl:w-2/4 max-w-screen-lg justify-center mx-auto px-4 xl:px-0">
                     <div className='relative md:pt-8 pb-16'>
                         <Image className='absolute top-[110px] -left-[250px]' alt='' width={200} src={slash} />
                         <div className=''>
                             <h1 className='text-center lg:text-left font-icie_medium text-xl md:text-[40px] lg:text-[50px] mt-5 text-[#534741] tracking-[0.5rem]'>LIÊN HỆ VỚI CHÚNG TÔI</h1>
-                            <div className='mt-8'>
-                                <p className='mb-2 text-[#534741]'>Với NHIỆT HUYẾT và sứ SÁNG TẠO. Chúng tôi luôn luôn hoàn thiện những ý tưởng, dự án hoặc giải pháp cho hhách hàng của mình. </p>
-                                <p className='mb-2 text-[#534741]'>
+                            <div className='mt-10'>
+                                <p className='mb-5 text-xl md:text-[36px] leading-9 text-[#534741]'>Với NHIỆT HUYẾT và sức SÁNG TẠO. Chúng tôi luôn luôn hoàn thiện những ý tưởng, dự án hoặc giải pháp cho hhách hàng của mình. </p>
+                                <p className='mb-5 text-xl md:text-[36px] leading-9 text-[#534741]'>
                                     Chúng tôi có trụ sở tại thành phố Hồ Chí Minh, nhưng luôn chăm sóc khách hàng chuyên nghiệp trên cả nước.
                                 </p>
-                                <p className='mb-2 text-[#534741]'>info@maipt.com</p>
-                                <p className='mb-2 text-[#534741]'>(+84) 28 2240 651</p>
+                                <p className='mb-5 text-xl md:text-[36px] leading-9 text-[#534741]'>info@maipt.com</p>
+                                <p className='mb-5 text-xl md:text-[36px] leading-9 text-[#534741]'>(+84) 28 2240 651</p>
                             </div>
                         </div>
-                        <div className='grid grid-cols-3 xl:grid-cols-2 items-center mt-10'>
+                        <div className='grid grid-cols-3 lg:flex gap-8 items-center mt-10'>
 
-                            <div className='col-span-3 md:col-span-1 pb-5 text-center md:text-right md:pr-10'>
+                            <div className='col-span-3 md:col-span-1 pb-5 '>
                                 <h1 className='hidden sm:max-md:block font-icie_medium  text-lg text-[#534741] tracking-[0.25rem] text-center'>HIỆU QUẢ - TIẾT KIỆM - SÁNG TẠO</h1>
 
                                 <div className='sm:hidden md:block'>
-                                    <h1 className='font-icie_medium md:text-xl lg:leading-[3.5rem] lg:text-[37px] xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]'>HIỆU QUẢ </h1>
-                                    <h1 className='font-icie_medium md:text-xl lg:leading-[3.5rem] lg:text-[37px] xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]'>TIẾT KIỆM  </h1>
-                                    <h1 className='font-icie_medium md:text-xl lg:leading-[3.5rem] lg:text-[37px] xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]'>SÁNG TẠO</h1>
+                                    <h1 className='font-icie_medium md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]'>HIỆU QUẢ </h1>
+                                    <h1 className='font-icie_medium md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]'>TIẾT KIỆM  </h1>
+                                    <h1 className='font-icie_medium md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]'>SÁNG TẠO</h1>
                                 </div>
                             </div>
-                            <div className='col-span-3 md:col-span-2 xl:col-span-1'>
+                            <div className='col-span-3 flex-1 md:col-span-2 xl:col-span-1'>
                                 <form onSubmit={e => {
                                     e.preventDefault()
-                                }} className='p-5 md:p-12 bg-white rounded-[30px] form-contact-us'>
+                                }} className='p-5 lg:p-12   2xl:p-12 bg-white rounded-[30px] form-contact-us'>
                                     <div className='form-group mb-3'>
                                         <label>Tên của bạn (Bắt buộc)</label>
                                         <input required className='w-full rounded-[8px] py-1 mt-1' />
@@ -84,9 +85,13 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                </Container>
+                </div>
             </div>
-            <FooterComponent />
+            <div
+                className={`bg-banner-news h-[400px] md:h-[500px] flex items-end lg:h-lvh 3xl:max-h-[900px] rounded`}
+            >
+            </div>
+            <FooterComponentV2 />
 
         </Screen>
     )

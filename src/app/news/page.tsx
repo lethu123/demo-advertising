@@ -30,6 +30,7 @@ import sp13 from '@assets/images/nc2.png';
 import sp14 from '@assets/images/nc2.2.png';
 import sp15 from '@assets/images/nc2.3.png';
 import sp16 from '@assets/images/nc2.4.png';
+import FooterComponentV2 from '@/components/home/FooterComponentV2'
 
 
 const News = () => {
@@ -110,7 +111,7 @@ const News = () => {
                 className={`bg-banner-news h-[400px] md:h-[500px] flex items-end lg:h-lvh 3xl:max-h-[900px] rounded`}
             >
             </div>
-            <FooterComponent />
+            <FooterComponentV2 />
 
         </Screen>
     )

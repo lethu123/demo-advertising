@@ -31,6 +31,7 @@ import sp13 from '@assets/images/stic2.png';
 import sp14 from '@assets/images/stic2.2.png';
 import sp15 from '@assets/images/stic2.3.png';
 import sp16 from '@assets/images/stic2.4.png';
+import FooterComponentV2 from "../home/FooterComponentV2";
 
 
 const Calandar = () => {
@@ -123,7 +124,7 @@ const Calandar = () => {
                     </Container>
                 </div>
             </div>
-            <FooterComponent />
+            <FooterComponentV2 />
         </Screen>
     );
 };

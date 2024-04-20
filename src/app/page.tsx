@@ -9,6 +9,7 @@ import AboutUsComponent from "@/components/home/AboutUsComponent";
 import ProductComponent from "@/components/home/ProductComponent";
 import EventComponent from "@/components/home/EventComponent";
 import ContactComponent from "@/components/home/ContactComponent";
+import FooterComponentV2 from "@/components/home/FooterComponentV2";
 export default function Home() {
   return (
     <Screen>
@@ -27,7 +28,7 @@ export default function Home() {
       {/* contact  */}
       <ContactComponent />
       {/* footer */}
-      <FooterComponent />
+      <FooterComponentV2 />
     </Screen>
 
   );

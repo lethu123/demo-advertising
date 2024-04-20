@@ -31,6 +31,7 @@ import sp16 from "@assets/images/bb4.png";
 import sp17 from "@assets/images/bb4.2.png";
 import sp18 from "@assets/images/bb4.3.png";
 import sp19 from "@assets/images/bb4.4.png";
+import FooterComponentV2 from "../home/FooterComponentV2";
 
 const ProductionDesign = () => {
   return (
@@ -252,7 +253,7 @@ const ProductionDesign = () => {
           </div>
         </Container>
       </div>
-      <FooterComponent />
+      <FooterComponentV2 />
     </Screen>
   );
 };

@@ -31,6 +31,7 @@ import sp15 from "@assets/images/qc3.4.png";
 import sp16 from "@assets/images/qc3.5.png";
 import sp17 from "@assets/images/qc3.6.png";
 import sp18 from "@assets/images/qc3.7.png";
+import FooterComponentV2 from "../home/FooterComponentV2";
 
 const ProductDisplayDesign = () => {
   return (
@@ -266,7 +267,7 @@ const ProductDisplayDesign = () => {
           </p>
         </Container>
       </div>
-      <FooterComponent />
+      <FooterComponentV2 />
     </Screen>
   );
 };

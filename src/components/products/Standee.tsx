@@ -34,6 +34,7 @@ import sp13 from '@assets/images/sb2.png';
 import sp14 from '@assets/images/sb2.2.png';
 import sp15 from '@assets/images/sb2.3.png';
 import sp16 from '@assets/images/sb2.4.png';
+import FooterComponentV2 from "../home/FooterComponentV2";
 
 
 const Standee = () => {
@@ -126,7 +127,7 @@ const Standee = () => {
                     </Container>
                 </div>
             </div>
-            <FooterComponent />
+            <FooterComponentV2 />
         </Screen>
     );
 };
