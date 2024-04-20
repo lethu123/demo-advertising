@@ -12,21 +12,21 @@ const FooterComponentV2 = () => {
       <Container>
         <div className='flex gap-10 flex-wrap md:flex-nowrap xl:gap-0 xl:justify-between'>
           <div>
-            <h1 className=" text-[#534741] uppercase text-xl font-extrabold font-avo_bold lg:text-[25px] xl:text-[22px] 3xl:text-[30.31px] mb-2">Công ty TNHH Quảng Cáo và  Phát Triển M.A.I</h1>
-            <h3 className='text-xl lg:text-[23px] xl:text-[20px] 3xl:text-[28px] font-avo text-white'>M.A.I Development And Advertising Company Limited</h3>
+            <h1 className=" text-[#534741] uppercase text-xl font-extrabold font-avo_bold lg:text-[25px] xl:text-[22px] 2xl:text-[30px] mb-2">Công ty TNHH Quảng Cáo và  Phát Triển M.A.I</h1>
+            <h3 className='text-xl lg:text-[23px] xl:text-[20px] 2xl:text-[29px] font-avo text-white'>M.A.I Development And Advertising Company Limited</h3>
             <div className='mt-5'>
               <div className="flex  text-[#534741] gap-2 items-start mb-1">
                 <IconLocation color='#534741' className='w-[15px] custom-icon-show mt-1' />
-                <span className='text-[18px] 2xl:text-[23px] font-avo flex-1'>60 Đào Duy Anh, Phường 9, Q. Phú Nhuận, TP HCM</span>
+                <span className='text-[18px] 2xl:text-[25px] font-avo flex-1'>60 Đào Duy Anh, Phường 9, Quận Phú Nhuận, TP Hồ Chí Minh</span>
               </div>
               <div className="flex flex-wrap gap-10 lg:gap-0 lg:justify-between">
                 <div className="flex text-[#534741] gap-2">
                   <IconPhone color='#534741' className='w-[15px] custom-icon-show' />
 
-                  <span className='text-[18px] 2xl:text-[23px] font-avo'>  (+84) 28 2240 6511 </span>
+                  <span className='text-[18px] 2xl:text-[25px] font-avo'>  (+84) 28 2240 6511 </span>
                 </div>
                 <div>
-                  <span className="text-[#534741] 2xl:text-[23px] text-[18px] font-avo">Hotline 0902 668 246</span>
+                  <span className="text-[#534741] 2xl:text-[25px] text-[18px] font-avo">Hotline 0902 668 246</span>
                 </div>
               </div>
             </div>
