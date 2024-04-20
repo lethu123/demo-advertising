@@ -1,8 +1,7 @@
 'use client'
 import Screen from "@commons/Screen";
 import HeaderComponent from "@components/home/HeaderComponent";
-import BannerComponent from "@srccomponents/home/BannerComponent";
-import FooterComponent from "@srccomponents/home/FooterComponent";
+import BannerComponent from "@srccomponents/home/BannerComponent"; 
 import CoperatorComponent from "@srccomponents/home/CoperatorComponent";
 import SloganComponent from "@/components/home/SloganComponent";
 import AboutUsComponent from "@/components/home/AboutUsComponent";

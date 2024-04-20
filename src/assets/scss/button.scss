@@ -1,0 +1,60 @@
+ /* 
+  ========================
+        BUTTON THREE
+  ========================
+  */
+ .btn-three {
+     color: white;
+     transition: all 0.5s;
+     position: relative;
+     text-transform: uppercase;
+     text-align: center;
+     padding: 10px 30px;
+     cursor: pointer;
+     z-index: 0;
+     border-radius: 40px;
+ }
+
+ .btn-three::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     background-color: #ffcd00;
+     transition: all 0.3s;
+     z-index: -1;
+     border-radius: 40px;
+ }
+
+ .btn-three:hover::before {
+     opacity: 0;
+     transform: scale(0.5, 0.5);
+ }
+
+ .btn-three::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     opacity: 0;
+     transition: all 0.3s;
+     border: 1px solid #ffcd00;
+     transform: scale(1.2, 1.2);
+     border-radius: 40px;
+ }
+
+ .btn-three:hover {
+     color: #2E3A40;
+
+     &::after {
+         opacity: 1;
+         transform: scale(1, 1);
+
+     }
+ }

@@ -79,7 +79,9 @@ const Contact = () => {
                                         <textarea required className='w-full rounded-[8px] py-1 mt-1' rows={3} />
                                     </div>
                                     <div className='flex justify-center mt-10'>
-                                        <button style={{ color: 'white' }} className='view-more text-sm md:text-[23.47px] tracking-[0.25rem]'>GỬI</button>
+                                        <button style={{ color: 'white' }} className="btn btn-three text-sm md:text-[23.47px] tracking-[0.25rem]">
+                                            <span>GỬI</span>
+                                        </button> 
                                     </div>
                                 </form>
                             </div>

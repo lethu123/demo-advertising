@@ -41,7 +41,9 @@ const ContactComponent = () => {
                                 </div>
                             </div>
                             <div className='text-center mt-7'>
-                                <button className='view-more' style={{ padding: '5px 40px' }}>GỬI</button>
+                                <button style={{ padding: '5px 40px' }} className="btn btn-three text-sm md:text-[23.47px] tracking-[0.25rem]">
+                                    <span>GỬI</span>
+                                </button>
                             </div>
                         </form>
                     </div>
