@@ -4,17 +4,12 @@ import Container from "@/commons/Container";
 import Screen from "@/commons/Screen";
 import HeaderComponent from "@/components/home/HeaderComponent";
 import Image from "next/image";
-import React from "react";
-import FooterComponent from "@/components/home/FooterComponent";
-import sloganIcon from "@assets/images/icon1.svg";
+import React from "react"; 
 import BannerSingle from "@/components/home/BannerSingle";
 
 import styles from "@assets/scss/home.module.scss";
 
-import design7 from "@assets/images/design7@2x.png";
 import threeSlash3 from "@assets/images/three-slash3.svg";
-import design5 from '@assets/images/design5@2x.png'
-import design6 from '@assets/images/design6@2x.png'
 import threeSlash from '@assets/images/three-slash.svg'
 
 import sp1 from '@assets/images/bt1.png';
@@ -45,7 +40,7 @@ const Standee = () => {
             <BannerSingle
                 idScreen="bang-ten-chuc-danh"
                 classImage={"bg-banner-product2"}
-            /> 
+            />
             <div className="mt-12">
                 <h3 className='text-center uppercase text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]'>Bảng tên chức danh, menu (mica)</h3>
             </div>
@@ -87,7 +82,7 @@ const Standee = () => {
                 </Container>
             </div>
             <div id="standee-backrop-pp-hiflex"></div>
-            <div className='my-[6.5rem]'> 
+            <div className='my-[6.5rem]'>
 
                 <div className="overflow-hidden">
                     <Container>

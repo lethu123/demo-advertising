@@ -6,8 +6,7 @@ import React from "react";
 
 import styles from "@assets/scss/home.module.scss";
 import design7 from "@assets/images/design7@2x.png";
-import threeSlash3 from "@assets/images/three-slash3.svg";
-import FooterComponent from "@/components/home/FooterComponent"; 
+import threeSlash3 from "@assets/images/three-slash3.svg"; 
 import sloganIcon from "@assets/images/icon1.svg";
 import BannerSingle from "@/components/home/BannerSingle";
 
