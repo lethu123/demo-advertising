@@ -1,9 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { IconLocation, IconPhone } from '@srccommons/icons'
 import styles from '@assets/scss/home.module.scss'
-import bct from '@assets/images/BCT.png'
 import Container from '@/commons/Container'
 
 const FooterComponentV2 = () => {
