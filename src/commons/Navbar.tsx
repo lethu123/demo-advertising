@@ -17,14 +17,14 @@ const Navbar = () => {
           <ul className="flex items-stretch gap-12 justify-between">
             <div className="flex items-center">
               <li>
-                <Link href="/" className=" text-[15px] 2xl:text-[18px]" data-hover="TRANG CHỦ">
+                <Link href="/" className=" text-[15px] 2xl:text-[20px]" data-hover="TRANG CHỦ">
                   TRANG CHỦ
                 </Link>
               </li>
             </div>
             <div className="menu flex items-center">
               <li className="flex items-center">
-                <h3 className=" text-[15px] 2xl:text-[18px] mr-2" data-hover="SẢN PHẨM">
+                <h3 className=" text-[15px] 2xl:text-[20px] mr-2" data-hover="SẢN PHẨM">
                   SẢN PHẨM{" "}
                 </h3>
                 <i
@@ -92,7 +92,7 @@ const Navbar = () => {
             </div>
             <div className="menu flex items-center">
               <li className="flex items-center">
-                <h3 className=" text-[15px] 2xl:text-[18px] mr-2" data-hover="DỊCH VỤ">
+                <h3 className=" text-[15px] 2xl:text-[20px] mr-2" data-hover="DỊCH VỤ">
                   DỊCH VỤ{" "}
                 </h3>
                 <i
@@ -151,7 +151,7 @@ const Navbar = () => {
               <li className="flex items-center">
                 <Link
                   href="/about-us"
-                  className=" text-[15px] 2xl:text-[18px]"
+                  className=" text-[15px] 2xl:text-[20px]"
                   data-hover="VỀ CHÚNG TÔI"
                 >
                   VỀ CHÚNG TÔI
@@ -160,14 +160,14 @@ const Navbar = () => {
             </div>
             <div className="flex items-center">
               <li className="flex items-center">
-                <Link href="/news" className=" text-[15px] 2xl:text-[18px]" data-hover="TIN TỨC">
+                <Link href="/news" className=" text-[15px] 2xl:text-[20px]" data-hover="TIN TỨC">
                   TIN TỨC
                 </Link>
               </li>
             </div>
             <div className="flex items-center">
               <li className="flex items-center">
-                <Link href="/contact" className=" text-[15px] 2xl:text-[18px]" data-hover="LIÊN HỆ">
+                <Link href="/contact" className=" text-[15px] 2xl:text-[20px]" data-hover="LIÊN HỆ">
                   LIÊN HỆ
                 </Link>
               </li>

@@ -37,7 +37,7 @@ const Header2Component = () => {
               <li>
                 <Link
                   href="/"
-                  className="text-white text-[15px] 2xl:text-[18px]"
+                  className="text-white text-[15px] 2xl:text-[20px]"
                   data-hover="TRANG CHỦ"
                 >
                   TRANG CHỦ
@@ -47,7 +47,7 @@ const Header2Component = () => {
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className="text-white text-[15px] 2xl:text-[18px] mr-2"
+                  className="text-white text-[15px] 2xl:text-[20px] mr-2"
                   data-hover="SẢN PHẨM"
                 >
                   SẢN PHẨM{" "}
@@ -118,7 +118,7 @@ const Header2Component = () => {
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className="text-white text-[15px] 2xl:text-[18px] mr-2"
+                  className="text-white text-[15px] 2xl:text-[20px] mr-2"
                   data-hover="DỊCH VỤ"
                 >
                   DỊCH VỤ{" "}
@@ -179,7 +179,7 @@ const Header2Component = () => {
               <li className="flex items-center">
                 <Link
                   href="/about-us"
-                  className="text-white text-[15px] 2xl:text-[18px]"
+                  className="text-white text-[15px] 2xl:text-[20px]"
                   data-hover="VỀ CHÚNG TÔI"
                 >
                   VỀ CHÚNG TÔI
@@ -190,7 +190,7 @@ const Header2Component = () => {
               <li className="flex items-center">
                 <Link
                   href="/news"
-                  className="text-white text-[15px] 2xl:text-[18px]"
+                  className="text-white text-[15px] 2xl:text-[20px]"
                   data-hover="TIN TỨC"
                 >
                   TIN TỨC
@@ -201,7 +201,7 @@ const Header2Component = () => {
               <li className="flex items-center">
                 <Link
                   href="/contact"
-                  className="text-white text-[15px] 2xl:text-[18px]"
+                  className="text-white text-[15px] 2xl:text-[20px]"
                   data-hover="LIÊN HỆ"
                 >
                   LIÊN HỆ
