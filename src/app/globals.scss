@@ -216,3 +216,20 @@ body.light-mode {
     color: #fe9d2b;
   }
 }
+
+.form-group {
+  input,
+  textarea {
+    background: #ffcd0085;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input {
+    height: 50px;
+  }
+}
