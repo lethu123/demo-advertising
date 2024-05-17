@@ -170,13 +170,13 @@ const ContactComponent = () => {
           </form>
         </div>
 
-        <iframe
+        {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7836.521263707445!2d106.54401639357908!3d10.867770499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b93635e7d83%3A0x7784b185f7215232!2zTmjDoCBpbiBExrDGoW5nIFBob25n!5e0!3m2!1svi!2s!4v1709973614919!5m2!1svi!2s"
           className="w-full max-w-full pb-10 h-lvh"
           style={{ border: 0 }}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        ></iframe> */}
       </Container>
     </div>
   );
