@@ -1,34 +1,30 @@
 "use client";
 
-import React, { useEffect } from "react";
-import Container from "@srccommons/Container";
+import React from "react"; 
 import Image from "next/image";
-import Link from "next/link";
-import styles from "@assets/scss/home.module.scss";
+import Link from "next/link"; 
 import logo from "@assets/images/logo.svg";
-import "@assets/scss/home.scss";
-import { usePathname } from "next/navigation";
+import "@assets/scss/home.scss"; 
 import MenuMobile from "@/commons/MenuMobile";
 
-const Navbar = () => {
-  const path = usePathname();
+const Navbar = () => { 
 
   return (
     <div className="sticky top-0 bg-white z-30 shadow">
-      <div className="w-full xl:w-3/4 max-w-screen-xl relative justify-center mx-auto px-4 xl:px-0 banner-single">
+      <div className="w-full xl:w-4/5 max-w-screen-2xl relative justify-center mx-auto px-4 xl:px-0 banner-single">
         <MenuMobile />
         <div className="hidden lg:block ">
           <ul className="flex items-stretch gap-12 justify-between">
             <div className="flex items-center">
               <li>
-                <Link href="/" className="  text-[18px]" data-hover="TRANG CHỦ">
+                <Link href="/" className=" text-[15px] 2xl:text-[20px]" data-hover="TRANG CHỦ">
                   TRANG CHỦ
                 </Link>
               </li>
             </div>
             <div className="menu flex items-center">
               <li className="flex items-center">
-                <h3 className="  text-[18px] mr-2" data-hover="SẢN PHẨM">
+                <h3 className=" text-[15px] 2xl:text-[20px] mr-2" data-hover="SẢN PHẨM">
                   SẢN PHẨM{" "}
                 </h3>
                 <i
@@ -43,7 +39,15 @@ const Navbar = () => {
                     <div className=" divide-x divide-gray-900/5   ">
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/so-tay"
+                          className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
+                        >
+                          Sổ tay
+                        </Link>
+                      </div>
+                      <div className="hover:bg-gray-100 px-3">
+                        <Link
+                          href="/products/name-card"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Name card
@@ -51,7 +55,7 @@ const Navbar = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/lich"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Lịch
@@ -59,7 +63,7 @@ const Navbar = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/sticker"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Sticker
@@ -67,7 +71,7 @@ const Navbar = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/bang-ten-chuc-danh"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Bảng tên chức danh, menu (mica)
@@ -75,7 +79,7 @@ const Navbar = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/standee-backrop-pp-hiflex"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Standee, backrop (PP, hiflex)
@@ -88,7 +92,7 @@ const Navbar = () => {
             </div>
             <div className="menu flex items-center">
               <li className="flex items-center">
-                <h3 className=" text-[18px] mr-2" data-hover="DỊCH VỤ">
+                <h3 className=" text-[15px] 2xl:text-[20px] mr-2" data-hover="DỊCH VỤ">
                   DỊCH VỤ{" "}
                 </h3>
                 <i
@@ -123,7 +127,7 @@ const Navbar = () => {
                           href="/services/in-thuong-mai-xuat-ban-an-pham"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          In thương mại, xuất bản ấn phẩm
+                          In thương mại, xuất bản phẩm
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">
@@ -146,8 +150,8 @@ const Navbar = () => {
             <div className="flex items-center">
               <li className="flex items-center">
                 <Link
-                  href=""
-                  className=" text-[18px]"
+                  href="/about-us"
+                  className=" text-[15px] 2xl:text-[20px]"
                   data-hover="VỀ CHÚNG TÔI"
                 >
                   VỀ CHÚNG TÔI
@@ -156,14 +160,14 @@ const Navbar = () => {
             </div>
             <div className="flex items-center">
               <li className="flex items-center">
-                <Link href="" className=" text-[18px]" data-hover="TIN TỨC">
+                <Link href="/news" className=" text-[15px] 2xl:text-[20px]" data-hover="TIN TỨC">
                   TIN TỨC
                 </Link>
               </li>
             </div>
             <div className="flex items-center">
               <li className="flex items-center">
-                <Link href="" className=" text-[18px]" data-hover="LIÊN HỆ">
+                <Link href="/contact" className=" text-[15px] 2xl:text-[20px]" data-hover="LIÊN HỆ">
                   LIÊN HỆ
                 </Link>
               </li>

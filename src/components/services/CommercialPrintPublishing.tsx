@@ -5,16 +5,11 @@ import Image from "next/image";
 import React from "react";
 
 import styles from "@assets/scss/home.module.scss";
-import design4 from "@assets/images/design4@2x.png";
-import design5 from "@assets/images/design5@2x.png";
-import design6 from "@assets/images/design6@2x.png";
 import design7 from "@assets/images/design7@2x.png";
 import threeSlash3 from "@assets/images/three-slash3.svg";
 import threeSlash4 from "@assets/images/slash4.svg";
 
 import FooterComponent from "@/components/home/FooterComponent";
-import Header2Component from "@/components/home/Header2Component";
-import homecss from "@assets/scss/home.module.scss";
 import sloganIcon from "@assets/images/icon1.svg";
 import BannerSingle from "@/components/home/BannerSingle";
 
@@ -44,6 +39,7 @@ import sp20 from "@assets/images/sp4.png";
 import sp21 from "@assets/images/i4.png";
 import sp22 from "@assets/images/i4.2.png";
 import sp23 from "@assets/images/sp4.3.png";
+import FooterComponentV2 from "../home/FooterComponentV2";
 
 const CommercialPrintPublishing = () => {
   return (
@@ -102,7 +98,7 @@ const CommercialPrintPublishing = () => {
               </div>
               <div className="col-span-2 flex justify-center items-center">
                 <div className="flex items-center gap-5">
-                  <p className="w-[27px] h-[27px] bg-[#F2792C] rounded-full"></p>
+                  <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
                     In ấn sách
                   </p>
@@ -143,7 +139,7 @@ const CommercialPrintPublishing = () => {
 
               <div className="col-span-2 flex ms-10 items-center">
                 <div className="flex items-center gap-5">
-                  <p className="w-[27px] h-[27px] bg-[#F2792C] rounded-full"></p>
+                  <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
                     Sản xuất lịch
                   </p>
@@ -326,7 +322,7 @@ const CommercialPrintPublishing = () => {
           <Image alt="" src={threeSlash4} />
         </div>
       </div>
-      <FooterComponent />
+      <FooterComponentV2 />
     </Screen>
   );
 };

@@ -69,8 +69,11 @@ body.light-mode {
   background-image: url(../assets/images/background.png);
 }
 
-.text-orange {
+.text-orange1 {
   color: #ffcd00;
+}
+.text-orange {
+  color: #2e3a40;
 }
 
 .custom-text-mode {
@@ -211,9 +214,10 @@ body.light-mode {
 
 .menu-footer {
   transition: transform 250ms ease-in-out;
+  margin-bottom: 10px;
   &:hover {
     transform: translateX(10px);
-    color: #fe9d2b;
+    color: white;
   }
 }
 

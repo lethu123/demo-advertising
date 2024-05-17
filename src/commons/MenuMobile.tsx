@@ -14,6 +14,10 @@ const menu = [
     path: "/",
     subMenu: [
       {
+        title: "Sổ tay",
+        path: "/",
+      },
+      {
         title: "Name card",
         path: "/",
       },
@@ -48,7 +52,7 @@ const menu = [
         path: "/services/thiet-ke-trung-bay-quang-cao",
       },
       {
-        title: "In thương mại, xuất bản ấn phẩm",
+        title: "In thương mại, xuất bản phẩm",
         path: "/services/in-thuong-mai-xuat-ban-an-pham",
       },
       {
@@ -59,15 +63,15 @@ const menu = [
   },
   {
     title: "Về chúng tôi",
-    path: "/",
+    path: "/about-us",
   },
   {
     title: "Tin tức",
-    path: "/",
+    path: "/news",
   },
   {
     title: " Liên hệ",
-    path: "/",
+    path: "/contact",
   },
 ];
 const MenuMobile = () => {
@@ -94,7 +98,7 @@ const MenuMobile = () => {
           }}
         >
           <span className="sr-only">Open main menu</span>
-          <i className="fa fa-bars"></i>
+          <i className="fa fa-bars text-white"></i>
         </button>
       </nav>
       <div

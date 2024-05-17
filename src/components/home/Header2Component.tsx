@@ -26,11 +26,10 @@ const Header2Component = () => {
 
   return (
     <div
-      className={`top-0 z-40 w-full   ${
-        !scrolled ? "absolute   unsticky-header" : "sticky-header shadow"
-      }`}
+      className={`top-0 z-40 w-full   ${!scrolled ? "absolute   unsticky-header" : "sticky-header shadow"
+        }`}
     >
-      <div className="w-full xl:w-3/4 max-w-screen-xl relative justify-center mx-auto px-4 xl:px-0">
+      <div className="w-full xl:w-4/5 max-w-screen-2xl relative justify-center mx-auto px-4 xl:px-0">
         <MenuMobile />
         <div className="hidden lg:block ">
           <ul className="flex items-stretch gap-12 justify-between">
@@ -38,7 +37,7 @@ const Header2Component = () => {
               <li>
                 <Link
                   href="/"
-                  className="text-white text-[18px]"
+                  className="text-white text-[15px] 2xl:text-[20px]"
                   data-hover="TRANG CHỦ"
                 >
                   TRANG CHỦ
@@ -48,7 +47,7 @@ const Header2Component = () => {
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className="text-white text-[18px] mr-2"
+                  className="text-white text-[15px] 2xl:text-[20px] mr-2"
                   data-hover="SẢN PHẨM"
                 >
                   SẢN PHẨM{" "}
@@ -65,7 +64,15 @@ const Header2Component = () => {
                     <div className=" divide-x divide-gray-900/5   ">
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/so-tay"
+                          className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
+                        >
+                          Sổ tay
+                        </Link>
+                      </div>
+                      <div className="hover:bg-gray-100 px-3">
+                        <Link
+                          href="/products/name-card"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Name card
@@ -73,7 +80,7 @@ const Header2Component = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/lich"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Lịch
@@ -81,7 +88,7 @@ const Header2Component = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/sticker"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Sticker
@@ -89,7 +96,7 @@ const Header2Component = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/bang-ten-chuc-danh"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Bảng tên chức danh, menu (mica)
@@ -97,7 +104,7 @@ const Header2Component = () => {
                       </div>
                       <div className="hover:bg-gray-100 px-3">
                         <Link
-                          href="#"
+                          href="/products/standee-backrop-pp-hiflex"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Standee, backrop (PP, hiflex)
@@ -111,7 +118,7 @@ const Header2Component = () => {
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className="text-white text-[18px] mr-2"
+                  className="text-white text-[15px] 2xl:text-[20px] mr-2"
                   data-hover="DỊCH VỤ"
                 >
                   DỊCH VỤ{" "}
@@ -148,7 +155,7 @@ const Header2Component = () => {
                           href="/services/in-thuong-mai-xuat-ban-an-pham"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          In thương mại, xuất bản ấn phẩm
+                          In thương mại, xuất bản phẩm
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">
@@ -171,8 +178,8 @@ const Header2Component = () => {
             <div className="flex items-center">
               <li className="flex items-center">
                 <Link
-                  href=""
-                  className="text-white text-[18px]"
+                  href="/about-us"
+                  className="text-white text-[15px] 2xl:text-[20px]"
                   data-hover="VỀ CHÚNG TÔI"
                 >
                   VỀ CHÚNG TÔI
@@ -182,8 +189,8 @@ const Header2Component = () => {
             <div className="flex items-center">
               <li className="flex items-center">
                 <Link
-                  href=""
-                  className="text-white text-[18px]"
+                  href="/news"
+                  className="text-white text-[15px] 2xl:text-[20px]"
                   data-hover="TIN TỨC"
                 >
                   TIN TỨC
@@ -193,8 +200,8 @@ const Header2Component = () => {
             <div className="flex items-center">
               <li className="flex items-center">
                 <Link
-                  href=""
-                  className="text-white text-[18px]"
+                  href="/contact"
+                  className="text-white text-[15px] 2xl:text-[20px]"
                   data-hover="LIÊN HỆ"
                 >
                   LIÊN HỆ

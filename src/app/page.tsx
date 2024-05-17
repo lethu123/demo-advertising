@@ -1,14 +1,14 @@
 'use client'
 import Screen from "@commons/Screen";
 import HeaderComponent from "@components/home/HeaderComponent";
-import BannerComponent from "@srccomponents/home/BannerComponent";
-import FooterComponent from "@srccomponents/home/FooterComponent";
+import BannerComponent from "@srccomponents/home/BannerComponent"; 
 import CoperatorComponent from "@srccomponents/home/CoperatorComponent";
 import SloganComponent from "@/components/home/SloganComponent";
 import AboutUsComponent from "@/components/home/AboutUsComponent";
 import ProductComponent from "@/components/home/ProductComponent";
 import EventComponent from "@/components/home/EventComponent";
 import ContactComponent from "@/components/home/ContactComponent";
+import FooterComponentV2 from "@/components/home/FooterComponentV2";
 export default function Home() {
   return (
     <Screen>
@@ -27,7 +27,7 @@ export default function Home() {
       {/* contact  */}
       <ContactComponent />
       {/* footer */}
-      <FooterComponent />
+      <FooterComponentV2 />
     </Screen>
 
   );
