@@ -139,7 +139,7 @@ const Header2Component = () => {
                           href="/services/thiet-ke-san-xuat-bao-bi-giay"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Thiết kế sản xuất bao bì giấy
+                          Thiết kế & sản xuất bao bì
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">

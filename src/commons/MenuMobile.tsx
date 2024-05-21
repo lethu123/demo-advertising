@@ -44,7 +44,7 @@ const menu = [
     path: "/",
     subMenu: [
       {
-        title: "Thiết kế sản xuất bao bì giấy",
+        title: "Thiết kế & sản xuất bao bì",
         path: "/services/thiet-ke-san-xuat-bao-bi-giay",
       },
       {

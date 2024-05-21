@@ -89,7 +89,7 @@ const FooterComponentV2 = () => {
               <ul className={`${styles.ul} mt-3 text-[#534741]`}>
                 <li className=' flex gap-2 menu-footer'>
 
-                  <Link href={'/services/thiet-ke-san-xuat-bao-bi-giay'} >Thiết kế sản xuất bao bì giấy</Link>
+                  <Link href={'/services/thiet-ke-san-xuat-bao-bi-giay'} >Thiết kế & sản xuất bao bì</Link>
                 </li>
                 <li className=' flex gap-2 menu-footer'>
 

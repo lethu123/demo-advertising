@@ -42,7 +42,7 @@ const ProductComponent = () => {
                                 SẢN PHẨM CỦA CHÚNG TÔI
                             </h1>
                         </div>
-                        <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>THIẾT KẾ SẢN XUẤT BAO BÌ GIẤY</h3>
+                        <h3 className='text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>THIẾT KẾ & SẢN XUẤT BAO BÌ</h3>
                         <div className='grid grid-cols-2 gap-10'>
                             <div className='col-span-2 md:col-span-1'>
                                 <p className='text-[18px] mb-3 md:mt-4'>Thay vì sử dụng các túi nhựa khó phân hủy, gây ô nhiễm đến môi trường toàn cầu thì người tiêu dùng hiện nay đang có xu hướng chuyển qua dùng các túi làm bằng giấy, vừa bảo vệ được cảnh quan sống .</p>
