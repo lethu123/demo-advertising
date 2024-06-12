@@ -55,7 +55,7 @@ const ContactComponent = () => {
             </h3>
             <div className="grid grid-cols-2 mt-3 lg:gap-10">
               <div className="col-span-2 lg:col-span-1">
-                <div className=" flex items-center mb-3">
+                {/* <div className=" flex items-center mb-3">
                   <input
                     className="h-[20px] w-[20px] me-2"
                     id="c-name-card"
@@ -64,7 +64,7 @@ const ContactComponent = () => {
                     value="yes"
                   />
                   <label htmlFor="c-name-card">Name Card</label>
-                </div>
+                </div> */}
                 <div className=" flex items-center mb-3">
                   <input
                     className="h-[20px] w-[20px] me-2"
@@ -75,7 +75,7 @@ const ContactComponent = () => {
                   />
                   <label htmlFor="c-schadule">Lịch</label>
                 </div>
-                <div className=" flex items-center mb-3">
+                {/* <div className=" flex items-center mb-3">
                   <input
                     className="h-[20px] w-[20px] me-2"
                     id="c-sticker"
@@ -96,7 +96,7 @@ const ContactComponent = () => {
                   <label htmlFor="c-bang-ten">
                     Bảng tên, chức danh, menu (mica)
                   </label>
-                </div>
+                </div> */}
                 <div className=" flex items-center mb-3">
                   <input
                     className="h-[20px] w-[20px] me-2"
@@ -107,6 +107,18 @@ const ContactComponent = () => {
                   />
                   <label htmlFor="c-standee">
                     Standee, backrop (PP, hiflex)
+                  </label>
+                </div>
+                <div className=" flex items-center mb-3">
+                  <input
+                    className="h-[20px] w-[20px] me-2"
+                    id="c-design-pano"
+                    name="c-design-pano"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label htmlFor="c-design-pano">
+                    Thiết kế thi công pano, hộp đèn quảng cáo
                   </label>
                 </div>
               </div>
@@ -145,18 +157,6 @@ const ContactComponent = () => {
                   />
                   <label htmlFor="c-printing">
                     In thương mại, xuất bản ấn phẩm
-                  </label>
-                </div>
-                <div className=" flex items-center mb-3">
-                  <input
-                    className="h-[20px] w-[20px] me-2"
-                    id="c-design-pano"
-                    name="c-design-pano"
-                    type="checkbox"
-                    value="yes"
-                  />
-                  <label htmlFor="c-design-pano">
-                    Thiết kế thi công pano, hộp đèn quảng cáo
                   </label>
                 </div>
               </div>

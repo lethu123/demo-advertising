@@ -26,8 +26,9 @@ const Header2Component = () => {
 
   return (
     <div
-      className={`top-0 z-40 w-full   ${!scrolled ? "absolute   unsticky-header" : "sticky-header shadow"
-        }`}
+      className={`top-0 z-40 w-full   ${
+        !scrolled ? "absolute   unsticky-header" : "sticky-header shadow"
+      }`}
     >
       <div className="w-full xl:w-4/5 max-w-screen-2xl relative justify-center mx-auto px-4 xl:px-0">
         <MenuMobile />
@@ -70,14 +71,14 @@ const Header2Component = () => {
                           Sổ tay
                         </Link>
                       </div>
-                      <div className="hover:bg-gray-100 px-3">
+                      {/* <div className="hover:bg-gray-100 px-3">
                         <Link
                           href="/products/name-card"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
                           Name card
                         </Link>
-                      </div>
+                      </div> */}
                       <div className="hover:bg-gray-100 px-3">
                         <Link
                           href="/products/lich"
@@ -86,7 +87,7 @@ const Header2Component = () => {
                           Lịch
                         </Link>
                       </div>
-                      <div className="hover:bg-gray-100 px-3">
+                      {/* <div className="hover:bg-gray-100 px-3">
                         <Link
                           href="/products/sticker"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
@@ -101,7 +102,7 @@ const Header2Component = () => {
                         >
                           Bảng tên chức danh, menu (mica)
                         </Link>
-                      </div>
+                      </div> */}
                       <div className="hover:bg-gray-100 px-3">
                         <Link
                           href="/products/standee-backrop-pp-hiflex"

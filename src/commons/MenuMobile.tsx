@@ -17,22 +17,22 @@ const menu = [
         title: "Sổ tay",
         path: "/",
       },
-      {
-        title: "Name card",
-        path: "/",
-      },
+      // {
+      //   title: "Name card",
+      //   path: "/",
+      // },
       {
         title: "Lịch",
         path: "/",
       },
-      {
-        title: "Sticker",
-        path: "/",
-      },
-      {
-        title: "Bảng tên chức danh, menu (mica)",
-        path: "/",
-      },
+      // {
+      //   title: "Sticker",
+      //   path: "/",
+      // },
+      // {
+      //   title: "Bảng tên chức danh, menu (mica)",
+      //   path: "/",
+      // },
       {
         title: "Standee, backrop (PP, hiflex)",
         path: "/",

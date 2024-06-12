@@ -180,7 +180,7 @@ const CommercialPrintPublishing = () => {
           </div>
           <div className="relative mt-28">
             <p className="text-orange mb-2 text-center font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-              In báo, tạp chí
+              Xuất bản phẩm
             </p>
             <div className=" grid grid-cols-4 gap-1 items-stretch">
               <div className="col-span-2 sm:col-span-2 md:col-span-1">

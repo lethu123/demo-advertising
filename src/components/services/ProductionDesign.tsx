@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import styles from "@assets/scss/home.module.scss";
 import design6 from "@assets/images/design6@2x.png";
-import threeSlash3 from "@assets/images/three-slash3.svg"; 
+import threeSlash3 from "@assets/images/three-slash3.svg";
 import sloganIcon from "@assets/images/icon1.svg";
 import BannerSingle from "@/components/home/BannerSingle";
 import sp1 from "@assets/images/bb1.png";
@@ -51,7 +51,7 @@ const ProductionDesign = () => {
           src={sloganIcon}
         />
         <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
-          THIẾT KẾ & SẢN XUẤT <br className="md:hidden"/> BAO BÌ
+          THIẾT KẾ & SẢN XUẤT <br className="md:hidden" /> BAO BÌ
         </h3>
       </div>
 
@@ -91,9 +91,7 @@ const ProductionDesign = () => {
                 <div className="flex items-center gap-5">
                   <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-                    Túi giấy Couche, <br />
-                    Túi giấy Briston, <br />
-                    Túi giấy Ford,
+                    Túi giấy
                   </p>
                 </div>
               </div>
@@ -133,15 +131,19 @@ const ProductionDesign = () => {
                 />
               </div>
 
-              <div className="col-span-2 flex justify-center items-center">
-                <div className="flex items-center gap-5">
-                  <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
-                  <p className="text-orange font-avo_bold text-xl lg:text-[23px] tracking-widest">
-                    Túi giấy kraft, <br />
-                    Túi giấy Duplex, <br />
-                    Túi giấy Mỹ thuật
-                  </p>
-                </div>
+              <div className="col-span-2 sm:col-span-2 md:col-span-1 mt-3">
+                <Image
+                  alt=""
+                  className={`h-full w-full ${styles.image_hover} `}
+                  src={sp3}
+                />
+              </div>
+              <div className="col-span-2 sm:col-span-2 md:col-span-1">
+                <Image
+                  alt=""
+                  className={`h-full w-full ${styles.image_hover} `}
+                  src={sp4}
+                />
               </div>
               <div className="col-span-2 sm:col-span-2 md:col-span-1">
                 <Image
@@ -177,9 +179,12 @@ const ProductionDesign = () => {
             </div>
           </div>
           <div className="relative mt-28">
-            <p className="text-orange text-center font-avo_bold text-xl lg:text-[23px] tracking-widest">
-              Hộp giấy
-            </p>
+            <div className="flex justify-center items-center gap-5 mb-8">
+              <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
+              <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
+                Hộp mềm
+              </p>
+            </div>
             <div className=" grid grid-cols-4 gap-1 items-stretch">
               <div className="col-span-2 sm:col-span-2 md:col-span-1">
                 <Image
@@ -213,9 +218,12 @@ const ProductionDesign = () => {
             </div>
           </div>
           <div className="relative mt-28">
-            <p className="text-orange mb-4 text-center font-avo_bold text-xl lg:text-[23px] tracking-widest">
-              Thùng giấy
-            </p>
+            <div className="flex justify-center items-center gap-5 mb-8">
+              <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
+              <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
+                Thùng carton
+              </p>
+            </div>
             <div className=" grid grid-cols-4 gap-1 items-stretch">
               <div className="col-span-2 sm:col-span-2 md:col-span-1">
                 <Image
