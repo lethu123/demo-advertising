@@ -21,7 +21,7 @@
     height: 100%;
   }
 
-  >div {
+  > div {
     content: "";
     position: absolute;
     top: 0;
@@ -50,7 +50,7 @@
     //  background: #FFCD00;
     border: 0;
 
-    >div {
+    > div {
       transform: scale(1);
       transform-origin: center center;
     }
@@ -142,7 +142,7 @@
   .follow_me {
     background: #ffcd00;
 
-    >div {
+    > div {
       background-color: #1d1d1d;
     }
   }
@@ -168,7 +168,7 @@
 .view-more {
   background: #ffcd00;
   //  font-size: 23.47px;
-  color: #2E3A40;
+  color: #2e3a40;
   text-align: center;
   padding: 10px 30px;
   border-radius: 40px;
@@ -288,7 +288,6 @@
   }
 
   ul li {
-
     a,
     h3 {
       display: block;
@@ -304,7 +303,6 @@
   }
 
   ul li:hover {
-
     a,
     h3 {
       transform: translateY(-100%);
@@ -324,7 +322,6 @@
   }
 
   ul li {
-
     a:before,
     h3:before {
       content: attr(data-hover);
@@ -340,7 +337,6 @@
 
 .banner {
   ul li {
-
     a:before,
     h3:before {
       color: rgb(244, 229, 229);
@@ -350,7 +346,6 @@
 
 .banner-single {
   ul li {
-
     a:before,
     h3:before {
       color: black;
@@ -382,7 +377,7 @@
 }
 
 .bg-banner-product2 {
-  background-image: url(../images/banner2.png);
+  background-image: url(../images/banner2.jpg);
   @include backgroundItem();
 }
 
@@ -411,7 +406,8 @@
 }
 
 .form-contact-us {
-  input, textarea {
+  input,
+  textarea {
     background-color: #ffcd00;
   }
 }
