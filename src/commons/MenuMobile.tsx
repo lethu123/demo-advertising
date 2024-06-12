@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import styles from "@assets/scss/home.module.scss";
 import logo2 from "@assets/images/logo.svg";
+import flagVN from "@assets/images/vietnam.png";
+import flagUK from "@assets/images/UK.png";
 
 const menu = [
   {
@@ -72,6 +74,18 @@ const menu = [
   {
     title: " Liên hệ",
     path: "/contact",
+  },
+  {
+    title: "Tiếng Anh",
+    path: "#",
+    icon: flagUK,
+    language: "en" as const,
+  },
+  {
+    title: "Tiếng Việt",
+    path: "#",
+    icon: flagVN,
+    language: "vi" as const,
   },
 ];
 const MenuMobile = () => {
@@ -145,6 +159,13 @@ const MenuMobile = () => {
                   index != menu.length - 1 ? "border-b" : ""
                 } flex  items-center px-5 text-nowrap  gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100`}
               >
+                {it.icon && (
+                  <Image
+                    style={{ width: 20, height: 20 }}
+                    alt=""
+                    src={it.icon}
+                  />
+                )}
                 {it.title}
               </Link>
             );
