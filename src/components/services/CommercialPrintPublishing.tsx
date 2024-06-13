@@ -293,8 +293,8 @@ const CommercialPrintPublishing = () => {
               />
             </div>
           </div>
-          <div className="text-white py-8">
-            <p className="mb-2">
+          <div className="text-[#2E3A40] py-8">
+            <p className="mb-2 ">
               - Pano, hộp đèn quảng cáo là một hình thức quảng cáo truyền thống
               mà các doanh nghiệp lớn ưu tiên chọn để định vị sản phẩm của mình
               trên thị trường. Pano thường là những biển quảng cáo có kích thước

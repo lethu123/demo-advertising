@@ -17,12 +17,12 @@ const FooterComponentV2 = () => {
               M.A.I Development And Advertising Company Limited
             </h3>
             <div className="mt-5">
-              <div className="flex  text-[#534741] gap-2 items-start mb-1">
+              <div className="flex   text-[#534741] gap-2 items-center mb-1">
                 <IconLocation
                   color="#534741"
                   className="w-[15px] custom-icon-show mt-1"
                 />
-                <span className="text-[18px] 2xl:text-[25px] font-avo flex-1">
+                <span className="text-[18px] 2xl:text-[24px] font-avo flex-1">
                   60 Đào Duy Anh, Phường 9, Quận Phú Nhuận, TP Hồ Chí Minh
                 </span>
               </div>

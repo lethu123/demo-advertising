@@ -39,7 +39,7 @@ const AboutUs = () => {
                         <div>
                             <p className='mb-2 text-xl leading-[2.75rem] md:text-[36px] text-[#534741]'>Được thành lập năm 2015 với tên gọi là <b> Công ty TNHH Quảng Cáo và Phát Triển M.A.I </b>  (M.A.I Development And Advertising Company Limited). </p>
                             <p className='text-xl mt-6 leading-[2.75rem] md:text-[36px] text-[#534741]'>
-                                Với kinh nghiệm gần 20 năm hoạt động trong lĩnh vực quảng cáo với <b> đội ngũ nhân viên năng động, nhiệt huyết, tận tâm, giàu kinh nghiệm.</b> Chúng tôi luôn hướng đến khẩu hiệu <b> “Hiệu quả - Tiết kiệm – Sáng tạo”, </b> bên cạnh đó chúng tôi cũng không ngừng thay đổi và làm mới mình để trở thành một địa chỉ đáng tin cậy cho việc quảng bá thương hiệu của Quý khách hàng.
+                                Với kinh nghiệm gần 20 năm hoạt động trong lĩnh vực quảng cáo với <b> đội ngũ nhân viên năng động, nhiệt huyết, tận tâm, giàu kinh nghiệm.</b> Chúng tôi luôn hướng đến khẩu hiệu <b> “Hiệu quả - Tiết kiệm – Sáng tạo”, </b> bên cạnh đó chúng tôi cũng không ngừng thay đổi và làm mới mình để trở thành một địa chỉ đáng tin cậy cho việc quảng bá sản phẩm thương hiệu của Quý khách hàng.
                             </p>
                         </div>
                     </div>

@@ -26,23 +26,23 @@ const HeaderComponent = () => {
           </div>
 
           <div className="flex items-center flex-wrap">
-            <div className="cursor-pointer font-semibold flex items-center mr-3">
+            <div className="cursor-pointer  flex items-center mr-3">
               {" "}
               <Image
                 style={{ width: 20, height: 20 }}
                 alt=""
                 src={flagVN}
               />{" "}
-              <span className="text-white ml-2  text-[14px]">Tiếng Việt</span>{" "}
+              <span className="text-[#2E3A40] ml-2  text-[14px]">Tiếng Việt</span>{" "}
             </div>
-            <div className="cursor-pointer font-semibold flex items-center">
+            <div className="cursor-pointer   flex items-center">
               {" "}
               <Image
                 style={{ width: 20, height: 20 }}
                 alt=""
                 src={flagUK}
               />{" "}
-              <span className="text-white ml-2  text-[14px]">Tiếng Anh</span>{" "}
+              <span className="text-[#2E3A40] ml-2  text-[14px]">Tiếng Anh</span>{" "}
             </div>
           </div>
         </div>

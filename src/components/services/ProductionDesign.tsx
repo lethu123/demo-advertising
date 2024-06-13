@@ -182,7 +182,7 @@ const ProductionDesign = () => {
             <div className="flex justify-center items-center gap-5 mb-8">
               <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
               <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-                Hộp mềm
+                Hộp cứng
               </p>
             </div>
             <div className=" grid grid-cols-4 gap-1 items-stretch">

@@ -236,7 +236,7 @@ const ProductDisplayDesign = () => {
       </div>
       <div className="pt-8 pb-14" style={{ background: "#FFCD00" }}>
         <Container>
-          <p className="text-white">
+          <p className="text-[#2E3A40]">
             Nội thất showroom: tủ, kệ trưng bày sản phẩm. Gian hàng hội chợ,
             booth sự kiện, Vật phẩm P.O.S.M: <br />
             Poster: thể hiện nội dung thông qua hình ảnh, bức vẽ, thông điệp,

@@ -55,6 +55,16 @@ const ContactComponent = () => {
             </h3>
             <div className="grid grid-cols-2 mt-3 lg:gap-10">
               <div className="col-span-2 lg:col-span-1">
+                <div className=" flex items-center mb-3">
+                  <input
+                    className="h-[20px] w-[20px] me-2"
+                    id="c-schadule"
+                    name="c-schadule"
+                    type="checkbox"
+                    value="yes"
+                  />
+                  <label htmlFor="c-schadule">Sổ tay</label>
+                </div>
                 {/* <div className=" flex items-center mb-3">
                   <input
                     className="h-[20px] w-[20px] me-2"

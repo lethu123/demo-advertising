@@ -45,7 +45,12 @@ const News = () => {
             <div className="bg-orange overflow-hidden">
                 <Container>
                     <div className="mt-12">
-                        <h3 className='text-center text-base text-[#2E3A40] sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]'>TIN TỨC</h3>
+                        <div className="flex justify-center items-center gap-5 mb-8">
+                            <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
+                            <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]">
+                                TIN TỨC
+                            </h3>
+                        </div>
                     </div>
                     <div className='overflow-hidden relative mt-12'>
                         <div className=' grid grid-cols-4 gap-1 items-stretch'>
@@ -76,7 +81,12 @@ const News = () => {
                         </div>
                     </div>
                     <div className='relative mt-24 mb-20'>
-                        <h3 className='text-center text-base sm:text-xl text-[#2E3A40] text-[27.88px] font-icie_medium tracking-[0.15rem] my-8'>SỰ KIỆN</h3>
+                        <div className="flex justify-center items-center gap-5 mb-8">
+                            <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
+                            <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]">
+                                SỰ KIỆN
+                            </h3>
+                        </div>
 
                         <div className=' grid grid-cols-4 gap-1 items-stretch'>
                             <div className='col-span-2 sm:col-span-2 md:col-span-1'>

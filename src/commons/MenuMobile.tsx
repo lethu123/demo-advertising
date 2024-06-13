@@ -112,7 +112,7 @@ const MenuMobile = () => {
           }}
         >
           <span className="sr-only">Open main menu</span>
-          <i className="fa fa-bars text-white"></i>
+          <i className="fa fa-bars text-[#2E3A40]"></i>
         </button>
       </nav>
       <div

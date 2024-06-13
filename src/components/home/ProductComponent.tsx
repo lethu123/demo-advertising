@@ -38,7 +38,7 @@ const ProductComponent = () => {
                 <Container>
                     <div  >
                         <div className='text-center'>
-                            <h1 className='pb-4 inline-block relative text-xl sm:text-2xl md:text-[35.03px] font-avo_bold'>
+                            <h1 className='py-4 inline-block relative text-xl sm:text-2xl md:text-[29.28px] font-avo_bold'>
                                 SẢN PHẨM CỦA CHÚNG TÔI
                             </h1>
                         </div>
@@ -174,7 +174,7 @@ const ProductComponent = () => {
 
 
                             </div>
-                            <div className='absolute top-[70px] -right-[270px] w-[400px] '>
+                            <div className='absolute top-[70px] -right-[270px] w-[400px] -z-[1]'>
                                 <Image alt='' src={threeSlash3} />
                             </div>
                         </div>

@@ -37,9 +37,12 @@ const Calandar = () => {
       {/* BANNER */}
       <BannerSingle idScreen="lich" classImage={"bg-banner-product2"} />
       <div className="mt-12">
-        <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]">
-          LỊCH
-        </h3>
+      <div className="flex justify-center items-center gap-5 mb-8">
+          <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
+          <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]">
+            LỊCH
+          </h3>
+        </div> 
       </div>
 
       <div className="overflow-hidden mb-[6.5rem]">
