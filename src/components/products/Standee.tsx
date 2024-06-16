@@ -40,12 +40,12 @@ const Standee = () => {
         classImage={"bg-banner-product2"}
       />
       <div className="mt-12 ">
-      <div className="flex justify-center items-center gap-5 mb-8">
+        <div className="flex justify-center items-center gap-5 mb-8">
           <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
           <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]">
-          STANDEE, BACKROP (PP, HIFLEX)
+            STANDEE, BACKROP (PP, HIFLEX)
           </h3>
-        </div> 
+        </div>
       </div>
       <div className="overflow-hidden mb-[6.5rem]">
         <Container>

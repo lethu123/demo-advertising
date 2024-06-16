@@ -29,7 +29,7 @@ import sp11 from "@assets/images/design6@2x.png";
 import sp12 from "@assets/images/i3.png";
 import sp13 from "@assets/images/i3.2.png";
 import sp14 from "@assets/images/i3.3.png";
-import sp15 from "@assets/images/i3.4.png";
+import sp15 from "@assets/images/design5@2x.png";
 import sp16 from "@assets/images/i3.5.png";
 import sp17 from "@assets/images/i3.6.png";
 import sp18 from "@assets/images/i3.7.png";
