@@ -7,7 +7,7 @@ import FooterComponent from "@/components/home/FooterComponent";
 import BannerSingle from "@/components/home/BannerSingle";
 
 import styles from "@assets/scss/home.module.scss";
-import threeSlash3 from "@assets/images/three-slash3.svg";
+// import threeSlash3 from "@assets/images/three-slash3.svg";
 import threeSlash from "@assets/images/three-slash.svg";
 import sp1 from "@assets/images/st1.png";
 import sp2 from "@assets/images/st1.2.png";
@@ -18,14 +18,14 @@ import sp6 from "@assets/images/st2.2.png";
 import sp7 from "@assets/images/st2.3.png";
 import sp8 from "@assets/images/st2.4.png";
 
-import sp9 from "@assets/images/nc1.png";
-import sp10 from "@assets/images/nc1.2.png";
-import sp11 from "@assets/images/nc1.3.png";
-import sp12 from "@assets/images/nc1.4.png";
-import sp13 from "@assets/images/nc2.png";
-import sp14 from "@assets/images/nc2.2.png";
-import sp15 from "@assets/images/nc2.3.png";
-import sp16 from "@assets/images/nc2.4.png";
+// import sp9 from "@assets/images/nc1.png";
+// import sp10 from "@assets/images/nc1.2.png";
+// import sp11 from "@assets/images/nc1.3.png";
+// import sp12 from "@assets/images/nc1.4.png";
+// import sp13 from "@assets/images/nc2.png";
+// import sp14 from "@assets/images/nc2.2.png";
+// import sp15 from "@assets/images/nc2.3.png";
+// import sp16 from "@assets/images/nc2.4.png";
 import FooterComponentV2 from "../home/FooterComponentV2";
 
 const NoteBook = () => {
@@ -35,8 +35,7 @@ const NoteBook = () => {
       {/* BANNER */}
       <BannerSingle idScreen="so-tay" classImage={"bg-banner-product2"} />
       <div className="mt-12">
-        <div className="flex justify-center items-center gap-5 mb-8">
-          <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
+        <div className="flex justify-center items-center gap-5 mb-8"> 
           <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]">
             SỔ TAY
           </h3>

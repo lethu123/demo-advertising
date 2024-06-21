@@ -5,9 +5,9 @@ import Image from "next/image";
 import React from "react";
 
 import styles from "@assets/scss/home.module.scss";
-import threeSlash3 from "@assets/images/three-slash3.svg";
+// import threeSlash3 from "@assets/images/three-slash3.svg";
 
-import FooterComponent from "@/components/home/FooterComponent";
+// import FooterComponent from "@/components/home/FooterComponent";
 import BannerSingle from "@/components/home/BannerSingle";
 import threeSlash from "@assets/images/three-slash.svg";
 
@@ -20,14 +20,14 @@ import sp6 from "@assets/images/l2.2.png";
 import sp7 from "@assets/images/l2.3.png";
 import sp8 from "@assets/images/l2.4.png";
 
-import sp9 from "@assets/images/stic1.png";
-import sp10 from "@assets/images/stic1.2.png";
-import sp11 from "@assets/images/stic1.3.png";
-import sp12 from "@assets/images/stic1.4.png";
-import sp13 from "@assets/images/stic2.png";
-import sp14 from "@assets/images/stic2.2.png";
-import sp15 from "@assets/images/stic2.3.png";
-import sp16 from "@assets/images/stic2.4.png";
+// import sp9 from "@assets/images/stic1.png";
+// import sp10 from "@assets/images/stic1.2.png";
+// import sp11 from "@assets/images/stic1.3.png";
+// import sp12 from "@assets/images/stic1.4.png";
+// import sp13 from "@assets/images/stic2.png";
+// import sp14 from "@assets/images/stic2.2.png";
+// import sp15 from "@assets/images/stic2.3.png";
+// import sp16 from "@assets/images/stic2.4.png";
 import FooterComponentV2 from "../home/FooterComponentV2";
 
 const Calandar = () => {
@@ -37,8 +37,7 @@ const Calandar = () => {
       {/* BANNER */}
       <BannerSingle idScreen="lich" classImage={"bg-banner-product2"} />
       <div className="mt-12">
-      <div className="flex justify-center items-center gap-5 mb-8">
-          <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
+      <div className="flex justify-center items-center gap-5 mb-8"> 
           <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem]">
             LỊCH
           </h3>

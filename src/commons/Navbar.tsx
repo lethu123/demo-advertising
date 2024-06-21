@@ -18,7 +18,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/"
-                  className=" text-[15px] 2xl:text-[20px]"
+                  className=" text-[15px] 2xl:text-[17px]"
                   data-hover="TRANG CHỦ"
                 >
                   TRANG CHỦ
@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className=" text-[15px] 2xl:text-[20px] mr-2"
+                  className=" text-[15px] 2xl:text-[17px] mr-2"
                   data-hover="SẢN PHẨM"
                 >
                   SẢN PHẨM{" "}
@@ -99,7 +99,7 @@ const Navbar = () => {
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className=" text-[15px] 2xl:text-[20px] mr-2"
+                  className=" text-[15px] 2xl:text-[17px] mr-2"
                   data-hover="DỊCH VỤ"
                 >
                   DỊCH VỤ{" "}
@@ -160,7 +160,7 @@ const Navbar = () => {
               <li className="flex items-center">
                 <Link
                   href="/about-us"
-                  className=" text-[15px] 2xl:text-[20px]"
+                  className=" text-[15px] 2xl:text-[17px]"
                   data-hover="VỀ CHÚNG TÔI"
                 >
                   VỀ CHÚNG TÔI
@@ -171,7 +171,7 @@ const Navbar = () => {
               <li className="flex items-center">
                 <Link
                   href="/news"
-                  className=" text-[15px] 2xl:text-[20px]"
+                  className=" text-[15px] 2xl:text-[17px]"
                   data-hover="TIN TỨC"
                 >
                   TIN TỨC
@@ -182,7 +182,7 @@ const Navbar = () => {
               <li className="flex items-center">
                 <Link
                   href="/contact"
-                  className=" text-[15px] 2xl:text-[20px]"
+                  className=" text-[15px] 2xl:text-[17px]"
                   data-hover="LIÊN HỆ"
                 >
                   LIÊN HỆ
