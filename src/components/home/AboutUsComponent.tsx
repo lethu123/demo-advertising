@@ -4,8 +4,16 @@ import slat from "@assets/images/slat1.svg";
 import banner from "@assets/images/banner.png";
 import styles from "@assets/scss/home.module.scss";
 import Container from "@/commons/Container";
+import dynamic from "next/dynamic";
+import { useTranslation } from "react-i18next";
+
+const Translations = dynamic(() => import("@/commons/Translations"), {
+  ssr: false,
+});
 
 const AboutUsComponent = () => {
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
   return (
     <div className="pb-[70px] pt-20 overflow-hidden">
       <div
@@ -14,7 +22,7 @@ const AboutUsComponent = () => {
         <div className="flex justify-around">
           <h2 className="hidden lg::block"></h2>
           <h2 className="font-icie_medium text-lg md:text-[35.05px] tracking-[0.5rem] md:tracking-[1rem] text-center lg:me-10">
-            VỀ CHÚNG TÔI
+            <Translations text="aboutUs" />
           </h2>
         </div>
         <div className="flex h-[200px] md:h-[300px] mt-2 lg:hidden">
@@ -31,21 +39,25 @@ const AboutUsComponent = () => {
       <Container>
         <div className="mt-5">
           <p className="text-[18px] mb-5">
-            <b>Công ty TNHH Quảng Cáo và Phát Triển M.A.I</b> (M.A.I Development
-            And Advertising Company Limited) được thành lập và đi vào hoạt động
-            vào năm 2015
+            <b>
+              <Translations text="companyName" />
+            </b>{" "}
+            {lang !== "en" && (
+              <>(M.A.I Development And Advertising Company Limited)</>
+            )}
+            <Translations text="establishment" />
           </p>
           <p className="text-[18px]">
             {" "}
-            Với kinh nghiệm gần 10 năm hoạt động trong lĩnh vực quảng cáo, in ấn
-            và sản xuất bao bì cùng với{" "}
+            <Translations text="aboutUsContent1" />{" "}
             <b>
-              đội ngũ nhân viên năng động, nhiệt huyết, tận tâm, giàu kinh
-              nghiệm.
+              <Translations text="aboutUsContent2" />
             </b>{" "}
-            Chúng tôi luôn hướng đến khẩu hiệu{" "}
-            <b>“Năng động – Sáng tạo – Tiết kiệm – Hiệu quả”</b>, sẽ là một địa
-            chỉ đáng tin cậy của Quý khách hàng và Đối tác.
+            <Translations text="aboutUsContent3" />{" "}
+            <b>
+              ”<Translations text="khauhieu" />“
+            </b>
+            , <Translations text="aboutUsContent4" />
           </p>
         </div>
       </Container>

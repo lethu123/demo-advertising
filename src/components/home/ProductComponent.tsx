@@ -28,6 +28,11 @@ import threeSlash from "@assets/images/three-slash.svg";
 import threeSlash3 from "@assets/images/three-slash3.svg";
 
 import "@assets/scss/button.scss";
+import dynamic from "next/dynamic";
+
+const Translations = dynamic(() => import("@/commons/Translations"), {
+  ssr: false,
+});
 
 const ProductComponent = () => {
   return (
@@ -36,12 +41,12 @@ const ProductComponent = () => {
         <Container>
           <div>
             <div className="text-center">
-              <h1 className="py-4 inline-block relative text-xl sm:text-2xl md:text-[29.28px] font-avo_bold">
-                SẢN PHẨM CỦA CHÚNG TÔI
+              <h1 className="py-4 inline-block uppercase relative text-xl sm:text-2xl md:text-[29.28px] font-avo_bold">
+                <Translations text="ourProducts" />
               </h1>
             </div>
             <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8">
-              THIẾT KẾ & SẢN XUẤT BAO BÌ GIẤY
+              <Translations text="designAndProductionPagerPacking" />
             </h3>
             <div className="grid grid-cols-2 gap-10">
               <div className="col-span-2 md:col-span-1">
@@ -108,8 +113,8 @@ const ProductComponent = () => {
             </div>
 
             <div className="mt-16">
-              <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8">
-                THIẾT KẾ TRƯNG BÀY QUẢNG CÁO ( POSM...)
+              <h3 className="text-center uppercase text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8">
+                <Translations text="advertisingDisplayDesign" />
               </h3>
               <div className="grid grid-cols-2 gap-10 items-stretch relative">
                 <div className="col-span-2 md:col-span-1">
@@ -137,11 +142,8 @@ const ProductComponent = () => {
                 </div>
                 <div className="col-span-2 md:col-span-1">
                   <p className="text-[18px] mb-3">
-                    Chào mừng bạn đến với <b>M.A.I</b> - nơi kết nối thương hiệu
-                    với khách hàng thông qua những chiến lược quảng cáo độc đáo
-                    và hiệu quả. Chúng tôi tự hào là đối tác chiến lược trong
-                    việc đưa thông điệp của bạn đến với đối tượng mục tiêu một
-                    cách sáng tạo và tinh tế.
+                    <Translations text="posmContent1" /> <b>M.A.I</b> -{" "}
+                    <Translations text="posmContent2" />
                   </p>
 
                   <div className="text-center mt-7">
@@ -154,8 +156,8 @@ const ProductComponent = () => {
             </div>
 
             <div className="relative mt-16">
-              <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8">
-                IN THƯƠNG MẠI, XUẤT BẢN PHẨM
+              <h3 className="text-center uppercase text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8">
+                <Translations text="commercialPrintingPublishingProducts" />
               </h3>
 
               <div className=" grid grid-cols-4 gap-1 items-stretch">
@@ -218,7 +220,9 @@ const ProductComponent = () => {
               </div>
               <div className="text-center mt-7">
                 <button className="btn btn-three text-sm md:text-[23.47px]">
-                  <span>Xem thêm</span>
+                  <span>
+                    <Translations text="viewMore" />
+                  </span>
                 </button>
               </div>
               <div className="absolute -top-[37px] -left-[97px] w-full -z-[1]">
@@ -227,22 +231,22 @@ const ProductComponent = () => {
             </div>
 
             <div className="relative mt-16">
-              <h3 className="text-center text-base sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8">
-                THIẾT KẾ THI CÔNG PANO, HỘP ĐÈN QUẢNG CÁO
+              <h3 className="text-center text-base uppercase sm:text-xl text-[27.88px] font-icie_medium tracking-[0.15rem] my-8">
+                <Translations text="designAndContributeTitle" />
               </h3>
               <div className="grid grid-cols-2 items-center gap-10 ">
                 <div className="col-span-2 md:col-span-1">
                   <p className="text-[18px] mb-3">
-                    M.A.I Advertising - nơi bạn có thể biến tưởng thành hiện
-                    thực với công nghệ in kỹ thuật số hiện đại. Chúng tôi là đối
-                    tác tin cậy của bạn trong việc tạo ra các sản phẩm in ấn
-                    chất lượng cao với độ tinh xảo và sáng tạo không giới hạn.
+                    M.A.I Advertising -{" "}
+                    <Translations text="designAndContributeContent" />
                   </p>
 
-                  <p>... CÒN NỮA</p>
+                  {/* <p>... CÒN NỮA</p> */}
                   <div className="text-center mt-7">
                     <button className="btn btn-three text-sm md:text-[23.47px]">
-                      <span>Xem thêm</span>
+                      <span>
+                        <Translations text="viewMore" />
+                      </span>
                     </button>
                   </div>
                 </div>

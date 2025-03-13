@@ -1,26 +1,27 @@
-import Image from "next/image";
 import React from "react";
-import slat from "@assets/images/slat1.svg";
-import contact from "@assets/images/contact.png";
-import styles from "@assets/scss/home.module.scss";
 import Container from "@/commons/Container";
+import dynamic from "next/dynamic";
+import { useTranslation } from "react-i18next";
+
+const Translations = dynamic(() => import("@/commons/Translations"), {
+  ssr: false,
+});
 
 const ContactComponent = () => {
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
   return (
     <div className="overflow-hidden ">
       <Container>
         <h1 className="border-l-4 pl-5 border-gray-800 text-[32px] mb-7 xl:mb-0 md:text-[40px] mt-10 ">
-          Kết nối với chúng tôi
+          <Translations text="connectWithUs" />
         </h1>
         <div className="ps-3 pt-5">
           <p className="mb-3 font-avo_bold">
-            Nếu bạn muốn đặt hàng với yêu cầu đặc biệt, góp ý, nhắn nhủ hay đơn
-            giản là một ý nghĩ bất chợt tới chúng tôi, xin đừng ngần ngại.{" "}
+            <Translations text="connectWithUsContent1" />{" "}
           </p>
           <p className="font-avo_bold">
-            Mọi lời nhắn của bạn đều rất có giá trị với chúng tôi. Và ngược lại,
-            chúng tôi sẽ cố gắng phản hồi nhanh nhất có thể vì không điều gì tệ
-            hơn việc để khách quý của mình phải chờ đợi quá lâu.
+            <Translations text="connectWithUsContent2" />
           </p>
         </div>
         <div className="md:w-4/5 mx-auto ">
@@ -28,7 +29,7 @@ const ContactComponent = () => {
             <div className="form-group">
               <input
                 className="placeholder:text-[#6D6E71] w-full"
-                placeholder="Tên*"
+                placeholder={lang === "vi" ? "Tên*" : "Name*"}
               />
             </div>
             <div className="form-group">
@@ -40,18 +41,18 @@ const ContactComponent = () => {
             <div className="form-group">
               <input
                 className="placeholder:text-[#6D6E71] w-full"
-                placeholder="Số điện thoại*"
+                placeholder={lang === "vi" ? "Số điện thoại*" : "Phone number*"}
               />
             </div>
             <div className="form-group">
               <textarea
                 className="placeholder:text-[#6D6E71] w-full"
                 rows={4}
-                placeholder="Lời nhắn gửi*"
+                placeholder={lang === "vi" ? "Lời nhắn gửi*" : "Message*"}
               ></textarea>
             </div>
-            <h3 className="text-[17px] mt-5 lg:text-[26px] font-avo_bold">
-              SẢN PHẨM VÀ DỊCH VỤ QUÝ KHÁCH HÀNG QUAN TÂM
+            <h3 className="text-[17px] mt-5 lg:text-[26px] font-avo_bold uppercase">
+              <Translations text="productAndServeForCustomer" />
             </h3>
             <div className="grid grid-cols-2 mt-3 lg:gap-10">
               <div className="col-span-2 lg:col-span-1">
@@ -63,7 +64,9 @@ const ContactComponent = () => {
                     type="checkbox"
                     value="yes"
                   />
-                  <label htmlFor="c-schadule">Sổ tay</label>
+                  <label htmlFor="c-schadule">
+                    <Translations text="Handbook" />
+                  </label>
                 </div>
                 {/* <div className=" flex items-center mb-3">
                   <input

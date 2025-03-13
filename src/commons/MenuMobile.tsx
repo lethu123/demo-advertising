@@ -42,7 +42,7 @@ const menu = [
     ],
   },
   {
-    title: "Thiết kế trưng bày quảng cáo",
+    title: "Dịch vụ",
     path: "/",
     subMenu: [
       {

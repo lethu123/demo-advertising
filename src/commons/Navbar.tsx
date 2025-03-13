@@ -100,9 +100,9 @@ const Navbar = () => {
               <li className="flex items-center">
                 <h3
                   className=" text-[15px] 2xl:text-[17px] mr-2"
-                  data-hover="THIẾT KẾ TRƯNG BÀY QUẢNG CÁO"
+                  data-hover="DỊCH VỤ"
                 >
-                  THIẾT KẾ TRƯNG BÀY QUẢNG CÁO{" "}
+                  DỊCH VỤ{" "}
                 </h3>
                 <i
                   className="fa fa-angle-down"
