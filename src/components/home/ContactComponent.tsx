@@ -86,7 +86,9 @@ const ContactComponent = () => {
                     type="checkbox"
                     value="yes"
                   />
-                  <label htmlFor="c-schadule">Lịch</label>
+                  <label htmlFor="c-schadule">
+                    <Translations text="Calendar" />
+                  </label>
                 </div>
                 {/* <div className=" flex items-center mb-3">
                   <input
@@ -131,7 +133,7 @@ const ContactComponent = () => {
                     value="yes"
                   />
                   <label htmlFor="c-design-pano">
-                    Thiết kế thi công pano, hộp đèn quảng cáo
+                    <Translations text="designAndContributeTitle" />
                   </label>
                 </div>
               </div>
@@ -145,7 +147,7 @@ const ContactComponent = () => {
                     value="yes"
                   />
                   <label htmlFor="c-design-boxing">
-                    Thiết kế & sản xuất bao bì giấy
+                    <Translations text="designAndProductionPagerPacking" />
                   </label>
                 </div>
                 <div className=" flex items-center mb-3">
@@ -157,7 +159,7 @@ const ContactComponent = () => {
                     value="yes"
                   />
                   <label htmlFor="c-design-ads">
-                    Thiết kế trưng bày quảng cáo (POSM)
+                    <Translations text="advertisingDisplayDesign" />
                   </label>
                 </div>
                 <div className=" flex items-center mb-3">
@@ -169,15 +171,15 @@ const ContactComponent = () => {
                     value="yes"
                   />
                   <label htmlFor="c-printing">
-                    In thương mại, xuất bản ấn phẩm
+                    <Translations text="commercialPrintingPublishingProducts" />
                   </label>
                 </div>
               </div>
             </div>
 
             <div className="text-center mt-14">
-              <button className="view-more text-sm md:text-[23.47px]">
-                GỬI LỜI NHẮN
+              <button className="view-more uppercase text-sm md:text-[23.47px]">
+                <Translations text="sendMessage" />
               </button>
             </div>
           </form>

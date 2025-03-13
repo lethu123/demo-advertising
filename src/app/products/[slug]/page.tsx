@@ -2,10 +2,11 @@
 
 import Calandar from "@/components/products/Calandar";
 import NoteBook from "@/components/products/NoteBook";
-import Standee from "@/components/products/Standee"; 
+import Standee from "@/components/products/Standee";
 import { useParams } from "next/navigation";
 import React, { useEffect } from "react";
 
+import "@/../i18n";
 const Service = () => {
   const params = useParams<{ slug: string }>();
 

@@ -51,22 +51,18 @@ const ProductComponent = () => {
             <div className="grid grid-cols-2 gap-10">
               <div className="col-span-2 md:col-span-1">
                 <p className="text-[18px] mb-3 md:mt-4">
-                  Thay vì sử dụng các túi nhựa khó phân hủy, gây ô nhiễm đến môi
-                  trường toàn cầu thì người tiêu dùng hiện nay đang có xu hướng
-                  chuyển qua dùng các túi làm bằng giấy, vừa bảo vệ được cảnh
-                  quan sống .
+                  <Translations text="ourProductsContent1" />
                 </p>
                 <p>
                   <b>
-                    - Một sản phẩm nổi bật, thu hút khách hàng từ cái nhìn đầu
-                    tiên không phải dựa vào công dụng của nó, mà chính là nhờ
-                    vào giao diện bên ngoài của sản phẩm đó. Việc chăm chút cho
-                    bao bì bên ngoài đó là điều cần thiết cho mỗi sản phẩm.{" "}
+                    - <Translations text="ourProductsContent2" />{" "}
                   </b>
                 </p>
                 <div className="text-center mt-7">
                   <button className="btn btn-three text-sm md:text-[23.47px]">
-                    <span>Xem thêm</span>
+                    <span>
+                      <Translations text="viewMore" />
+                    </span>
                   </button>
                 </div>
               </div>
@@ -148,7 +144,9 @@ const ProductComponent = () => {
 
                   <div className="text-center mt-7">
                     <button className="btn btn-three text-sm md:text-[23.47px]">
-                      <span>Xem thêm</span>
+                      <span>
+                        <Translations text="viewMore" />
+                      </span>
                     </button>
                   </div>
                 </div>

@@ -1,6 +1,5 @@
 "use client";
 
-import Container from "@/commons/Container";
 import Screen from "@/commons/Screen";
 import BannerSingle from "@/components/home/BannerSingle";
 import HeaderComponent from "@/components/home/HeaderComponent";
@@ -8,9 +7,12 @@ import Image from "next/image";
 import React from "react";
 import sloganIcon from "@assets/images/iconSlogon2.png";
 import slash from "@assets/images/slash-dark.png";
-import FooterComponent from "@/components/home/FooterComponent";
 import FooterComponentV2 from "@/components/home/FooterComponentV2";
+import dynamic from "next/dynamic";
 
+const Translations = dynamic(() => import("@/commons/Translations"), {
+  ssr: false,
+});
 const Contact = () => {
   return (
     <Screen>
@@ -30,7 +32,7 @@ const Contact = () => {
               />
 
               <h5 className="font-icie_medium text-[#534741] text-lg sm:text-xl md:text-[27.88px] tracking-[0.15em] pt-7">
-                “HIỆU QUẢ - TIẾT KIỆM – SÁNG TẠO”{" "}
+                “<Translations text="khauhieu" />”{" "}
               </h5>
               <h2 className="font-icie_medium text-[#534741]   text-xl sm:text-[1.5rem] md:text-[35px]  leading-10 tracking-[0.15em]">
                 M.A.I ADVERTISING AND DEVELOPMENT CO.,LT
@@ -48,8 +50,8 @@ const Contact = () => {
               src={slash}
             />
             <div className="">
-              <h1 className="text-center lg:text-left font-icie_medium text-xl md:text-[40px] lg:text-[45px] mt-5 text-[#534741] tracking-[0.5rem]">
-                LIÊN HỆ VỚI CHÚNG TÔI
+              <h1 className="text-center uppercase lg:text-left font-icie_medium text-xl md:text-[40px] lg:text-[45px] mt-5 text-[#534741] tracking-[0.5rem]">
+                <Translations text="contactWithUs" />
               </h1>
               <div className="mt-10">
                 <p className="mb-5 text-xl md:text-[36px] leading-9 text-[#534741]">

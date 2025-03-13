@@ -3,7 +3,11 @@ import React from "react";
 import { IconLocation, IconPhone } from "@srccommons/icons";
 import styles from "@assets/scss/home.module.scss";
 import Container from "@/commons/Container";
+import dynamic from "next/dynamic";
 
+const Translations = dynamic(() => import("@/commons/Translations"), {
+  ssr: false,
+});
 const FooterComponentV2 = () => {
   return (
     <footer className="bg-orange py-[5rem] overflow-hidden">
@@ -11,7 +15,7 @@ const FooterComponentV2 = () => {
         <div className="flex gap-10 flex-wrap md:flex-nowrap xl:gap-0 xl:justify-between">
           <div>
             <h1 className=" text-[#534741] uppercase text-xl font-extrabold font-avo_bold lg:text-[25px] xl:text-[22px] 2xl:text-[30px] mb-2">
-              Công ty TNHH Quảng Cáo và Phát Triển M.A.I
+              <Translations text="companyName" />
             </h1>
             <h3 className="text-xl lg:text-[23px] xl:text-[20px] 2xl:text-[29px] font-avo text-white">
               M.A.I Advertising And Development Company Limited
@@ -23,7 +27,7 @@ const FooterComponentV2 = () => {
                   className="w-[15px] custom-icon-show mt-1"
                 />
                 <span className="text-[18px] 2xl:text-[24px] font-avo flex-1">
-                  60 Đào Duy Anh, Phường 9, Quận Phú Nhuận, TP Hồ Chí Minh
+                  <Translations text="address" />
                 </span>
               </div>
               <div className="flex flex-wrap gap-10 lg:gap-0 lg:justify-between">
@@ -77,29 +81,29 @@ const FooterComponentV2 = () => {
           <div className="col-span-2 sm:col-span-1 lg:col-span-2 xl:grow">
             <div>
               <h1 className="text-[#534741] font-extrabold text-[20px]">
-                Dịch vụ
+                <Translations text="services" />
               </h1>
               <ul className={`${styles.ul} mt-3 text-[#534741]`}>
                 <li className=" flex gap-2 menu-footer">
                   <Link href={"/services/thiet-ke-san-xuat-bao-bi-giay"}>
-                    Thiết kế & sản xuất bao bì giấy
+                    <Translations text="designAndProductionPagerPacking" />
                   </Link>
                 </li>
                 <li className=" flex gap-2 menu-footer">
                   <Link href={"/services/thiet-ke-trung-bay-quang-cao"}>
-                    Thiết kế trưng bày quảng cáo (POSM)
+                    <Translations text="advertisingDisplayDesign" />
                   </Link>
                 </li>
                 <li className=" flex gap-2 menu-footer">
                   <Link href={"/services/in-thuong-mai-xuat-ban-an-pham"}>
-                    In thương mại, xuất bản phẩm
+                    <Translations text="commercialPrintingPublishingProducts" />
                   </Link>
                 </li>
                 <li className=" flex gap-2 menu-footer">
                   <Link
                     href={"/services/thiet-ke-thi-cong-pano-hop-den-quang-cao"}
                   >
-                    Thiết kế thi công pano, hộp đèn quảng cáo
+                    <Translations text="designAndContributeTitle" />
                   </Link>
                 </li>
               </ul>
@@ -108,18 +112,22 @@ const FooterComponentV2 = () => {
 
           <div className="col-span-2 sm:col-span-1 lg:col-span-2 xl:grow ">
             <h1 className="text-[#534741] font-extrabold text-[20px]">
-              Sản phẩm
+              <Translations text="product" />
             </h1>
             <ul className={`${styles.ul} mt-3 text-[#534741]`}>
               <li className=" flex gap-2 menu-footer">
-                <Link href={"/products/so-tay"}>Sổ tay</Link>
+                <Link href={"/products/so-tay"}>
+                  <Translations text="Handbook" />
+                </Link>
               </li>
               {/* <li className=' flex gap-2 menu-footer'>
                 
                 <Link href="/products/name-card" > Name card</Link>
               </li> */}
               <li className=" flex gap-2 menu-footer">
-                <Link href="/products/lich">Lịch</Link>
+                <Link href="/products/lich">
+                  <Translations text="calendar" />
+                </Link>
               </li>
               {/* <li className=' flex gap-2 menu-footer'>
                 
@@ -141,16 +149,18 @@ const FooterComponentV2 = () => {
           <div className="col-span-2 sm:col-span-1 xl:grow">
             <div>
               <h1 className="text-[#534741] font-extrabold  text-[20px]">
-                Liên hệ
+                <Translations text="contact" />
               </h1>
               <ul className={`${styles.ul} mt-3 text-[#534741]`}>
                 <li className=" flex gap-2 menu-footer">
                   <Link href={"/"} className="text-nowrap">
-                    Form liên hệ
+                    <Translations text="formContact" />
                   </Link>
                 </li>
                 <li className=" flex gap-2 menu-footer">
-                  <Link href={"/"}>Điện thoại</Link>
+                  <Link href={"/"}>
+                    <Translations text="phonaNumber" />
+                  </Link>
                 </li>
                 <li className=" flex gap-2 menu-footer">
                   <Link href={"/"}>Email</Link>

@@ -5,9 +5,17 @@ import Link from "next/link";
 import logo from "@assets/images/logo.svg";
 import MenuMobile from "../../commons/MenuMobile";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+import { useTranslation } from "react-i18next";
+
+const Translations = dynamic(() => import("@/commons/Translations"), {
+  ssr: false,
+});
 
 const Header2Component = () => {
   const [scrolled, setScrolled] = React.useState(false);
+
+  const { t } = useTranslation();
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -38,20 +46,20 @@ const Header2Component = () => {
               <li>
                 <Link
                   href="/"
-                  className="text-white text-[15px] 2xl:text-[17px]"
-                  data-hover="TRANG CHỦ"
+                  className="text-white text-[15px] 2xl:text-[17px] uppercase"
+                  data-hover={t("home")}
                 >
-                  TRANG CHỦ
+                  <Translations text="home" />
                 </Link>
               </li>
             </div>
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className="text-white text-[15px] 2xl:text-[17px] mr-2"
-                  data-hover="SẢN PHẨM"
+                  className="text-white text-[15px] 2xl:text-[17px] mr-2 uppercase"
+                  data-hover={t("product")}
                 >
-                  SẢN PHẨM{" "}
+                  <Translations text="product" />
                 </h3>
                 <i
                   className="fa fa-angle-down"
@@ -68,7 +76,7 @@ const Header2Component = () => {
                           href="/products/so-tay"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Sổ tay
+                          <Translations text="Handbook" />
                         </Link>
                       </div>
                       {/* <div className="hover:bg-gray-100 px-3">
@@ -84,7 +92,7 @@ const Header2Component = () => {
                           href="/products/lich"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Lịch
+                          <Translations text="calendar" />
                         </Link>
                       </div>
                       {/* <div className="hover:bg-gray-100 px-3">
@@ -119,10 +127,10 @@ const Header2Component = () => {
             <div className="menu flex items-center">
               <li className="flex items-center">
                 <h3
-                  className="text-white text-[15px] 2xl:text-[17px] mr-2"
-                  data-hover="DỊCH VỤ"
+                  className="text-white text-[15px] 2xl:text-[17px] mr-2 uppercase"
+                  data-hover={t("services")}
                 >
-                  DỊCH VỤ{" "}
+                  <Translations text="services" />
                 </h3>
                 <i
                   className="fa fa-angle-down"
@@ -140,7 +148,7 @@ const Header2Component = () => {
                           href="/services/thiet-ke-san-xuat-bao-bi-giay"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Thiết kế & sản xuất bao bì giấy
+                          <Translations text="designAndProductionPagerPacking" />
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">
@@ -148,7 +156,7 @@ const Header2Component = () => {
                           href="/services/thiet-ke-trung-bay-quang-cao"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Thiết kế trưng bày quảng cáo (POSM)
+                          <Translations text="advertisingDisplayDesign" />
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">
@@ -156,7 +164,7 @@ const Header2Component = () => {
                           href="/services/in-thuong-mai-xuat-ban-an-pham"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          In thương mại, xuất bản phẩm
+                          <Translations text="commercialPrintingPublishingProducts" />
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">
@@ -164,7 +172,7 @@ const Header2Component = () => {
                           href="/services/thiet-ke-thi-cong-pano-hop-den-quang-cao"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Thiết kế thi công pano, hộp đèn quảng cáo
+                          <Translations text="designAndContributeTitle" />
                         </Link>
                       </div>
                     </div>
@@ -180,10 +188,10 @@ const Header2Component = () => {
               <li className="flex items-center">
                 <Link
                   href="/about-us"
-                  className="text-white text-[15px] 2xl:text-[17px]"
-                  data-hover="VỀ CHÚNG TÔI"
+                  className="text-white uppercase text-[15px] 2xl:text-[17px]"
+                  data-hover={t("aboutUs")}
                 >
-                  VỀ CHÚNG TÔI
+                  <Translations text="aboutUs" />
                 </Link>
               </li>
             </div>
@@ -191,10 +199,10 @@ const Header2Component = () => {
               <li className="flex items-center">
                 <Link
                   href="/news"
-                  className="text-white text-[15px] 2xl:text-[17px]"
-                  data-hover="TIN TỨC"
+                  className="text-white uppercase text-[15px] 2xl:text-[17px]"
+                  data-hover={t("news")}
                 >
-                  TIN TỨC
+                  <Translations text="news" />
                 </Link>
               </li>
             </div>
@@ -202,10 +210,10 @@ const Header2Component = () => {
               <li className="flex items-center">
                 <Link
                   href="/contact"
-                  className="text-white text-[15px] 2xl:text-[17px]"
-                  data-hover="LIÊN HỆ"
+                  className="text-white uppercase text-[15px] 2xl:text-[17px]"
+                  data-hover={t("contact")}
                 >
-                  LIÊN HỆ
+                  <Translations text="contact" />
                 </Link>
               </li>
             </div>

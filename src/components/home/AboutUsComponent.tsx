@@ -21,7 +21,7 @@ const AboutUsComponent = () => {
       >
         <div className="flex justify-around">
           <h2 className="hidden lg::block"></h2>
-          <h2 className="font-icie_medium text-lg md:text-[35.05px] tracking-[0.5rem] md:tracking-[1rem] text-center lg:me-10">
+          <h2 className="uppercase font-icie_medium text-lg md:text-[35.05px] tracking-[0.5rem] md:tracking-[1rem] text-center lg:me-10">
             <Translations text="aboutUs" />
           </h2>
         </div>

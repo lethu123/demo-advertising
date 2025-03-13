@@ -40,7 +40,11 @@ import sp21 from "@assets/images/i4.png";
 import sp22 from "@assets/images/i4.2.png";
 import sp23 from "@assets/images/sp4.3.png";
 import FooterComponentV2 from "../home/FooterComponentV2";
+import dynamic from "next/dynamic";
 
+const Translations = dynamic(() => import("@/commons/Translations"), {
+  ssr: false,
+});
 const CommercialPrintPublishing = () => {
   return (
     <Screen>
@@ -59,8 +63,8 @@ const CommercialPrintPublishing = () => {
           alt=""
           src={sloganIcon}
         />
-        <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
-          IN THƯƠNG MẠI, XUẤT BẢN PHẨM
+        <h3 className="text-white text-center uppercase mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
+          <Translations text="commercialPrintingPublishingProducts" />
         </h3>
       </div>
 
@@ -100,7 +104,7 @@ const CommercialPrintPublishing = () => {
                 <div className="flex items-center gap-5">
                   <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-                    In ấn sách
+                    <Translations text="printingBook" />
                   </p>
                 </div>
               </div>
@@ -141,7 +145,7 @@ const CommercialPrintPublishing = () => {
                 <div className="flex items-center gap-5">
                   <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-                    Sản xuất lịch
+                    <Translations text="Calendar production" />
                   </p>
                 </div>
               </div>
@@ -180,7 +184,7 @@ const CommercialPrintPublishing = () => {
           </div>
           <div className="relative mt-28">
             <p className="text-orange mb-2 text-center font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-              Xuất bản phẩm
+              <Translations text="Publishing Products" />
             </p>
             <div className=" grid grid-cols-4 gap-1 items-stretch">
               <div className="col-span-2 sm:col-span-2 md:col-span-1">
@@ -258,9 +262,9 @@ const CommercialPrintPublishing = () => {
               alt=""
               src={sloganIcon}
             />
-            <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold leading-snug">
-              THIẾT KẾ THI CÔNG PANO, <br />
-              HỘP ĐÈN QUẢNG CÁO
+            <h3 className="text-white text-center uppercase mt-5 text-2xl lg:text-[37.12px] font-avo_bold leading-snug">
+              <Translations text="designAndContributeContent1" /> <br />
+              <Translations text="designAndContributeContent2" />
             </h3>
           </div>
           <div className="col-span-2 md:col-span-1  grid grid-cols-2 gap-1">
@@ -295,23 +299,13 @@ const CommercialPrintPublishing = () => {
           </div>
           <div className="text-[#2E3A40] py-8">
             <p className="mb-2 ">
-              - Pano, hộp đèn quảng cáo là một hình thức quảng cáo truyền thống
-              mà các doanh nghiệp lớn ưu tiên chọn để định vị sản phẩm của mình
-              trên thị trường. Pano thường là những biển quảng cáo có kích thước
-              to, được đặt ở các vị trí cao như ở trên các cao tốc, các nút giao
-              nhau để có thể thu hút được sự chú ý của người đi đường.
+              - <Translations text="boxContent1" />
             </p>
             <p className="mb-2">
-              - Chịu được nhiệt, mưa nắng, các điều kiện thời tiết khắc nghiệt,
-              có sự dẻo dai, bám tốt. Để thỏa được các điều kiện trên thì chúng
-              tôi chọn in trên Hiflex cao cấp – là loại nhựa cao cấp
-              Polyvinyclorua cùng với công nghệ in phun kỹ thuật số hiện đại
-              giúp sẽ giúp màu bám tốt, hình ảnh, màu sắc vô cùng chân thực.
+              - <Translations text="boxContent2" />
             </p>
             <p>
-              M.A.I có dội ngũ thiết kế pano theo yêu cầu của khách hàng. Nhận
-              thi công trọn gói và lắp đặt toàn quốc. Dựa trên nhu cầu thực tế
-              mà khách mong muốn cty M.A.I sẽ tư vấn phù hợp nhất.
+              <Translations text="boxContent3" />
             </p>
           </div>
         </Container>

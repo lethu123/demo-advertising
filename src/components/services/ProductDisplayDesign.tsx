@@ -31,6 +31,11 @@ import sp16 from "@assets/images/qc3.5.png";
 import sp17 from "@assets/images/qc3.6.png";
 import sp18 from "@assets/images/qc3.7.png";
 import FooterComponentV2 from "../home/FooterComponentV2";
+import dynamic from "next/dynamic";
+
+const Translations = dynamic(() => import("@/commons/Translations"), {
+  ssr: false,
+});
 
 const ProductDisplayDesign = () => {
   return (
@@ -50,8 +55,8 @@ const ProductDisplayDesign = () => {
           alt=""
           src={sloganIcon}
         />
-        <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
-          THIẾT KẾ TRƯNG BÀY QUẢNG CÁO ( POSM...)
+        <h3 className="text-white uppercase text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
+          <Translations text="advertisingDisplayDesign" />
         </h3>
       </div>
 
@@ -91,7 +96,7 @@ const ProductDisplayDesign = () => {
                 <div className="flex items-center gap-5">
                   <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-                    Tư vấn thiết kế
+                    <Translations text="DesignConsulting" />
                   </p>
                 </div>
               </div>
@@ -132,7 +137,7 @@ const ProductDisplayDesign = () => {
                 <div className="flex items-center gap-5">
                   <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-                    In ấn
+                    <Translations text="printing" />
                   </p>
                 </div>
               </div>
@@ -171,7 +176,7 @@ const ProductDisplayDesign = () => {
           </div>
           <div className="relative mt-28">
             <p className="text-orange mb-2 text-center font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-              Thi công sản xuất lắp đặt
+              <Translations text="lapdat" />
             </p>
             <div className=" grid grid-cols-4 gap-1 items-stretch">
               <div className="col-span-2 sm:col-span-2 md:col-span-1">
@@ -237,24 +242,17 @@ const ProductDisplayDesign = () => {
       <div className="pt-8 pb-14" style={{ background: "#FFCD00" }}>
         <Container>
           <p className="text-[#2E3A40]">
-            Nội thất showroom: tủ, kệ trưng bày sản phẩm. Gian hàng hội chợ,
-            booth sự kiện, Vật phẩm P.O.S.M: <br />
-            Poster: thể hiện nội dung thông qua hình ảnh, bức vẽ, thông điệp,
-            câu chữ chi tiết, thường được in trên giấy dán trên tường hay các
-            mặt thẳng đứng. Poster thu hút được người xem ở cự ly gần, do kích
-            thước cũng như phông chữ nhỏ. Về độ bền thì những tấm poster này chỉ
-            sử dụng được trong một bảng hiệu quảng cáo, bảng vẩy. <br />
-            Standee chữ X, standee cuốn: xuất hiện nhiều trong các buổi triển
-            lãm, hội thảo, hội chợ, chúng được ưa chuộng như vậy là nhờ vào tính
-            năng có thể di chuyển, gấp gọn khi không dùng và đặc biệt chi phí in
-            cũng khá thấp nếu thay đổi nội dung. <br />
-            Danglers: là những biển quảng cáo được thả dài trên trần, thường gặp
-            ở các siêu thị hoặc những cửa hàng bán lẻ <br />
-            Sticker/decal: là loại decal dùng để dán lên các vị trí mà khách
-            muốn, trên đó thường in logo hay nội dung chính của sản phẩm. <br />
-            Shelf talker: cũng tương tự như wobbler, nhưng shelftalker lại dùng
-            để cài lên trên kệ, dễ dàng thay đổi nội dung bằng cách thay phần
-            giấy ở bên trong rất tiết kiệm chi phí <br />
+            <Translations text="lapdatContent1" /> <br />
+            <Translations text="lapdatContent2" />
+            <br />
+            <Translations text="lapdatContent3" />
+            <br />
+            <Translations text="lapdatContent4" />
+            <br />
+            <Translations text="lapdatContent5" />
+            <br />
+            <Translations text="lapdatContent6" />
+            <br />
           </p>
         </Container>
       </div>

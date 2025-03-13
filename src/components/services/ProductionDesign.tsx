@@ -31,6 +31,11 @@ import sp17 from "@assets/images/bb4.2.png";
 import sp18 from "@assets/images/bb4.3.png";
 import sp19 from "@assets/images/bb4.4.png";
 import FooterComponentV2 from "../home/FooterComponentV2";
+import dynamic from "next/dynamic";
+
+const Translations = dynamic(() => import("@/commons/Translations"), {
+  ssr: false,
+});
 
 const ProductionDesign = () => {
   return (
@@ -50,8 +55,10 @@ const ProductionDesign = () => {
           alt=""
           src={sloganIcon}
         />
-        <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
-          THIẾT KẾ & SẢN XUẤT <br className="md:hidden" /> BAO BÌ GIẤY
+        <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold uppercase">
+          <Translations text="designAndContributeTitle1" />{" "}
+          <br className="md:hidden" />{" "}
+          <Translations text="designAndContributeTitle2" />
         </h3>
       </div>
 
@@ -91,7 +98,7 @@ const ProductionDesign = () => {
                 <div className="flex items-center gap-5">
                   <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
                   <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-                    Túi giấy
+                    <Translations text="PaperBags" />
                   </p>
                 </div>
               </div>
@@ -182,7 +189,7 @@ const ProductionDesign = () => {
             <div className="flex justify-center items-center gap-5 mb-8">
               <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
               <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-                Hộp cứng
+                <Translations text="Hard case" />
               </p>
             </div>
             <div className=" grid grid-cols-4 gap-1 items-stretch">
@@ -221,7 +228,7 @@ const ProductionDesign = () => {
             <div className="flex justify-center items-center gap-5 mb-8">
               <p className="w-[27px] h-[27px] bg-[#2E3A40] rounded-full"></p>
               <p className="text-orange font-avo_bold text-xl  lg:text-[23px] tracking-widest">
-                Thùng carton
+                <Translations text="carton" />
               </p>
             </div>
             <div className=" grid grid-cols-4 gap-1 items-stretch">

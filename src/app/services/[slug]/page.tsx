@@ -5,7 +5,7 @@ import ProductDisplayDesign from "@/components/services/ProductDisplayDesign";
 import ProductionDesign from "@/components/services/ProductionDesign";
 import { useParams } from "next/navigation";
 import React, { useEffect } from "react";
-
+import "@/../i18n";
 const Service = () => {
   const params = useParams<{ slug: string }>();
 
