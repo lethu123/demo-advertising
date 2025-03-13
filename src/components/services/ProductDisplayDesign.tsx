@@ -6,7 +6,7 @@ import React from "react";
 
 import styles from "@assets/scss/home.module.scss";
 import design7 from "@assets/images/design7@2x.png";
-import threeSlash3 from "@assets/images/three-slash3.svg"; 
+import threeSlash3 from "@assets/images/three-slash3.svg";
 import sloganIcon from "@assets/images/icon1.svg";
 import BannerSingle from "@/components/home/BannerSingle";
 
@@ -243,15 +243,7 @@ const ProductDisplayDesign = () => {
             câu chữ chi tiết, thường được in trên giấy dán trên tường hay các
             mặt thẳng đứng. Poster thu hút được người xem ở cự ly gần, do kích
             thước cũng như phông chữ nhỏ. Về độ bền thì những tấm poster này chỉ
-            sử dụng được trong một khoảng thời gian ngắn. Banner: cũng giống như
-            poster nhưng banner lại có sự khác biệt hơn. Khi được in trên bạt,
-            vinyl (đều là các chất liệu bền, sử dụng được lâu). Nội dung thể
-            hiện cũng được chọn lọc, kích thước chữ hay hình ảnh khá là lớn do
-            banner thường treo ở các vị trí cao, xa. <br />
-            Hanger sắt treo, hanger giấy, haging mobile <br />
-            Kệ trưng bày bằng sắt, alu, sơn tĩnh điện <br />
-            Cổng chào siêu thị, cửa hàng <br />
-            Bảng hiệu quảng cáo, bảng vẩy <br />
+            sử dụng được trong một bảng hiệu quảng cáo, bảng vẩy. <br />
             Standee chữ X, standee cuốn: xuất hiện nhiều trong các buổi triển
             lãm, hội thảo, hội chợ, chúng được ưa chuộng như vậy là nhờ vào tính
             năng có thể di chuyển, gấp gọn khi không dùng và đặc biệt chi phí in

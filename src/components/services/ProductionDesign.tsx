@@ -51,7 +51,7 @@ const ProductionDesign = () => {
           src={sloganIcon}
         />
         <h3 className="text-white text-center mt-5 text-2xl lg:text-[37.12px] font-avo_bold">
-          THIẾT KẾ & SẢN XUẤT <br className="md:hidden" /> BAO BÌ
+          THIẾT KẾ & SẢN XUẤT <br className="md:hidden" /> BAO BÌ GIẤY
         </h3>
       </div>
 

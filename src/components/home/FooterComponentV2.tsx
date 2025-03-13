@@ -14,7 +14,7 @@ const FooterComponentV2 = () => {
               Công ty TNHH Quảng Cáo và Phát Triển M.A.I
             </h1>
             <h3 className="text-xl lg:text-[23px] xl:text-[20px] 2xl:text-[29px] font-avo text-white">
-              M.A.I Development And Advertising Company Limited
+              M.A.I Advertising And Development Company Limited
             </h3>
             <div className="mt-5">
               <div className="flex   text-[#534741] gap-2 items-center mb-1">
@@ -82,7 +82,7 @@ const FooterComponentV2 = () => {
               <ul className={`${styles.ul} mt-3 text-[#534741]`}>
                 <li className=" flex gap-2 menu-footer">
                   <Link href={"/services/thiet-ke-san-xuat-bao-bi-giay"}>
-                    Thiết kế & sản xuất bao bì
+                    Thiết kế & sản xuất bao bì giấy
                   </Link>
                 </li>
                 <li className=" flex gap-2 menu-footer">

@@ -31,21 +31,21 @@ const AboutUsComponent = () => {
       <Container>
         <div className="mt-5">
           <p className="text-[18px] mb-5">
-            Được thành lập năm 2015 với tên gọi là{" "}
             <b>Công ty TNHH Quảng Cáo và Phát Triển M.A.I</b> (M.A.I Development
-            And Advertising Company Limited).
+            And Advertising Company Limited) được thành lập và đi vào hoạt động
+            vào năm 2015
           </p>
           <p className="text-[18px]">
             {" "}
-            Với kinh nghiệm gần 20 năm hoạt động trong lĩnh vực quảng cáo với{" "}
+            Với kinh nghiệm gần 10 năm hoạt động trong lĩnh vực quảng cáo, in ấn
+            và sản xuất bao bì cùng với{" "}
             <b>
               đội ngũ nhân viên năng động, nhiệt huyết, tận tâm, giàu kinh
               nghiệm.
             </b>{" "}
             Chúng tôi luôn hướng đến khẩu hiệu{" "}
-            <b>“Hiệu quả - Tiết kiệm – Sáng tạo”</b>, bên cạnh đó chúng tôi cũng
-            không ngừng thay đổi và làm mới mình để trở thành một địa chỉ đáng
-            tin cậy cho việc quảng bá sản phẩm thương hiệu của Quý khách hàng.
+            <b>“Năng động – Sáng tạo – Tiết kiệm – Hiệu quả”</b>, sẽ là một địa
+            chỉ đáng tin cậy của Quý khách hàng và Đối tác.
           </p>
         </div>
       </Container>

@@ -42,11 +42,11 @@ const menu = [
     ],
   },
   {
-    title: "Dịch vụ",
+    title: "Thiết kế trưng bày quảng cáo",
     path: "/",
     subMenu: [
       {
-        title: "Thiết kế & sản xuất bao bì",
+        title: "Thiết kế & sản xuất bao bì giấy",
         path: "/services/thiet-ke-san-xuat-bao-bi-giay",
       },
       {

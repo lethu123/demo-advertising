@@ -100,9 +100,9 @@ const Navbar = () => {
               <li className="flex items-center">
                 <h3
                   className=" text-[15px] 2xl:text-[17px] mr-2"
-                  data-hover="DỊCH VỤ"
+                  data-hover="THIẾT KẾ TRƯNG BÀY QUẢNG CÁO"
                 >
-                  DỊCH VỤ{" "}
+                  THIẾT KẾ TRƯNG BÀY QUẢNG CÁO{" "}
                 </h3>
                 <i
                   className="fa fa-angle-down"
@@ -111,7 +111,7 @@ const Navbar = () => {
               </li>
 
               <div className="menu_products overflow-hidden">
-                <div className="flex rounded grid grid-cols-7 bg-white shadow-lg ring-1 ring-gray-900/5">
+                <div className=" rounded grid grid-cols-7 bg-white shadow-lg ring-1 ring-gray-900/5">
                   <div className="col-span-2"></div>
                   <div className="flex-auto col-span-5 ps-5  text-sm leading-6  ">
                     <div className=" divide-x divide-gray-900/5   ">
@@ -120,7 +120,7 @@ const Navbar = () => {
                           href="/services/thiet-ke-san-xuat-bao-bi-giay"
                           className="flex items-center  text-nowrap menu-footer  gap-x-2.5 py-3 font-semibold text-gray-900 "
                         >
-                          Thiết kế & sản xuất bao bì
+                          Thiết kế & sản xuất bao bì giấy
                         </Link>
                       </div>
                       <div className="hover:bg-gray-100 px-3">

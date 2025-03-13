@@ -142,7 +142,7 @@ const ContactComponent = () => {
                     value="yes"
                   />
                   <label htmlFor="c-design-boxing">
-                    Thiết kế & sản xuất bao bì
+                    Thiết kế & sản xuất bao bì giấy
                   </label>
                 </div>
                 <div className=" flex items-center mb-3">
