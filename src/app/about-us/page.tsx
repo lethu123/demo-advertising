@@ -34,7 +34,7 @@ const AboutUs = () => {
                 src={sloganIcon}
               />
 
-              <h5 className="font-icie_medium text-[#534741] uppercase text-lg sm:text-xl md:text-[27.88px] tracking-[0.15em] pt-7">
+              <h5 className="font-icie_medium text-[#534741] uppercase text-md sm:text-xl md:text-[27.88px] tracking-[0.15em] pt-7">
                 “<Translations text="khauhieu" />”{" "}
               </h5>
               <h2 className="font-icie_medium text-[#534741]   text-xl sm:text-[1.5rem] md:text-[35px]  leading-10 tracking-[0.15em]">

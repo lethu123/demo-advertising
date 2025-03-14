@@ -9,7 +9,7 @@ import sloganIcon from "@assets/images/iconSlogon2.png";
 import slash from "@assets/images/slash-dark.png";
 import FooterComponentV2 from "@/components/home/FooterComponentV2";
 import dynamic from "next/dynamic";
-
+import "../../../i18n";
 const Translations = dynamic(() => import("@/commons/Translations"), {
   ssr: false,
 });
@@ -55,13 +55,10 @@ const Contact = () => {
               </h1>
               <div className="mt-10">
                 <p className="mb-5 text-xl md:text-[36px] leading-9 text-[#534741]">
-                  Với NHIỆT HUYẾT và sức SÁNG TẠO. Chúng tôi luôn luôn hoàn
-                  thiện những ý tưởng, dự án hoặc giải pháp cho hhách hàng của
-                  mình.{" "}
+                  <Translations text="contactContent1" />{" "}
                 </p>
                 <p className="mb-5 text-xl md:text-[36px] leading-9 text-[#534741]">
-                  Chúng tôi có trụ sở tại thành phố Hồ Chí Minh, nhưng luôn chăm
-                  sóc khách hàng chuyên nghiệp trên cả nước.
+                  <Translations text="contactContent2" />
                 </p>
                 <p className="mb-5 text-xl md:text-[36px] leading-9 text-[#534741]">
                   info@maipt.com
@@ -73,19 +70,22 @@ const Contact = () => {
             </div>
             <div className="grid grid-cols-3 lg:flex gap-8 items-center mt-10">
               <div className="col-span-3 md:col-span-1 pb-5 ">
-                <h1 className="hidden sm:max-md:block font-icie_medium  text-lg text-[#534741] tracking-[0.25rem] text-center">
-                  HIỆU QUẢ - TIẾT KIỆM - SÁNG TẠO
+                <h1 className="hidden sm:max-md:block font-icie_medium uppercase  text-lg text-[#534741] tracking-[0.25rem] text-center">
+                  <Translations text="khauhieu" />
                 </h1>
 
                 <div className="sm:hidden md:block">
-                  <h1 className="font-icie_medium md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]">
-                    HIỆU QUẢ{" "}
+                  <h1 className="font-icie_medium uppercase md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]">
+                    <Translations text="khauhieu1" />{" "}
                   </h1>
-                  <h1 className="font-icie_medium md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]">
-                    TIẾT KIỆM{" "}
+                  <h1 className="font-icie_medium uppercase md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]">
+                    <Translations text="khauhieu2" />{" "}
                   </h1>
-                  <h1 className="font-icie_medium md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]">
-                    SÁNG TẠO
+                  <h1 className="font-icie_medium uppercase md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]">
+                    <Translations text="khauhieu3" />{" "}
+                  </h1>
+                  <h1 className="font-icie_medium uppercase md:text-3xl text-nowrap lg:leading-[3.5rem] lg:text-[37px] xl:text-[30px] 2xl:text-[45px] text-lg mt-1 text-[#534741] tracking-[0.5rem]">
+                    <Translations text="khauhieu4" />
                   </h1>
                 </div>
               </div>
@@ -97,28 +97,36 @@ const Contact = () => {
                   className="p-5 lg:p-12   2xl:p-12 bg-white rounded-[30px] form-contact-us"
                 >
                   <div className="form-group mb-3">
-                    <label>Tên của bạn (Bắt buộc)</label>
+                    <label>
+                      <Translations text="contactLabel1" />
+                    </label>
                     <input
                       required
                       className="w-full rounded-[8px] py-1 mt-1"
                     />
                   </div>
                   <div className="form-group mb-3">
-                    <label>Địa chỉ email (Bắt buộc)</label>
+                    <label>
+                      <Translations text="contactLabel2" />
+                    </label>
                     <input
                       required
                       className="w-full rounded-[8px] py-1 mt-1"
                     />
                   </div>
                   <div className="form-group mb-3">
-                    <label>Số điện thoại (Bắt buộc)</label>
+                    <label>
+                      <Translations text="contactLabel3" />
+                    </label>
                     <input
                       required
                       className="w-full rounded-[8px] py-1 mt-1"
                     />
                   </div>
                   <div className="form-group">
-                    <label>Lời nhắn</label>
+                    <label>
+                      <Translations text="message" />
+                    </label>
                     <textarea
                       required
                       className="w-full rounded-[8px] py-1 mt-1"
@@ -130,7 +138,9 @@ const Contact = () => {
                       style={{ color: "white" }}
                       className="btn btn-three text-sm md:text-[23.47px] tracking-[0.25rem]"
                     >
-                      <span>GỬI</span>
+                      <span>
+                        <Translations text="send" />
+                      </span>
                     </button>
                   </div>
                 </form>
