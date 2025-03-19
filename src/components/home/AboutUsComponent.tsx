@@ -43,8 +43,8 @@ const AboutUsComponent = () => {
               <Translations text="companyName" />
             </b>{" "}
             {lang !== "en" && (
-              <>(M.A.I Development And Advertising Company Limited)</>
-            )}
+              <>(M.A.I Development And Advertising Company Limited) </>
+            )}{" "}
             <Translations text="establishment" />
           </p>
           <p className="text-[18px]">
