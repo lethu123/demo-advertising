@@ -44,7 +44,7 @@ const FooterComponentV2 = () => {
                 </div>
                 <div>
                   <span className="text-[#534741] 2xl:text-[25px] text-[18px] font-avo">
-                    Hotline 0902 668 246
+                    Hotline 0902 929 246
                   </span>
                 </div>
               </div>

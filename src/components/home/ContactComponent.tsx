@@ -87,7 +87,7 @@ const ContactComponent = () => {
                     value="yes"
                   />
                   <label htmlFor="c-schadule">
-                    <Translations text="Calendar" />
+                    <Translations text="calendar" />
                   </label>
                 </div>
                 {/* <div className=" flex items-center mb-3">

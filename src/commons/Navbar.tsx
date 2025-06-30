@@ -16,7 +16,7 @@ const Navbar = () => {
   const { t } = useTranslation();
   return (
     <div className="sticky top-0 bg-white z-30 shadow">
-      <div className="w-full xl:w-4/5 max-w-screen-2xl relative justify-center mx-auto px-4 xl:px-0 banner-single">
+      <div className="w-full xl:w-3/5 max-w-screen-2xl relative justify-center mx-auto px-4 xl:px-0 banner-single">
         <MenuMobile />
         <div className="hidden lg:block ">
           <ul className="flex items-stretch gap-12 justify-between">

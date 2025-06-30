@@ -46,7 +46,7 @@ const FooterComponent = () => {
                 </div>
                 <div>
                   <span className="custom-text-mode text-[18px] font-avo">
-                    Hotline 0902 668 246
+                    Hotline 0902 929 246
                   </span>
                 </div>
               </div>
@@ -233,7 +233,7 @@ const FooterComponent = () => {
               </div>
               <div>
                 <span className="custom-text-mode text-[18px] font-avo">
-                  Hotline 0902 668 246
+                  Hotline 0902 929 246
                 </span>
               </div>
             </div>

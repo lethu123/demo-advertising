@@ -38,7 +38,7 @@ const Header2Component = () => {
         !scrolled ? "absolute   unsticky-header" : "sticky-header shadow"
       }`}
     >
-      <div className="w-full xl:w-4/5 max-w-screen-2xl relative justify-center mx-auto px-4 xl:px-0">
+      <div className="w-full xl:w-3/5 max-w-screen-2xl relative justify-center mx-auto px-4 xl:px-0">
         <MenuMobile />
         <div className="hidden lg:block ">
           <ul className="flex items-stretch gap-12 justify-between">
