@@ -34,7 +34,7 @@ const CoperatorComponent = () => {
         style={{ background: "#A8AAAC" }}
       >
         <div className="w-full xl:w-4/5 max-w-screen-xl mx-auto">
-          <div className="w-full flex gap-x-[2rem] gap-y-[1rem] items-end  flex-wrap justify-center">
+          <div className="w-full flex gap-x-[2rem] gap-y-[1rem] items-stretch  flex-wrap justify-center">
             <div className="bg-white">
               <Image
                 alt=""
