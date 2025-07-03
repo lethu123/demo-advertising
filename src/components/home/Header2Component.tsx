@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import Link from "next/link";
 import logo from "@assets/images/logo.svg";
 import MenuMobile from "../../commons/MenuMobile";
@@ -31,6 +31,18 @@ const Header2Component = () => {
     }
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const translatedTexts = useMemo(
+    () => ({
+      home: t("home"),
+      product: t("product"),
+      services: t("services"),
+      aboutUs: t("aboutUs"),
+      news: t("news"),
+      contact: t("contact"),
+    }),
+    [t]
+  );
 
   return (
     <div
@@ -200,7 +212,7 @@ const Header2Component = () => {
                 <Link
                   href="/news"
                   className="text-white uppercase text-[15px] 2xl:text-[17px]"
-                  data-hover={t("news")}
+                  data-hover={translatedTexts.news}
                 >
                   <Translations text="news" />
                 </Link>
